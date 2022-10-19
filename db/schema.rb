@@ -15,6 +15,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_19_132526) do
     t.integer "user_id"
     t.integer "receipt_id"
     t.string "pick_up"
+ActiveRecord::Schema[7.0].define(version: 2022_10_19_132515) do
+  create_table "receipts", force: :cascade do |t|
+    t.string "receipt_no"
+    t.string "sender_name"
+    t.string "receiver_name"
+    t.integer "amount_paid"
+    t.string "nature_of_goods"
+    t.string "pickup"
     t.string "destination"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
