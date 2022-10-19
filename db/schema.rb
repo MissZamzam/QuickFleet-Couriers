@@ -10,6 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema[7.0].define(version: 2022_10_19_132526) do
+  create_table "trackings", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "receipt_id"
+    t.string "pick_up"
 ActiveRecord::Schema[7.0].define(version: 2022_10_19_132515) do
   create_table "receipts", force: :cascade do |t|
     t.string "receipt_no"
