@@ -1,0 +1,12 @@
+class CreateTrackings < ActiveRecord::Migration[7.0]
+  def change
+    create_table :trackings do |t|
+      t.integer :user_id
+      t.integer :receipt_id
+      t.string :pick_up
+      t.string :destination
+
+      t.timestamps
+    end
+  end
+end
