@@ -13,7 +13,7 @@ class ReceiptsController < ApplicationController
 
   #  GET /receipts/:id
   def show
-    payment = Receipt.find(params[:id])
+    payment = Receipt.find(params[:receipt_no])
     render json: payment, status: :ok
   end
 
@@ -26,15 +26,15 @@ class ReceiptsController < ApplicationController
   # PATCH /receipts/:id
   def update
     #find
-    payment = Receipt.find(params[:id])
+    payment = Receipt.find(params[:receipt_no])
     Receipt.update!(payment_params)
-    render json: payment, serializer: Tenantreceiptserializer, status: :ok
+    render json: payment, status: :ok
   end
 
   # DELETE /receipts/:id
   def destroy
     # find
-    payment = Receipt.find(params[:id])
+    payment = Receipt.find(params[:receipt_no])
     # delete
     Receipt.destroy
     head :no_content
