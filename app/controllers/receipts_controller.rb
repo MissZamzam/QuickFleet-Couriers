@@ -13,44 +13,44 @@ class ReceiptsController < ApplicationController
 
   #  GET /receipts/:id
   def show
-    payment = Receipt.find(params[:receipt_no])
-    render json: payment, status: :ok
+    receipt = Receipt.find(params[:receipt_no])
+    render json: receipt, status: :ok
   end
 
   # POST/receipts
   def create
-    payment = Receipt.create!(payment_params)
-    render json: payment, status: :created
+    receipt = Receipt.create!(receipt_params)
+    render json: receipt, status: :created
   end
 
-  # PATCH /receipts/:id
-  def update
-    #find
-    payment = Receipt.find(params[:receipt_no])
-    Receipt.update!(payment_params)
-    render json: payment, status: :ok
-  end
+#   # PATCH /receipts/:id
+#   def update
+#     #find
+#     receipt = Receipt.find(params[:receipt_no])
+#     Receipt.update!(receipt_params)
+#     render json: receipt, status: :ok
+#   end
 
-  # DELETE /receipts/:id
-  def destroy
-    # find
-    payment = Receipt.find(params[:receipt_no])
-    # delete
-    Receipt.destroy
-    head :no_content
-  end
+#   # DELETE /receipts/:id
+#   def destroy
+#     # find
+#     receipt = Receipt.find(params[:receipt_no])
+#     # delete
+#     Receipt.destroy
+#     head :no_content
+#   end
 
   private
 
-  def payment_params
-    params.permit(:id, :tenant_id, :invoice_no, :amount_paid, :date)
+  def receipt_params
+    params.permit(:id, :receipt_no, :sender_name, :receiver_name, :amount_paid, :nature_of_goods, :pickup, :destination, :delivery_id)
   end
 
   def unprocessable_entity(invalid)
     render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
   end
 
-  def payment_not_found
-    render json: { error: "payment not found" }, status: :not_found
+  def receipt_not_found
+    render json: { error: "receipt not found" }, status: :not_found
   end
 end
