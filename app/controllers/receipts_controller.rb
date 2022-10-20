@@ -31,14 +31,14 @@ class ReceiptsController < ApplicationController
     render json: receipt, status: :ok
   end
 
-#   # DELETE /receipts/:id
-#   def destroy
-#     # find
-#     receipt = Receipt.find(params[:receipt_no])
-#     # delete
-#     Receipt.destroy
-#     head :no_content
-#   end
+  # DELETE /receipts/:id
+  def destroy
+    # find
+    receipt = Receipt.find(params[:receipt_no])
+    # delete
+    Receipt.destroy
+    head :no_content
+  end
 
   private
 
