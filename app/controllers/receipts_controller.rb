@@ -23,13 +23,13 @@ class ReceiptsController < ApplicationController
     render json: receipt, status: :created
   end
 
-#   # PATCH /receipts/:id
-#   def update
-#     #find
-#     receipt = Receipt.find(params[:receipt_no])
-#     Receipt.update!(receipt_params)
-#     render json: receipt, status: :ok
-#   end
+  # PATCH /receipts/:id
+  def update
+    #find
+    receipt = Receipt.find(params[:receipt_no])
+    Receipt.update!(receipt_params)
+    render json: receipt, status: :ok
+  end
 
 #   # DELETE /receipts/:id
 #   def destroy
