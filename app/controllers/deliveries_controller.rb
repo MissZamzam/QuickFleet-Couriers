@@ -1,4 +1,6 @@
 class DeliveriesController < ApplicationController
+    rescue_from ActiveRecord::RecordNotFound, with: :delivery_not_found
+    rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
 
     # GET /rdeliveries
@@ -42,6 +44,10 @@ class DeliveriesController < ApplicationController
     
     def unprocessable_entity(invalid)
         render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
+    end
+
+    def delivery_not_found
+        render json: { error: "delivery not found" }, status: :not_found
       end
     
 
