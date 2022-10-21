@@ -1,6 +1,21 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
+delivery1 = Delivery.create(
+    image_url: "",
+    category: "On-Demand Delivery",
+    description: ""
+)
 
-#
-#   
+delivery2 = Delivery.create(
+    image_url: "",
+    category: "Parcel Services",
+    description: ""
+)
+delivery3 = Delivery.create(
+    image_url: "",
+    category: "Overnight Shipping",
+    description: ""
+)
+delivery4 = Delivery.create(
+    image_url: "",
+    category: "Same Day Courier",
+    description: ""
+)
