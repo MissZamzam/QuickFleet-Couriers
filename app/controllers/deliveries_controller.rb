@@ -17,10 +17,17 @@ class DeliveriesController < ApplicationController
         render json: delivery, status: :created
     end
 
+    def update
+        delivery = Delivery.find(id: params[:id])
+        delivery.update!(delivery_params)
+        render json: delivery, status: :ok
+    end
+
     private
 
     def delivery_params
         params.permit(:image_url, :category, :description)
     end
+    
 
 end
