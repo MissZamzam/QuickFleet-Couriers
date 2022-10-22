@@ -13,7 +13,7 @@ class ReceiptsController < ApplicationController
 
   #  GET /receipts/:id
   def show
-    receipt = Receipt.find(params[:receipt_no])
+    receipt = Receipt.find(params[:id])
     render json: receipt, status: :ok
   end
 
@@ -26,7 +26,7 @@ class ReceiptsController < ApplicationController
   # PATCH /receipts/:id
   def update
     #find
-    receipt = Receipt.find(params[:receipt_no])
+    receipt = Receipt.find(params[:id])
     Receipt.update!(receipt_params)
     render json: receipt, status: :ok
   end
