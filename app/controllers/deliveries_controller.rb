@@ -11,7 +11,7 @@ class DeliveriesController < ApplicationController
 
     # GET /deliveries/:id
     def show
-        delivery = Delivery.find(id: params[:id])
+        delivery = Delivery.find_by(id: params[:id])
         render json: delivery, status: :ok
     end
 
@@ -28,7 +28,7 @@ class DeliveriesController < ApplicationController
         render json: delivery, status: :ok
     end
 
-          # DELETE /deliveries/:id
+    # DELETE /deliveries/:id
     def destroy
         delivery = Delivery.find(id: params[:id])
         Delivery.destroy
