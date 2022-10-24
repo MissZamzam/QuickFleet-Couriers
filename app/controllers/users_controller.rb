@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[ show update destroy ]
+  # before_action :set_user, only: %i[ show update destroy ]
+  # before_action :authorize_request, only: [:verify]
 
   # GET /users
-  def index
-    @users = User.all
 
-    render json: @users
+  def index
+    @users = User.select(:id,:username, :email, :image, :password_digest)
+
+    render json: @users 
   end
 
   # GET /users/1
@@ -68,10 +70,18 @@ class UsersController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def user_params
-      params.require(:user).permit(:username, :password, :email, :image)
+    # def user_params
+    #   params.require(:user).permit(:username, :password, :email, :image)
+    # end
+
+    def user_register_params
+      params.permit(:username, :email, :password)
     end
-    
+  
+    def user_login_params
+      params.permit(:email, :password)
+    end
+
     def create_token(id)
       payload = {id: id, exp: 24.hours.from_now.to_i}
       JWT.encode(payload, SECRET_KEY)
