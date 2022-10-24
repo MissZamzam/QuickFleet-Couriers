@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :deliveries
+  resources :deliveries, only: [:index, :show, :create, :update, :destroy]
   resources :trackings
   resources :receipts
   resources :users
