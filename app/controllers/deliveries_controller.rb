@@ -5,7 +5,7 @@ class DeliveriesController < ApplicationController
 
     # GET /rdeliveries
     def index
-        deliveries = Delivery.all 
+        deliveries = Delivery.all
         render json: deliveries
     end
 
@@ -41,7 +41,7 @@ class DeliveriesController < ApplicationController
     def delivery_params
         params.permit(:image_url, :category, :description)
     end
-    
+
     def unprocessable_entity(invalid)
         render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
     end
@@ -49,7 +49,7 @@ class DeliveriesController < ApplicationController
     def delivery_not_found
         render json: { error: "delivery not found" }, status: :not_found
       end
-    
+
 
 
 end
