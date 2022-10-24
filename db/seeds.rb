@@ -5,12 +5,12 @@ delivery1 = Delivery.create(
 )
 
 delivery2 = Delivery.create(
-    image_url: "https://www.google.com/imgres?imgurl=https%3A%2F%2Frajmandirtravesh.com%2Fwp-content%2Fuploads%2F2021%2F05%2FMedium-parcel.jpeg&imgrefurl=https%3A%2F%2Frajmandirtravesh.com%2Fproduct%2Fmedium-parcel%2F&tbnid=w084RxkfgkNhVM&vet=12ahUKEwi9lLWG-PD6AhVyQKQEHU86ClEQMygyegQIARBh..i&docid=2O7ARkU2cwEvnM&w=500&h=500&q=parcel%20image&hl=en&ved=2ahUKEwi9lLWG-PD6AhVyQKQEHU86ClEQMygyegQIARBh",
+    image_url: "https://target.scene7.com/is/image/Target/GUEST_5dfc3ae5-0771-4e24-884f-494f922db908?wid=488&hei=488&fmt=pjpeg",
     category: "Parcel Services",
     description: "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."
 )
 delivery3 = Delivery.create(
-    image_url: "https://thumbs.dreamstime.com/b/clothes-shopping-bag-price-tag-42010054.jpg",
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU",
     category: "Overnight Shipping",
     description: "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."
 )
