@@ -34,7 +34,7 @@ class ReceiptsController < ApplicationController
   # DELETE /receipts/:id
   def destroy
     # find
-    receipt = Receipt.find(params[:receipt_no])
+    receipt = Receipt.find(params[:id])
     # delete
     Receipt.destroy
     head :no_content
