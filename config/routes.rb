@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :use_profiles
   resources :deliveries, only: [:index, :show, :create, :update, :destroy]
   resources :trackings
   resources :trackings, only: [:index, :show, :create, :update, :destroy]
