@@ -33,6 +33,22 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_24_132055) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+ActiveRecord::Schema[7.0].define(version: 2022_10_19_132526) do
+  create_table "trackings", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "receipt_id"
+    t.string "pick_up"
+ActiveRecord::Schema[7.0].define(version: 2022_10_19_132515) do
+  create_table "receipts", force: :cascade do |t|
+    t.string "receipt_no"
+    t.string "sender_name"
+    t.string "receiver_name"
+    t.integer "amount_paid"
+    t.string "nature_of_goods"
+    t.string "pickup"
+    t.string "destination"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
