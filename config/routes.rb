@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   resources :use_profiles
   resources :deliveries, only: [:index, :show, :create, :update, :destroy]
   resources :trackings
   resources :receipts
   resources :users
-=======
   # resources :users
   devise_for :admins, path: 'admin', path_names:{
     sign_in: 'login',
@@ -30,7 +28,6 @@ Rails.application.routes.draw do
     registrations: 'users/devise/registrations'
   }
 
->>>>>>> master
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
