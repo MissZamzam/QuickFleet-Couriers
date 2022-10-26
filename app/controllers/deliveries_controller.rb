@@ -3,7 +3,7 @@ class DeliveriesController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
 
-    # GET /rdeliveries
+    # GET /deliveries
     def index
         deliveries = Delivery.all
         render json: deliveries
