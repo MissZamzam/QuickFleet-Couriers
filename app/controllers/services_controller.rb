@@ -23,6 +23,13 @@ def update
     render json: service, status: :ok
 end
 
+ # DELETE /deliveries/:id
+ def destroy
+    service = Service.find(id: params[:id])
+    Service.destroy
+    head :no_content
+end
+
     private
 
     def service_params
