@@ -11,11 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_10_25_081826) do
-<<<<<<< HEAD
-
-ActiveRecord::Schema[7.0].define(version: 2022_10_24_132055) do
-=======
->>>>>>> 090a5aa1c24e3d7413c11ddaa20627293362782c
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
