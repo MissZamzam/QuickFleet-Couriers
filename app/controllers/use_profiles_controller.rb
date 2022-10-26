@@ -25,7 +25,15 @@ class UseProfilesController < ApplicationController
     user_profile.update!(user_profile_params)
     render json: user_profile, status: :ok
 end
+  
 
+
+    # DELETE /user_profiles/:id
+    def destroy
+        user_profile = User_Profile.find(id: params[:id])
+        User_Profile.destroy
+        head :no_content
+    end
 
     private
 
