@@ -1,0 +1,2 @@
+class UseProfilesController < ApplicationController
+end
