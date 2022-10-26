@@ -1,5 +1,9 @@
 class ServicesController < ApplicationController
 
+    rescue_from ActiveRecord::RecordNotFound, with: :service_not_found
+    rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
+
+
     # GET /services
     def index
         services = Service.all
@@ -36,5 +40,11 @@ end
         params.permit(:image_url, :category, :description)
     end
 
+    def unprocessable_entity(invalid)
+        render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
+    end
 
+    def delivery_not_found
+        render json: { error: "service not found" }, status: :not_found
+      end
 end
