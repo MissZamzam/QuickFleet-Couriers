@@ -6,4 +6,10 @@ class ServicesController < ApplicationController
         render json: services
     end
 
+     # GET /deliveries/:id
+     def show
+        service = Service.find_by(id: params[:id])
+        render json: service, status: :ok
+    end
+
 end
