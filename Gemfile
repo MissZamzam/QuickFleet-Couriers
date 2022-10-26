@@ -18,6 +18,7 @@ gem "jsonapi-serializer"
 gem "puma", "~> 5.0"
 
 #serializer gem
+gem 'active_model_serializers'
 #gem 'active_model_serializers'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -51,5 +52,8 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  # Use sqlite3 as the database for Active Record
+  gem "sqlite3", "~> 1.4"
 end
+
 

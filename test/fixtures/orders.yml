@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sender_name: MyString
+  receiver_name: MyString
+  amount_paid: 1
+  nature_of_goods: MyString
+  pickup: MyString
+  destination: MyString
+  delivery_id: 1
+  receipt_id: 1
+
+two:
+  sender_name: MyString
+  receiver_name: MyString
+  amount_paid: 1
+  nature_of_goods: MyString
+  pickup: MyString
+  destination: MyString
+  delivery_id: 1
+  receipt_id: 1
