@@ -38,9 +38,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_26_140911) do
   end
 
   create_table "deliveries", force: :cascade do |t|
-    t.string "image_url"
-    t.string "category"
-    t.string "description"
+    t.string "receiver_name"
+    t.string "receiver_contact"
+    t.text "pickup_instructions"
+    t.text "delivery_instructions"
+    t.string "package_type"
+    t.string "package_details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,6 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_26_140911) do
     t.string "nature_of_goods"
     t.string "pickup"
     t.string "destination"
+    t.integer "service_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
