@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_24_095704) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_25_081826) do
+  create_table "admins", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_admins_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
   create_table "deliveries", force: :cascade do |t|
     t.string "image_url"
     t.string "category"
@@ -40,7 +52,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_24_095704) do
     t.string "nature_of_goods"
     t.string "pickup"
     t.string "destination"
-    t.integer "delivery_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,19 +59,32 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_24_095704) do
   create_table "trackings", force: :cascade do |t|
     t.integer "user_id"
     t.integer "receipt_id"
-    t.string "pickup"
+    t.string "pick_up"
     t.string "destination"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "password"
+  create_table "use_profiles", force: :cascade do |t|
+    t.string "avatar"
+    t.string "name"
     t.string "email"
-    t.string "image"
+    t.string "telephone"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end
