@@ -16,7 +16,12 @@ class ServicesController < ApplicationController
         service = Service.create!(service_params)
         render json: service, status: :created
     end
-
+# PATCH /services/:id
+def update
+    service = Service.find(id: params[:id])
+    service.update!(service_params)
+    render json: service, status: :ok
+end
 
     private
 
