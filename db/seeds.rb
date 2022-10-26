@@ -46,7 +46,7 @@ Receipt.create!(
 "nature_of_goods": "Fragile",
 "pickup": "Moringa",
 "destination": "CBD",
-"delivery_id": 1,
+"delivery_id": 2,
 "created_at": "2022-10-24T07:03:48.845Z",
 "updated_at": "2022-10-24T07:03:48.845Z"
 },
@@ -72,7 +72,7 @@ Receipt.create!(
 "nature_of_goods": "Fragile",
 "pickup": "Moringa",
 "destination": "CBD",
-"delivery_id": 2,
+"delivery_id": 4,
 "created_at": "2022-10-24T07:09:09.190Z",
 "updated_at": "2022-10-24T07:09:09.190Z"
 },
@@ -85,7 +85,7 @@ Receipt.create!(
 "nature_of_goods": "Perishable",
 "pickup": "Moringa",
 "destination": "Coptic",
-"delivery_id": 4,
+"delivery_id": 5,
 "created_at": "2022-10-24T07:24:43.210Z",
 "updated_at": "2022-10-24T07:24:43.210Z"
 }
