@@ -6,10 +6,23 @@ class ServicesController < ApplicationController
         render json: services
     end
 
-     # GET /deliveries/:id
+     # GET /services/:id
      def show
         service = Service.find_by(id: params[:id])
         render json: service, status: :ok
     end
+    # POST/services
+    def create
+        service = Service.create!(service_params)
+        render json: service, status: :created
+    end
+
+
+    private
+
+    def service_params
+        params.permit(:image_url, :category, :description)
+    end
+
 
 end
