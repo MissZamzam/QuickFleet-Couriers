@@ -19,6 +19,13 @@ class UseProfilesController < ApplicationController
         render json: user_profile, status: :created
     end
 
+ # PATCH /user_profile/:id
+ def update
+    user_profile = User_Profile.find(id: params[:id])
+    user_profile.update!(user_profile_params)
+    render json: user_profile, status: :ok
+end
+
 
     private
 
