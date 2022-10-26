@@ -8,6 +8,7 @@ class CreateReceipts < ActiveRecord::Migration[7.0]
       t.string :nature_of_goods
       t.string :pickup
       t.string :destination
+      t.integer :delivery_id
 
       t.timestamps
     end

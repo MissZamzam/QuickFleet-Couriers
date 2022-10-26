@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_24_132055) do
     t.string "nature_of_goods"
     t.string "pickup"
     t.string "destination"
+    t.integer "delivery_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -47,7 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_24_132055) do
   create_table "trackings", force: :cascade do |t|
     t.integer "user_id"
     t.integer "receipt_id"
-    t.string "pick_up"
+    t.string "pickup"
     t.string "destination"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
