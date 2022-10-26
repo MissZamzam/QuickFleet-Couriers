@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :services
   resources :orders
   resources :use_profiles
   resources :deliveries, only: [:index, :show, :create, :update, :destroy]
