@@ -245,3 +245,76 @@ Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 877)
   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
   [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("id", "receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 5], ["receipt_no", "KEN875543"], ["sender_name", "Shuku Nickson"], ["receiver_name", "Griffins Mkare"], ["amount_paid", 9000], ["nature_of_goods", "Perishable"], ["pickup", "Moringa"], ["destination", "Coptic"], ["delivery_id", 4], ["created_at", "2022-10-24 07:24:43.210000"], ["updated_at", "2022-10-24 07:24:43.210000"]]
   [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/receipts" for 127.0.0.1 at 2022-10-26 15:24:23 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.3ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (56.25ms)
+Completed 200 OK in 202ms (Views: 142.2ms | ActiveRecord: 3.6ms | Allocations: 61472)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-10-26 15:24:23 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.1ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.7ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.62ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 1.3ms | Allocations: 6747)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-10-26 15:24:33 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.3ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.85ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.8ms | Allocations: 6769)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-10-26 15:24:33 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.1ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.25ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 1.0ms | Allocations: 6748)
+
+
