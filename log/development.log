@@ -1152,3 +1152,92 @@ Migrating to AddingOrdersColumn (20221027111859)
   [1m[36mTRANSACTION (18.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-10-27 11:36:08.273810"], ["updated_at", "2022-10-27 11:36:08.273810"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-10-27 11:36:08.284926"], ["updated_at", "2022-10-27 11:36:08.284926"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-10-27 11:36:08.293327"], ["updated_at", "2022-10-27 11:36:08.293327"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://img.freepik.com/free-photo/white-pill-container-blue-background_23-2148506747.jpg?w=2000"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-10-27 11:36:08.301897"], ["updated_at", "2022-10-27 11:36:08.301897"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReceipt Create (0.4ms)[0m  [1m[32mINSERT INTO "receipts" ("id", "receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["receipt_no", "KEN123456"], ["sender_name", "Grace Neema"], ["receiver_name", "Marion Jefwa"], ["amount_paid", 8500], ["nature_of_goods", "Flamable"], ["pickup", "Kawangware"], ["destination", "Kenyatta"], ["delivery_id", 1], ["created_at", "2022-10-24 07:00:47.076000"], ["updated_at", "2022-10-24 07:01:51.306000"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("id", "receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["receipt_no", "KEN4563211"], ["sender_name", "Neema Maitha"], ["receiver_name", "Tuma Marion"], ["amount_paid", 10000], ["nature_of_goods", "Fragile"], ["pickup", "Moringa"], ["destination", "CBD"], ["delivery_id", 1], ["created_at", "2022-10-24 07:03:48.845000"], ["updated_at", "2022-10-24 07:03:48.845000"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("id", "receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 3], ["receipt_no", "KEN875543"], ["sender_name", "Nickson Shuku"], ["receiver_name", "Mkare Griffins"], ["amount_paid", 9000], ["nature_of_goods", "Perishable"], ["pickup", "Kenyatta"], ["destination", "Zimmer"], ["delivery_id", 3], ["created_at", "2022-10-24 07:05:17.263000"], ["updated_at", "2022-10-24 07:05:17.263000"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReceipt Create (0.4ms)[0m  [1m[32mINSERT INTO "receipts" ("id", "receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 4], ["receipt_no", "KEN4563211"], ["sender_name", "Neema Maitha"], ["receiver_name", "Tuma Marion"], ["amount_paid", 10000], ["nature_of_goods", "Fragile"], ["pickup", "Moringa"], ["destination", "CBD"], ["delivery_id", 2], ["created_at", "2022-10-24 07:09:09.190000"], ["updated_at", "2022-10-24 07:09:09.190000"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mReceipt Create (0.4ms)[0m  [1m[32mINSERT INTO "receipts" ("id", "receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 5], ["receipt_no", "KEN875543"], ["sender_name", "Shuku Nickson"], ["receiver_name", "Griffins Mkare"], ["amount_paid", 9000], ["nature_of_goods", "Perishable"], ["pickup", "Moringa"], ["destination", "Coptic"], ["delivery_id", 4], ["created_at", "2022-10-24 07:24:43.210000"], ["updated_at", "2022-10-24 07:24:43.210000"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:37:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "senderName"=>"jdsjf", "receiverName"=>"VDJVU", "amountPaid"=>"240", "natureOfGoods"=>"DVUDB"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007fdfdc12cde8>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "senderName"=>"jdsjf", "receiverName"=>"VDJVU", "amountPaid"=>"240", "natureOfGoods"=>"DVUDB"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:37:31.850443"], ["updated_at", "2022-10-27 11:37:31.850443"], ["senderName", "jdsjf"], ["receiverName", "VDJVU"], ["amountPaid", 240], ["natureOfGoods", "DVUDB"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 201 Created in 78ms (Views: 18.6ms | ActiveRecord: 6.7ms | Allocations: 35441)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 14:37:34 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.93ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 1927)
+
+
+Started GET "/images/icons/gear.png" for 127.0.0.1 at 2022-10-27 14:37:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/gear.png"):
+  
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:37:51 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "senderName"=>"jdsjf", "receiverName"=>"VDJVU", "amountPaid"=>"240", "natureOfGoods"=>"DVUDB"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007fdfe8fd3b10>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "senderName"=>"jdsjf", "receiverName"=>"VDJVU", "amountPaid"=>"240", "natureOfGoods"=>"DVUDB"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:37:51.378225"], ["updated_at", "2022-10-27 11:37:51.378225"], ["senderName", "jdsjf"], ["receiverName", "VDJVU"], ["amountPaid", 240], ["natureOfGoods", "DVUDB"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 14ms (Views: 1.3ms | ActiveRecord: 6.6ms | Allocations: 2227)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 14:37:55 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1979)
+
+
+Started GET "/images/icons/gear.png" for 127.0.0.1 at 2022-10-27 14:37:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/gear.png"):
+  
