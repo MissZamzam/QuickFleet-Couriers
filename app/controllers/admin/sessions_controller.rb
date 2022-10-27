@@ -9,9 +9,9 @@ class Admin::SessionsController < Devise::SessionsController
   # end
   def create
     @admin = Admin.find_by_email(user_params[:email])
-    if @admin && @admin.valid_password?(user_params[:password])
-      sign_in :user, @admin
-      render json: @admin
+    if @admin && @user.valid_password?(user_params[:password])
+      sign_in :admin, @admin
+      render json: @user
     elsif @admin && not(@admin.valid_password?(user_params[:password]))
       invalid_attempt
     else
@@ -57,26 +57,26 @@ class Admin::SessionsController < Devise::SessionsController
     params.permit(:email, :password)
   end
 
-  def respond_with(resources, _opts = {})
-    render json: {
-      status: {code: 200, message: "Logged in successfully."},
-      data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
-    }, status: :ok
-    end
+  # def respond_with(resources, _opts = {})
+  #   render json: {
+  #     status: {code: 200, message: "Logged in successfully."},
+  #     data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
+  #   }, status: :ok
+  #   end
   
-    def respond_to_on_destroy
-      if current_user
-        render json: {
-          status: 200,
-          message: "logged out succesfully"
-        },status: :ok
-        else
-          render json: {
-            status: 401,
-            message: "Couldn't find an active session"
-          }, status: :unauthorized
-          end
-    end
+  #   def respond_to_on_destroy
+  #     if current_user
+  #       render json: {
+  #         status: 200,
+  #         message: "logged out succesfully"
+  #       },status: :ok
+  #       else
+  #         render json: {
+  #           status: 401,
+  #           message: "Couldn't find an active session"
+  #         }, status: :unauthorized
+  #         end
+  #   end
 
   # def respond_with(resources , _opts = {})
   # render json: {
