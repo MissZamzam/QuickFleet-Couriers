@@ -1076,3 +1076,68 @@ Processing by OrdersController#create as */*
 Completed 201 Created in 108ms (Views: 34.4ms | ActiveRecord: 6.7ms | Allocations: 35400)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemovingOrderColumns (20221027111340)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemovingOrderColumns (20221027111340)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aorders" ("id","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","pickup","destination","created_at","updated_at")
+                     SELECT "id","pickup","destination","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221027111340"]]
+  [1m[36mTRANSACTION (18.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
