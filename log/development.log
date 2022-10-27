@@ -318,3 +318,761 @@ Processing by ReceiptsController#index as */*
 Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 1.0ms | Allocations: 6748)
 
 
+Started GET "/orders" for ::1 at 2022-10-27 12:53:00 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 81ms (Views: 28.0ms | ActiveRecord: 0.3ms | Allocations: 15038)
+
+
+Started GET "/orders" for ::1 at 2022-10-27 12:53:00 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 860)
+
+
+Started GET "/orders" for ::1 at 2022-10-27 12:53:06 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.15ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms | Allocations: 877)
+
+
+Started GET "/orders" for ::1 at 2022-10-27 12:53:06 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.08ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 860)
+
+
+Started GET "/orders" for ::1 at 2022-10-27 12:53:47 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/orders" for ::1 at 2022-10-27 12:54:41 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/orders" for ::1 at 2022-10-27 13:00:10 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (1.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 3.0ms | Allocations: 1017)
+
+
+Started GET "/orders" for ::1 at 2022-10-27 13:00:40 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (4.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 10ms (Views: 4.3ms | ActiveRecord: 4.7ms | Allocations: 877)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-27 13:07:47 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.8ms | Allocations: 559)
+Completed 200 OK in 50ms (Views: 24.1ms | Allocations: 5103)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:09:58 +0300
+Processing by OrdersController#create as */*
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:09:58 +0300
+  Parameters: {"senderName"=>"jdfjo", "receiverName"=>"fmbjr", "natureOfGoods"=>"fvbje", "amountPaid"=>"1344", "pickup"=>"jfbeskj", "destination"=>"kfdek", "order"=>{"pickup"=>"jfbeskj", "destination"=>"kfdek"}}
+Processing by OrdersController#index as */*
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacdfb508>, params: {"senderName"=>"jdfjo", "receiverName"=>"fmbjr", "natureOfGoods"=>"fvbje", "amountPaid"=>"1344", "pickup"=>"jfbeskj", "destination"=>"kfdek", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"jfbeskj", "destination"=>"kfdek"}} }[0m
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.7ms | Allocations: 1578)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:09:58 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1413)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (13.0ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "jfbeskj"], ["destination", "kfdek"], ["created_at", "2022-10-27 10:09:58.423797"], ["updated_at", "2022-10-27 10:09:58.423797"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (19.05ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 25.4ms | Allocations: 27456)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bacdd43b8>):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:11:52 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsfidsn", "receiverName"=>"FGINDE", "natureOfGoods"=>"vjbnife", "amountPaid"=>"1360", "pickup"=>"fdknsgid", "destination"=>"dfskfngfi", "order"=>{"pickup"=>"fdknsgid", "destination"=>"dfskfngfi"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacab6690>, params: {"senderName"=>"jdsfidsn", "receiverName"=>"FGINDE", "natureOfGoods"=>"vjbnife", "amountPaid"=>"1360", "pickup"=>"fdknsgid", "destination"=>"dfskfngfi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"fdknsgid", "destination"=>"dfskfngfi"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "fdknsgid"], ["destination", "dfskfngfi"], ["created_at", "2022-10-27 10:11:52.732664"], ["updated_at", "2022-10-27 10:11:52.732664"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (31.86ms)
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:11:52 +0300
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 6.6ms | Allocations: 5886)
+
+
+Processing by OrdersController#index as */*
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bacab21d0>):
+  
+app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.67ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.2ms | Allocations: 38714)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3b9c4502c0>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:11:53 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.21ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.5ms | Allocations: 4258)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bacc817e0>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:14:23 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.78ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.2ms | Allocations: 4258)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3baca36648>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:14:23 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.84ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.2ms | Allocations: 4257)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3b9c3d1650>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:18:03 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"udey", "receiverName"=>"fvueeu", "natureOfGoods"=>"fjvdubeu", "amountPaid"=>"1200", "pickup"=>"dudbu", "destination"=>"ufude", "order"=>{"pickup"=>"dudbu", "destination"=>"ufude"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055bed6db02a0>, params: {"senderName"=>"udey", "receiverName"=>"fvueeu", "natureOfGoods"=>"fjvdubeu", "amountPaid"=>"1200", "pickup"=>"dudbu", "destination"=>"ufude", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"dudbu", "destination"=>"ufude"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "dudbu"], ["destination", "ufude"], ["created_at", "2022-10-27 10:18:03.551380"], ["updated_at", "2022-10-27 10:18:03.551380"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (10.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (31.55ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 11.5ms | Allocations: 5340)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x000055bed6d9a4a0>):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:18:03 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.51ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bac7f72b0>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:18:03 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.94ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.2ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bacecac90>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:18:10 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.25ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.2ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x000055bed6d58c80>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:18:10 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (57.4ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.2ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bac62e398>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:19:25 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.6ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.2ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3b9c2e5e08>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:19:26 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (48.46ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.2ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x000055bed6d21ff0>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:19:41 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (47.81ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.2ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bac387518>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:19:41 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.53ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.5ms | Allocations: 4304)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3b9c2651b8>):
+  
+app/controllers/orders_controller.rb:6:in `index'
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:20:09 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"dsuvbfduv", "receiverName"=>"DBVHDVE", "natureOfGoods"=>"dddvu", "amountPaid"=>"1384", "pickup"=>"ebfuewfb", "destination"=>"duvbvue", "order"=>{"pickup"=>"ebfuewfb", "destination"=>"duvbvue"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacc3f638>, params: {"senderName"=>"dsuvbfduv", "receiverName"=>"DBVHDVE", "natureOfGoods"=>"dddvu", "amountPaid"=>"1384", "pickup"=>"ebfuewfb", "destination"=>"duvbvue", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"ebfuewfb", "destination"=>"duvbvue"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.8ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "ebfuewfb"], ["destination", "duvbvue"], ["created_at", "2022-10-27 10:20:09.473211"], ["updated_at", "2022-10-27 10:20:09.473211"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (26.43ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 11.3ms | Allocations: 5340)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bacc39d50>):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:20:58 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"dsuvbfduv", "receiverName"=>"DBVHDVE", "natureOfGoods"=>"dddvu", "amountPaid"=>"1384", "pickup"=>"ebfuewfb", "destination"=>"duvbvue", "order"=>{"pickup"=>"ebfuewfb", "destination"=>"duvbvue"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bac1858a0>, params: {"senderName"=>"dsuvbfduv", "receiverName"=>"DBVHDVE", "natureOfGoods"=>"dddvu", "amountPaid"=>"1384", "pickup"=>"ebfuewfb", "destination"=>"duvbvue", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"ebfuewfb", "destination"=>"duvbvue"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "ebfuewfb"], ["destination", "duvbvue"], ["created_at", "2022-10-27 10:20:58.270004"], ["updated_at", "2022-10-27 10:20:58.270004"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (19.62ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 9.9ms | Allocations: 5345)
+
+
+  
+NoMethodError (undefined method `delivery_id' for #<Order:0x00007f3bac161cc0>):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:23:11 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"dsuvbfduv", "receiverName"=>"DBVHDVE", "natureOfGoods"=>"dddvu", "amountPaid"=>"1384", "pickup"=>"ebfuewfb", "destination"=>"duvbvue", "order"=>{"pickup"=>"ebfuewfb", "destination"=>"duvbvue"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055bed6d29688>, params: {"senderName"=>"dsuvbfduv", "receiverName"=>"DBVHDVE", "natureOfGoods"=>"dddvu", "amountPaid"=>"1384", "pickup"=>"ebfuewfb", "destination"=>"duvbvue", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"ebfuewfb", "destination"=>"duvbvue"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "ebfuewfb"], ["destination", "duvbvue"], ["created_at", "2022-10-27 10:23:11.302175"], ["updated_at", "2022-10-27 10:23:11.302175"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 201 Created in 18ms (Views: 4.3ms | ActiveRecord: 6.3ms | Allocations: 4388)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:23:18 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 2423)
+
+
+Started GET "/images/icons/gear.png" for 127.0.0.1 at 2022-10-27 13:23:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/gear.png"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-10-27 13:23:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:24:46 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacf6b370>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.9ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 10:24:46.570669"], ["updated_at", "2022-10-27 10:24:46.570669"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 201 Created in 24ms (Views: 2.0ms | ActiveRecord: 11.5ms | Allocations: 2178)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:24:49 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.41ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 2481)
+
+
+Started GET "/images/icons/gear.png" for 127.0.0.1 at 2022-10-27 13:24:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/gear.png"):
+  
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:27:22 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacef2ce0>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 10:27:22.969041"], ["updated_at", "2022-10-27 10:27:22.969041"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (1.04ms)
+Completed 201 Created in 22ms (Views: 2.8ms | ActiveRecord: 11.7ms | Allocations: 2186)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:27:35 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3b9c30a960>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 10:27:35.574688"], ["updated_at", "2022-10-27 10:27:35.574688"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 18ms (Views: 1.4ms | ActiveRecord: 9.6ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 13:27:35 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bace6b718>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 10:27:35.726419"], ["updated_at", "2022-10-27 10:27:35.726419"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 201 Created in 14ms (Views: 1.7ms | ActiveRecord: 5.9ms | Allocations: 2179)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 13:27:43 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.25ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 2868)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:01 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacd43520>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:01.344178"], ["updated_at", "2022-10-27 11:00:01.344178"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 201 Created in 16ms (Views: 1.3ms | ActiveRecord: 8.6ms | Allocations: 2293)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:08 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3baccfe128>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:08.788683"], ["updated_at", "2022-10-27 11:00:08.788683"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 201 Created in 20ms (Views: 1.4ms | ActiveRecord: 12.9ms | Allocations: 2184)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:08 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3baccc2da8>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:08.969433"], ["updated_at", "2022-10-27 11:00:08.969433"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 201 Created in 17ms (Views: 1.8ms | ActiveRecord: 4.9ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:09 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacca49e8>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:09.129068"], ["updated_at", "2022-10-27 11:00:09.129068"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 201 Created in 17ms (Views: 1.6ms | ActiveRecord: 4.7ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:09 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055bed6d9ed98>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:09.297545"], ["updated_at", "2022-10-27 11:00:09.297545"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 201 Created in 19ms (Views: 1.6ms | ActiveRecord: 9.8ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:09 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055bed6d4b080>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:09.448551"], ["updated_at", "2022-10-27 11:00:09.448551"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (22.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 201 Created in 34ms (Views: 1.7ms | ActiveRecord: 23.0ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:09 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055bed6d13090>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:09.611083"], ["updated_at", "2022-10-27 11:00:09.611083"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 201 Created in 12ms (Views: 1.8ms | ActiveRecord: 5.3ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:09 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055bed6c6a918>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:09.775633"], ["updated_at", "2022-10-27 11:00:09.775633"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 201 Created in 14ms (Views: 1.2ms | ActiveRecord: 6.0ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:09 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055bed6c00400>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:09.929435"], ["updated_at", "2022-10-27 11:00:09.929435"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 201 Created in 15ms (Views: 1.6ms | ActiveRecord: 5.4ms | Allocations: 2179)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:00:10 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacb7af68>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:00:10.101292"], ["updated_at", "2022-10-27 11:00:10.101292"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 201 Created in 15ms (Views: 1.6ms | ActiveRecord: 7.2ms | Allocations: 2179)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-10-27 14:02:09 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (2.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.99ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 2.0ms | Allocations: 3573)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:03:27 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"id"=>10, "sender_name"=>"fulobo", "receiver_name"=>"bofu", "amount_paid"=>12122, "nature_of_goods"=>"bulk", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"id"=>10, "sender_name"=>"fulobo", "receiver_name"=>"bofu", "amount_paid"=>12122, "nature_of_goods"=>"bulk", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :id, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3bacaec560>, params: {"id"=>10, "sender_name"=>"fulobo", "receiver_name"=>"bofu", "amount_paid"=>12122, "nature_of_goods"=>"bulk", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"id"=>10, "sender_name"=>"fulobo", "receiver_name"=>"bofu", "amount_paid"=>12122, "nature_of_goods"=>"bulk", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (9.8ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", "fulobo"], ["receiver_name", "bofu"], ["amount_paid", 12122], ["nature_of_goods", "bulk"], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:03:27.844326"], ["updated_at", "2022-10-27 11:03:27.844326"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 201 Created in 25ms (Views: 1.4ms | ActiveRecord: 15.2ms | Allocations: 2242)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveDeliveryId (20221026101129)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "orders" ADD "receipt_id" integer[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "orders" ADD "delivery_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20221026101129"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUseProfiles (20221025081826)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "use_profiles"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20221025081826"]]
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUseProfiles (20221025081826)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "name" varchar, "email" varchar, "telephone" varchar, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221025081826"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveDeliveryId (20221026101129)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "receipt_id" integer DEFAULT NULL, "delivery_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at","receipt_id","delivery_id")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at","receipt_id","delivery_id" FROM "orders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "receipt_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at","receipt_id")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at","receipt_id" FROM "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "receipt_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at","receipt_id")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at","receipt_id" FROM "orders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221026101129"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReceipts (20221019132515)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "receipts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receipt_no" varchar, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "delivery_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019132515"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTrackings (20221019132526)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "receipt_id" integer, "pickup" varchar, "destination" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019132526"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDeliveries (20221019134107)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "category" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019134107"]]
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20221024095704)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "delivery_id" integer, "receipt_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024095704"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateUsers (20221024131614)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024131614"]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdmins (20221024132055)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_confirmation_token" ON "admins" ("confirmation_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_unlock_token" ON "admins" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024132055"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUseProfiles (20221025081826)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "name" varchar, "email" varchar, "telephone" varchar, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221025081826"]]
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveDeliveryId (20221026101129)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "delivery_id" integer DEFAULT NULL, "receipt_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","delivery_id","receipt_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","delivery_id","receipt_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "receipt_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","receipt_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","receipt_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "receipt_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","receipt_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","receipt_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221026101129"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-10-27 11:07:32.334115"], ["updated_at", "2022-10-27 11:07:32.334115"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/orders" for 127.0.0.1 at 2022-10-27 14:09:06 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}}
+[31mUnpermitted parameters: :senderName, :receiverName, :natureOfGoods, :amountPaid, :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007ff750128500>, params: {"senderName"=>"jdsjf", "receiverName"=>"VDJVU", "natureOfGoods"=>"DVUDB", "amountPaid"=>"240", "pickup"=>"FUDBSU", "destination"=>"dfdibdiu", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"FUDBSU", "destination"=>"dfdibdiu"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["sender_name", nil], ["receiver_name", nil], ["amount_paid", nil], ["nature_of_goods", nil], ["pickup", "FUDBSU"], ["destination", "dfdibdiu"], ["created_at", "2022-10-27 11:09:06.834602"], ["updated_at", "2022-10-27 11:09:06.834602"]]
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:15:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 201 Created in 108ms (Views: 34.4ms | ActiveRecord: 6.7ms | Allocations: 35400)
+
+
