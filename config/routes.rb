@@ -14,17 +14,17 @@ Rails.application.routes.draw do
     registrations: 'admin/registrations'
   }
 
-  devise_for :users, path: 'users', path_names:{
-    sign_in: 'login',
-    sign_out: 'signout',
-    registration: 'signup'
-  },
+  # devise_for :users, path: 'users', path_names:{
+  #   sign_in: 'login',
+  #   sign_out: 'signout',
+  #   registration: 'signup'
+  # },
 
-  controllers:{
-    sessions: 'users/devise/sessions',
-    password: 'users/devise/passwords',
-    registrations: 'users/devise/registrations'
-  }
+  # controllers:{
+  #   sessions: 'users/devise/sessions',
+  #   password: 'users/devise/passwords',
+  #   registrations: 'users/devise/registrations'
+  # }
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
