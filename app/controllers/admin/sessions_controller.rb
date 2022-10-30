@@ -53,9 +53,9 @@ class Admin::SessionsController < Devise::SessionsController
     
   end
 
-  # def user_params
-  #   params.permit(:email, :password)
-  # end
+  def user_params
+    params.permit(:email, :password)
+  end
 
   # def respond_with(resources, _opts = {})
   #   render json: {
