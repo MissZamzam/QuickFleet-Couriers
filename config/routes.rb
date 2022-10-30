@@ -3,11 +3,11 @@ Rails.application.routes.draw do
   # resources :admin
   # get "/me", to: "users#show"
   
-  # devise_for :admins, path: 'admin', path_names:{
-  #   sign_in: 'login',
-  #   sign_out: 'signout',
-  #   registration: 'signup'
-  # },
+  devise_for :admins, path: 'admin', path_names:{
+    sign_in: 'login',
+    sign_out: 'signout',
+    registration: 'signup'
+  },
   controllers:{
     sessions: 'admin/sessions',
     password: 'admin/passwords',
