@@ -7,7 +7,7 @@ class AdminController < ApplicationController
     end
 
     def show
-        current_user = User.find(session[:user_id])
+        # current_user = User.find(session[:user_id])
         render json: current_user
     end
 
