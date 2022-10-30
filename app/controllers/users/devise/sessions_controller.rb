@@ -8,10 +8,10 @@ class Users::Devise::SessionsController < Devise::SessionsController
   #   super
   # end
 
-  def show
-    current_user = User.find(params[:id])
-    render json: current_user
-end
+#   def show
+#     current_user = User.find(params[:id])
+#     render json: current_user
+# end
 
   
 
