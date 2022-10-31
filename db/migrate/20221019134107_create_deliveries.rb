@@ -3,8 +3,8 @@ class CreateDeliveries < ActiveRecord::Migration[7.0]
     create_table :deliveries do |t|
       t.string :receiver_name
       t.string :receiver_contact
-      t.text :pickup_instructions
-      t.text :delivery_instructions
+      t.string :pickup_instructions
+      t.string :delivery_instructions
       t.string :package_type
       t.string :package_details
 

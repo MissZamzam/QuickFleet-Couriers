@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_27_111859) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_31_095040) do
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -40,31 +40,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_27_111859) do
   create_table "deliveries", force: :cascade do |t|
     t.string "receiver_name"
     t.string "receiver_contact"
-    t.text "pickup_instructions"
-    t.text "delivery_instructions"
-    t.string "package_type"
+    t.string "pickup_instructions"
+    t.string "delivery_instructions"
+    t.string "service_type"
     t.string "package_details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string "sender_name"
-    t.string "receiver_name"
-    t.integer "amount_paid"
-    t.string "nature_of_goods"
     t.string "pickup"
     t.string "destination"
     t.integer "service_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "orders", force: :cascade do |t|
-    t.string "pickup"
-    t.string "destination"
-    t.integer "delivery_id"
-    t.integer "receipt_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "senderName"

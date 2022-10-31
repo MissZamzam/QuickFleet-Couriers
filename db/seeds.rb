@@ -89,27 +89,27 @@ Receipt.create([
 seeded_deliveries = Delivery.create!(
     receiver_name: Faker::Name.name,
     receiver_contact: Faker::PhoneNumber.cell_phone_with_country_code,
-    pickup_instructions: Faker::Lorem.sentences(number: 1),
-    delivery_instructions: Faker::Lorem.sentences(number: 1),
-    package_type: rand(1..4),
+    pickup_instructions: Faker::Lorem.word,
+    delivery_instructions: Faker::Lorem.word,
+    service_type: ["Same Day Courier", "On-Demand Delivery", "Overnight Shipping", "Parcel Services" ,"Same Day Courier"].sample,
     package_details: Faker::Lorem.sentences(number: 1),
 )
 end
 
-5.times do
-    seeded_orders = Order.create(
-        sender_name: Faker::Name.name,
-        receiver_name: Faker::Name.name,
-        amount_paid: Faker::Commerce.price(range: 500...2500, as_string: true),
-        nature_of_goods: Faker::Construction.material,
-        pickup:Faker::Address.mail_box,
-        destination:Faker::Address.mail_box,
-        service_id: rand(1..4),
-        # delivery_id: rand(1..5),
-        # receipt_id: rand(1..5)
+# 5.times do
+#     seeded_orders = Order.create(
+#         sender_name: Faker::Name.name,
+#         receiver_name: Faker::Name.name,
+#         amount_paid: Faker::Commerce.price(range: 500...2500, as_string: true),
+#         nature_of_goods: Faker::Construction.material,
+#         pickup:Faker::Address.mail_box,
+#         destination:Faker::Address.mail_box,
+#         service_id: rand(1..4),
+#         delivery_id: rand(1..5),
+#         receipt_id: rand(1..5)
 
-    )
-end
+#     )
+# end
 # Receipt.create(
 #     [
 # {

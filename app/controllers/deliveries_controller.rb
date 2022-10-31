@@ -5,7 +5,7 @@ class DeliveriesController < ApplicationController
     # GET /rdeliveries
     def index
         deliveries = Delivery.all
-        render json: deliveries
+        render json: deliveries, status: :ok
     end
 
     # GET /deliveries/:id
@@ -37,7 +37,7 @@ class DeliveriesController < ApplicationController
     private
 
     def delivery_params
-        params.permit(:receiver_name, :receiver_contact, :pickup_instructions, :delivery_instructions, :package_type, :package_details)
+        params.permit(:receiver_name, :receiver_contact, :pickup_instructions, :delivery_instructions, :service_type, :package_details)
     end
 
     def unprocessable_entity(invalid)
