@@ -1,4 +1,2 @@
-class Order < ApplicationRecord
-    belongs_to :delivery
-    
+class Order < ApplicationRecord  
 end
