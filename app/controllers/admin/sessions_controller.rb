@@ -9,9 +9,9 @@ class Admin::SessionsController < Devise::SessionsController
   # end
   def create
     @admin = Admin.find_by_email(user_params[:email])
-    if @admin && @user.valid_password?(user_params[:password])
+    if @admin && @admin.valid_password?(user_params[:password])
       sign_in :admin, @admin
-      render json: @user
+      render json: @admin
     elsif @admin && not(@admin.valid_password?(user_params[:password]))
       invalid_attempt
     else
