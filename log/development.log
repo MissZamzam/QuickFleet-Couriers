@@ -2482,3 +2482,714 @@ Processing by ServicesController#index as */*
 Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1468)
 
 
+Started GET "/services" for 127.0.0.1 at 2022-11-01 15:56:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.16ms)
+Completed 200 OK in 64ms (Views: 42.5ms | ActiveRecord: 1.0ms | Allocations: 31715)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 15:56:03 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.04ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1489)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 15:56:16 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (1.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.03ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 1.1ms | Allocations: 1493)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 15:56:16 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.82ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 1493)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:01:44 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.4ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.72ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms | Allocations: 1468)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:01:44 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.45ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1485)
+
+
+Started GET "/main.61425fff68988de201df.hot-update.json" for 127.0.0.1 at 2022-11-01 16:08:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/main.61425fff68988de201df.hot-update.json"):
+  
+Started GET "/main.971cf8b478a3c4011a2f.hot-update.json" for 127.0.0.1 at 2022-11-01 16:19:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/main.971cf8b478a3c4011a2f.hot-update.json"):
+  
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:29:01 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.61ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 2.3ms | Allocations: 1617)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:29:01 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.33ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1474)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:33:19 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (3.7ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.39ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 3.7ms | Allocations: 1468)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:33:19 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1468)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-01 13:35:13.629648"], ["updated_at", "2022-11-01 13:35:13.629648"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-01 13:35:13.639809"], ["updated_at", "2022-11-01 13:35:13.639809"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-01 13:35:13.648422"], ["updated_at", "2022-11-01 13:35:13.648422"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-01 13:35:13.656642"], ["updated_at", "2022-11-01 13:35:13.656642"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.4ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN123456"], ["sender_name", "Grace Neema"], ["receiver_name", "Marion Jefwa"], ["amount_paid", 8500], ["nature_of_goods", "Flamable"], ["pickup", "Kawangware"], ["destination", "Kenyatta"], ["delivery_id", 1], ["created_at", "2022-10-24 07:00:47.076000"], ["updated_at", "2022-10-24 07:01:51.306000"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN4563211"], ["sender_name", "Neema Maitha"], ["receiver_name", "Tuma Marion"], ["amount_paid", 10000], ["nature_of_goods", "Fragile"], ["pickup", "Moringa"], ["destination", "CBD"], ["delivery_id", 2], ["created_at", "2022-10-24 07:03:48.845000"], ["updated_at", "2022-10-24 07:03:48.845000"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN875543"], ["sender_name", "Nickson Shuku"], ["receiver_name", "Mkare Griffins"], ["amount_paid", 9000], ["nature_of_goods", "Perishable"], ["pickup", "Kenyatta"], ["destination", "Zimmer"], ["delivery_id", 3], ["created_at", "2022-10-24 07:05:17.263000"], ["updated_at", "2022-10-24 07:05:17.263000"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.7ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN4563211"], ["sender_name", "Neema Maitha"], ["receiver_name", "Tuma Marion"], ["amount_paid", 10000], ["nature_of_goods", "Fragile"], ["pickup", "Moringa"], ["destination", "CBD"], ["delivery_id", 4], ["created_at", "2022-10-24 07:09:09.190000"], ["updated_at", "2022-10-24 07:09:09.190000"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.4ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN875543"], ["sender_name", "Shuku Nickson"], ["receiver_name", "Griffins Mkare"], ["amount_paid", 9000], ["nature_of_goods", "Perishable"], ["pickup", "Moringa"], ["destination", "Coptic"], ["delivery_id", 5], ["created_at", "2022-10-24 07:24:43.210000"], ["updated_at", "2022-10-24 07:24:43.210000"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Wilburn Runolfsdottir"], ["receiver_contact", "+596 1-378-256-9511"], ["pickup_instructions", "[\"Est delectus rerum.\"]"], ["delivery_instructions", "[\"Consequuntur nesciunt aspernatur.\"]"], ["package_type", "1"], ["package_details", "[\"Voluptatibus et nesciunt.\"]"], ["created_at", "2022-11-01 13:35:14.135694"], ["updated_at", "2022-11-01 13:35:14.135694"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Elwood Block"], ["receiver_contact", "+1-473 176.799.5871"], ["pickup_instructions", "[\"Et recusandae unde.\"]"], ["delivery_instructions", "[\"Occaecati exercitationem numquam.\"]"], ["package_type", "1"], ["package_details", "[\"Aliquid omnis quaerat.\"]"], ["created_at", "2022-11-01 13:35:14.147184"], ["updated_at", "2022-11-01 13:35:14.147184"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Marco Torphy"], ["receiver_contact", "+236 1-275-738-5614"], ["pickup_instructions", "[\"Molestias voluptas ea.\"]"], ["delivery_instructions", "[\"Temporibus nostrum sapiente.\"]"], ["package_type", "4"], ["package_details", "[\"Ipsa sapiente unde.\"]"], ["created_at", "2022-11-01 13:35:14.157767"], ["updated_at", "2022-11-01 13:35:14.157767"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Celinda Hyatt DDS"], ["receiver_contact", "+375 1-573-370-3196"], ["pickup_instructions", "[\"Optio adipisci laboriosam.\"]"], ["delivery_instructions", "[\"Explicabo veritatis facere.\"]"], ["package_type", "1"], ["package_details", "[\"Sit qui dolorum.\"]"], ["created_at", "2022-11-01 13:35:14.168934"], ["updated_at", "2022-11-01 13:35:14.168934"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Fonda Hudson"], ["receiver_contact", "+501 352-879-9892"], ["pickup_instructions", "[\"Illum quia dolores.\"]"], ["delivery_instructions", "[\"In voluptas molestiae.\"]"], ["package_type", "4"], ["package_details", "[\"Qui ipsum ullam.\"]"], ["created_at", "2022-11-01 13:35:14.179197"], ["updated_at", "2022-11-01 13:35:14.179197"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUseProfile Create (0.3ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "name", "email", "telephone", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", "https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg"], ["name", "Alvin Smith"], ["email", "alvin@smith.com"], ["telephone", "0712435659"], ["location", "Nairobi"], ["created_at", "2022-11-01 13:35:14.229436"], ["updated_at", "2022-11-01 13:35:14.229436"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:35:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.12ms)
+Completed 200 OK in 65ms (Views: 42.7ms | ActiveRecord: 1.1ms | Allocations: 32233)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:35:43 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.59ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 2007)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:43:10 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.99ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 2.5ms | Allocations: 2164)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:43:11 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.38ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 2019)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:53:32 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.72ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 2.6ms | Allocations: 2144)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 16:53:33 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.98ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 1982)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:06:42 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.26ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 2.8ms | Allocations: 2131)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:06:42 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.95ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 1984)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:08:51 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (4.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.96ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 4.1ms | Allocations: 1986)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:08:52 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.84ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 1986)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:09:42 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (2.9ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.17ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 2.9ms | Allocations: 1988)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:09:42 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.59ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 1988)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:12 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.37ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 2.5ms | Allocations: 3880)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:13 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.04ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 1988)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:17 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (1.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.88ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 1.1ms | Allocations: 1984)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:17 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.77ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 1984)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:28 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.4ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.11ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 1986)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:28 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.82ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1986)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:32 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.04ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 1989)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:32 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.9ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 1988)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:38 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.26ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 1984)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 17:17:38 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.57ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 1984)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 20:52:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.32ms)
+Completed 200 OK in 69ms (Views: 47.6ms | ActiveRecord: 1.5ms | Allocations: 32235)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 20:52:48 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.63ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 2009)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-01 20:52:56 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f124ca41630>, params: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@smith.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 15ms (Views: 3.7ms | ActiveRecord: 0.9ms | Allocations: 3153)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:52:57 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.4ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.12ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 1.4ms | Allocations: 16645)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:52:57 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.18ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1292)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-01 20:53:31 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Alvin", "receiverName"=>"Ndungu", "natureOfGoods"=>"Flammable", "amountPaid"=>"1000", "pickup"=>"meru", "destination"=>"nairobi", "order"=>{"pickup"=>"meru", "destination"=>"nairobi", "senderName"=>"Alvin", "receiverName"=>"Ndungu", "amountPaid"=>"1000", "natureOfGoods"=>"Flammable"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00005577eaf1c3b0>, params: {"senderName"=>"Alvin", "receiverName"=>"Ndungu", "natureOfGoods"=>"Flammable", "amountPaid"=>"1000", "pickup"=>"meru", "destination"=>"nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"meru", "destination"=>"nairobi", "senderName"=>"Alvin", "receiverName"=>"Ndungu", "amountPaid"=>"1000", "natureOfGoods"=>"Flammable"}} }[0m
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:53:31 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "service_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "meru"], ["destination", "nairobi"], ["service_id", nil], ["created_at", "2022-11-01 17:53:31.114327"], ["updated_at", "2022-11-01 17:53:31.114327"], ["senderName", "Alvin"], ["receiverName", "Ndungu"], ["amountPaid", 1000], ["natureOfGoods", "Flammable"]]
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 1.1ms | Allocations: 5913)
+
+
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.65ms)
+Completed 201 Created in 83ms (Views: 2.2ms | ActiveRecord: 8.0ms | Allocations: 20991)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:53:31 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.73ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1314)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 20:53:46 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.72ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 1986)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 20:53:46 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.13ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 1986)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-01 20:53:57 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00005577eb9a3c48>, params: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@smith.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 940)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:53:57 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.22ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1273)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:53:57 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1273)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:54:10 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.01ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1261)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:54:10 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1261)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:54:14 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.94ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 1267)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:54:14 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1267)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-01 20:54:16 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.5ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.07ms)
+Completed 200 OK in 42ms (Views: 36.3ms | ActiveRecord: 1.5ms | Allocations: 19040)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-01 20:54:16 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.3ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.52ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 2587)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:54:20 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.13ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 1267)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:54:20 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.11ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 1267)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-01 20:54:22 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.3ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.63ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 2586)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-01 20:54:22 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.2ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.62ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 2586)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:54:31 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.24ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 1267)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:54:31 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.07ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1267)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:55:35 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.27ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 1265)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:55:35 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.97ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 1265)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:55:38 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.09ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1253)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:55:38 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.87ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1253)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:55:40 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.12ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 1269)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-01 20:55:40 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1269)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-01 20:55:58 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"vfdjgbd", "receiverName"=>"Ndungu", "natureOfGoods"=>"Flammable", "amountPaid"=>"1000", "pickup"=>"nn", "destination"=>"1000", "order"=>{"pickup"=>"nn", "destination"=>"1000", "senderName"=>"vfdjgbd", "receiverName"=>"Ndungu", "amountPaid"=>"1000", "natureOfGoods"=>"Flammable"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f124c284668>, params: {"senderName"=>"vfdjgbd", "receiverName"=>"Ndungu", "natureOfGoods"=>"Flammable", "amountPaid"=>"1000", "pickup"=>"nn", "destination"=>"1000", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"nn", "destination"=>"1000", "senderName"=>"vfdjgbd", "receiverName"=>"Ndungu", "amountPaid"=>"1000", "natureOfGoods"=>"Flammable"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "service_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "nn"], ["destination", "1000"], ["service_id", nil], ["created_at", "2022-11-01 17:55:58.652466"], ["updated_at", "2022-11-01 17:55:58.652466"], ["senderName", "vfdjgbd"], ["receiverName", "Ndungu"], ["amountPaid", 1000], ["natureOfGoods", "Flammable"]]
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.65ms)
+Completed 201 Created in 17ms (Views: 2.2ms | ActiveRecord: 5.2ms | Allocations: 2243)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:55:58 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.56ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 1412)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:55:58 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.39ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 1413)
+
+
+Started PATCH "/orders/1" for 127.0.0.1 at 2022-11-01 20:56:08 +0300
+Processing by OrdersController#update as */*
+  Parameters: {"senderName"=>"Alvin", "receiverName"=>"nn", "natureOfGoods"=>"dfjbg", "amountPaid"=>"100000", "pickup"=>"Flammable", "destination"=>"sgjbgs", "id"=>"1", "order"=>{"pickup"=>"Flammable", "destination"=>"sgjbgs", "senderName"=>"Alvin", "receiverName"=>"nn", "amountPaid"=>"100000", "natureOfGoods"=>"dfjbg"}}
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:40:in `find_order'
+[31mUnpermitted parameters: :id, :order. Context: { controller: OrdersController, action: update, request: #<ActionDispatch::Request:0x00007f124d0a5990>, params: {"senderName"=>"Alvin", "receiverName"=>"nn", "natureOfGoods"=>"dfjbg", "amountPaid"=>"100000", "pickup"=>"Flammable", "destination"=>"sgjbgs", "controller"=>"orders", "action"=>"update", "id"=>"1", "order"=>{"pickup"=>"Flammable", "destination"=>"sgjbgs", "senderName"=>"Alvin", "receiverName"=>"nn", "amountPaid"=>"100000", "natureOfGoods"=>"dfjbg"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:22:in `update'
+  [1m[36mOrder Update (0.6ms)[0m  [1m[33mUPDATE "orders" SET "updated_at" = ?, "amountPaid" = ? WHERE "orders"."id" = ?[0m  [["updated_at", "2022-11-01 17:56:08.422305"], ["amountPaid", 100000], ["id", 1]]
+  ↳ app/controllers/orders_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (22.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:22:in `update'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 35ms (Views: 2.0ms | ActiveRecord: 23.0ms | Allocations: 2946)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:56:12 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.53ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1416)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:56:12 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.27ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 1416)
+
+
+Started DELETE "/orders/1" for 127.0.0.1 at 2022-11-01 20:56:15 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:40:in `find_order'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+  [1m[36mOrder Destroy (0.6ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+Completed 204 No Content in 13ms (ActiveRecord: 6.1ms | Allocations: 1781)
+
+
+Started DELETE "/orders/1" for 127.0.0.1 at 2022-11-01 20:56:15 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:40:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 404 Not Found in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 900)
+
+
+Started DELETE "/orders/2" for 127.0.0.1 at 2022-11-01 20:56:17 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:40:in `find_order'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+  [1m[36mOrder Destroy (0.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 5.9ms | Allocations: 1764)
+
+
+Started DELETE "/orders/2" for 127.0.0.1 at 2022-11-01 20:56:17 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:40:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 404 Not Found in 4ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 800)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:56:20 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1108)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-01 20:56:21 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1108)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 20:56:26 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.09ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 1984)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-01 20:56:26 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.47ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1984)
+
+
