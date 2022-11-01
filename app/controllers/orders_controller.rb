@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :order_not_found
   rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
+  
   def index
     order = Order.all
     render json: order
@@ -12,9 +13,24 @@ class OrdersController < ApplicationController
     render json: order, status: 200
   end
 
+  def new
+    @order = Order.new
+    # render json: order
+  end
+
   def create
     order = Order.create!(order_params)
     render json: order, status: :created
+
+    if @order.save
+      OrderMailer.with(order: @order).new_order_email.deliver_later
+
+      flash[:success] = "Thank you for your order! We'll get contact you soon!"
+      redirect_to root_path
+    else
+      flash.now[:error] = "Your order form had some errors. Please check the form and resubmit."
+      render :new
+    end
   end
 
   def update
@@ -41,7 +57,7 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.permit(:senderName, :receiverName, :natureOfGoods, :pickup, :destination, :use_profile_id)
+    params.require(:order).permit(:senderName, :receiverName, :natureOfGoods, :pickup, :destination, :use_profile_id)
   end
 
   def unprocessable_entity(invalid)
