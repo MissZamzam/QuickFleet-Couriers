@@ -3,7 +3,8 @@ class OrdersController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
   def index
-    render json: Order.all
+    order = Order.all
+    render json: order
   end
 
   def show
@@ -20,6 +21,11 @@ class OrdersController < ApplicationController
     order = find_order
     order.update!(order_params)
     render json: order, status: :ok
+    # if order.update(order_params)
+    #   render json: order
+    # else
+    #   render json: order.errors, status: :unprocessable_entity
+    # end
   end
 
   def destroy
@@ -35,7 +41,7 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.permit(:sender_name, :receiver_name, :amount_paid, :nature_of_goods, :pickup, :destination)
+    params.permit(:senderName, :receiverName, :amountPaid, :natureOfGoods, :pickup, :destination)
   end
 
   def unprocessable_entity(invalid)

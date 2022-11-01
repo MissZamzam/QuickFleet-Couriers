@@ -17,7 +17,7 @@ service3 = Service.create(
     description: "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."
 )
 service4 = Service.create(
-    image_url: "https://img.freepik.com/free-photo/white-pill-container-blue-background_23-2148506747.jpg?w=2000",
+    image_url: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     category: "Same Day Courier",
     description: "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."
 )
@@ -96,20 +96,20 @@ seeded_deliveries = Delivery.create!(
 )
 end
 
-5.times do
-    seeded_orders = Order.create(
-        sender_name: Faker::Name.name,
-        receiver_name: Faker::Name.name,
-        amount_paid: Faker::Commerce.price(range: 500...2500, as_string: true),
-        nature_of_goods: Faker::Construction.material,
-        pickup:Faker::Address.mail_box,
-        destination:Faker::Address.mail_box,
-        service_id: rand(1..4),
-        # delivery_id: rand(1..5),
-        # receipt_id: rand(1..5)
+# 5.times do
+#     seeded_orders = Order.create(
+#         sender_name: Faker::Name.name,
+#         receiver_name: Faker::Name.name,
+#         amount_paid: Faker::Commerce.price(range: 500...2500, as_string: true),
+#         nature_of_goods: Faker::Construction.material,
+#         pickup:Faker::Address.mail_box,
+#         destination:Faker::Address.mail_box,
+#         service_id: rand(1..4),
+#         # delivery_id: rand(1..5),
+#         # receipt_id: rand(1..5)
 
-    )
-end
+#     )
+# end
 # Receipt.create(
 #     [
 # {
@@ -179,5 +179,15 @@ end
 # }
 # ]
 # )
+
+UseProfile.create([
+    {
+        avatar: "https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg",
+        name: "Alvin Smith",
+        email: "alvin@smith.com",
+        telephone: "0712435659",
+        location: "Nairobi"
+    }
+])
 
 puts "End Seeding ....."
