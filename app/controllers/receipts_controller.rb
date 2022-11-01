@@ -43,7 +43,7 @@ class ReceiptsController < ApplicationController
   private
 
   def receipt_params
-    params.permit(:id, :receipt_no, :sender_name, :receiver_name, :amount_paid, :nature_of_goods, :pickup, :destination)
+    params.permit(:id, :receipt_no, :sender_name, :receiver_name, :amount_paid, :nature_of_goods, :pickup, :destination, :order_id)
   end
 
   def unprocessable_entity(invalid)

@@ -41,7 +41,7 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.permit(:senderName, :receiverName, :amountPaid, :natureOfGoods, :pickup, :destination)
+    params.permit(:senderName, :receiverName, :natureOfGoods, :pickup, :destination, :use_profile_id)
   end
 
   def unprocessable_entity(invalid)

@@ -1,9 +1,9 @@
 class Order < ApplicationRecord  
-    belongs_to :use_profile
+    # belongs_to :use_profile
 
-    has_one :receipt
+    # has_one :receipt
 
-    validates :sender_name, :receiver_name, :destination, :pickup, :nature_of_goods,  presence: true
+    validates :senderName, :receiverName, :destination, :pickup, :natureOfGoods,  presence: true
 
     # has_one :tracking
 end
