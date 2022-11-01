@@ -3421,3 +3421,353 @@ Processing by ReceiptsController#index as */*
 Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.3ms | Allocations: 2266)
 
 
+Started GET "/rails/mailers/order_mailer" for ::1 at 2022-11-02 01:28:42 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer"}
+  Rendering layout /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application (Duration: 22.7ms | Allocations: 531)
+  Rendered layout /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 24.1ms | Allocations: 853)
+Completed 200 OK in 558ms (Views: 205.6ms | Allocations: 34162)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-11-02 01:28:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/mailers/order_mailer" for ::1 at 2022-11-02 01:30:16 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer"}
+  Rendering layout /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1257)
+  Rendered layout /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 3.5ms | Allocations: 1568)
+Completed 200 OK in 7ms (Views: 5.5ms | Allocations: 2619)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:30:19 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 4.1ms | Allocations: 16051)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Order.):
+  
+test/mailers/previews/order_mailer_preview.rb:5:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:35:52 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.4ms | Allocations: 3485)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected '<'
+     mail(to: <ADMIN_EMAIL>, subject: "Your ...
+              ^
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected '<'
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected '<'
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:37:03 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.9ms | Allocations: 3410)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+     mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:38:15 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms | Allocations: 3422)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+     mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:38:17 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+     mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:38:18 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+     mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:39:09 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.0ms | Allocations: 3440)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+...    {mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+...                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")}
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")}
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:39:35 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.1ms | Allocations: 3401)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:5: syntax error, unexpected `do', expecting ';' or '\n'
+    def new_order_email do
+                        ^~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+     mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:5: syntax error, unexpected `do', expecting ';' or '\n'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:5: syntax error, unexpected `do', expecting ';' or '\n'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:40:02 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.9ms | Allocations: 3421)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+     mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:44:25 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 1220)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+     mail(to: loreydjefwa@gmail.com, subject: "Your Order is...
+                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+...loreydjefwa@gmail.com, subject: "Your Order is Approved!")
+...                       ^~~~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:44:48 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.4ms | Allocations: 3419)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected '<'
+     mail(to: <>, subject: "Your Order is Ap...
+              ^
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected '<'
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected '<'
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:45:28 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.2ms | Allocations: 3400)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+...    mail(to: {loreydjefwa@gmail.com}, subject: "Your Order i...
+...                         ^~~~~~
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected '}', expecting `end'
+...ail(to: {loreydjefwa@gmail.com}, subject: "Your Order is App...
+...                              ^
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+...ect: "Your Order is Approved!")
+...                              ^
+):
+  
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected '}', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected instance variable, expecting `do' or '{' or '('
+app/mailers/order_mailer.rb:8: syntax error, unexpected '}', expecting `end'
+app/mailers/order_mailer.rb:8: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:45:46 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.4ms | Allocations: 3403)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/app/mailers/order_mailer.rb:11: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/mailers/order_mailer.rb:11: syntax error, unexpected end-of-input, expecting `end'
+app/mailers/order_mailer.rb:11: syntax error, unexpected end-of-input, expecting `end'
+test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:46:02 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.0ms | Allocations: 248)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.9ms | Allocations: 458)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.4ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 52.6ms | Allocations: 402)
+OrderMailer#new_order_email: processed outbound mail in 134.8ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 111.4ms | Allocations: 4130)
+Completed 200 OK in 314ms (Views: 114.7ms | ActiveRecord: 1.0ms | Allocations: 13980)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-02 01:46:02 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.6ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 7.1ms
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 47ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 2960)
+
+
