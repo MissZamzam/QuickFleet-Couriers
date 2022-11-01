@@ -105,8 +105,8 @@ end
 #         pickup:Faker::Address.mail_box,
 #         destination:Faker::Address.mail_box,
 #         service_id: rand(1..4),
-#         delivery_id: rand(1..5),
-#         receipt_id: rand(1..5)
+#         # delivery_id: rand(1..5),
+#         # receipt_id: rand(1..5)
 
 #     )
 # end
@@ -179,5 +179,15 @@ end
 # }
 # ]
 # )
+
+UseProfile.create([
+    {
+        avatar: "https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg",
+        name: "Alvin Smith",
+        email: "alvin@smith.com",
+        telephone: "0712435659",
+        location: "Nairobi"
+    }
+])
 
 puts "End Seeding ....."
