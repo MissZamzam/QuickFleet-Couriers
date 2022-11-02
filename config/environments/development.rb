@@ -62,7 +62,7 @@ Rails.application.configure do
   
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3004 }
     config.action_mailer.delivery_method = :smtp
-  host = 'example.com' #replace with your own url
+  host = 'loretta.jefwa@student.moringaschool.com' #replace with your own url
   config.action_mailer.default_url_options = { host: host }
 
 # SMTP settings for gmail

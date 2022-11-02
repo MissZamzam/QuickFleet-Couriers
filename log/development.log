@@ -4374,3 +4374,208 @@ Content-Transfer-Encoding: 7bit
 
 ----==_mimepart_63621cc93d193_28efaa0-457--
 
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:32:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (22.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+OrderMailer#new_order_email: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 392ms (ActiveRecord: 0.7ms | Allocations: 393880)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/mailers/order_mailer.rb:5:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:34:08 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+OrderMailer#new_order_email: processed outbound mail in 0.6ms
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 428)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/mailers/order_mailer.rb:5:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:35:19 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+OrderMailer#new_order_email: processed outbound mail in 2.7ms
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 425)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/mailers/order_mailer.rb:5:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:35:21 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+OrderMailer#new_order_email: processed outbound mail in 0.6ms
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 427)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/mailers/order_mailer.rb:5:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:35:22 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+OrderMailer#new_order_email: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 418)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/mailers/order_mailer.rb:5:in `new_order_email'
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.7ms | Allocations: 443)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.0ms | Allocations: 662)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.9ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.0ms | Allocations: 402)
+OrderMailer#new_order_email: processed outbound mail in 31.1ms
+Delivered mail 63621e06a667e_2e26aa0587cd@moringa.mail (2742.4ms)
+Date: Wed, 02 Nov 2022 10:36:38 +0300
+From: loretta.jefwa@student.moringaschool.com
+To: loreydjefwa@gmail.com
+Message-ID: <63621e06a667e_2e26aa0587cd@moringa.mail>
+Subject: Your Order is Approved!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_63621e06a50de_2e26aa0586c1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_63621e06a50de_2e26aa0586c1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+
+----==_mimepart_63621e06a50de_2e26aa0586c1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_63621e06a50de_2e26aa0586c1--
+
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:36:44 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+OrderMailer#new_order_email: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 420)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/mailers/order_mailer.rb:5:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:37:27 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+OrderMailer#new_order_email: processed outbound mail in 0.3ms
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.2ms | Allocations: 5488)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/mailers/order_mailer.rb:5:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en" for ::1 at 2022-11-02 10:37:35 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.4ms | Allocations: 248)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.2ms | Allocations: 458)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.1ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.0ms | Allocations: 402)
+OrderMailer#new_order_email: processed outbound mail in 12.8ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 12.0ms | Allocations: 4105)
+Completed 200 OK in 40ms (Views: 14.1ms | ActiveRecord: 1.3ms | Allocations: 13885)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email.html?locale=en&part=text%2Fhtml" for ::1 at 2022-11-02 10:37:35 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"locale"=>"en", "part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.6ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 6.9ms
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 142ms (Views: 132.4ms | ActiveRecord: 0.0ms | Allocations: 2891)
+
+
