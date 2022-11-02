@@ -3771,3 +3771,606 @@ OrderMailer#new_order_email: processed outbound mail in 7.1ms
 Completed 200 OK in 47ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 2960)
 
 
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:49:39 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+Completed 500 Internal Server Error in 2ms (Allocations: 313)
+
+
+  
+SyntaxError (/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected '}', expecting =>
+...new(senderName: {senderName.id}, receiverName: "Janet", pick...
+...                              ^
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+...ame.id}, receiverName: "Janet", pickup: "Moringa", destinati...
+...                              ^
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+...me: "Janet", pickup: "Moringa", destination: "Nairobi", natu...
+...                              ^
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+...ringa", destination: "Nairobi", natureOfGoods: "Perishable")
+...                              ^
+/home/moringa/Development/code/phase-5/QuickFleet-Couriers-api/test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ')', expecting `end'
+...", natureOfGoods: "Perishable")
+...                              ^
+):
+  
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected '}', expecting =>
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ')', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected '}', expecting =>
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ',', expecting `end'
+test/mailers/previews/order_mailer_preview.rb:5: syntax error, unexpected ')', expecting `end'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:50:02 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 23)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 98)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 6.1ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 5.0ms | Allocations: 2711)
+Completed 200 OK in 29ms (Views: 6.0ms | ActiveRecord: 2.0ms | Allocations: 10845)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-02 01:50:02 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.0ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.6ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 6.6ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 2768)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:50:42 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | Allocations: 98)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 5.6ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 4.3ms | Allocations: 2711)
+Completed 200 OK in 28ms (Views: 5.2ms | ActiveRecord: 2.4ms | Allocations: 10818)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-02 01:50:42 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 5.4ms
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 17ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2774)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 01:51:20 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 98)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 5.8ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 3.8ms | Allocations: 2711)
+Completed 200 OK in 28ms (Views: 4.7ms | ActiveRecord: 1.4ms | Allocations: 10824)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-02 01:51:20 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.6ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 9.3ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2767)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-11-02 09:50:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-02 09:50:58 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 84.7ms | Allocations: 253)
+  Rendered layout layouts/mailer.html.erb (Duration: 147.5ms | Allocations: 465)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 81.2ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 155.1ms | Allocations: 402)
+OrderMailer#new_order_email: processed outbound mail in 695.8ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 456.3ms | Allocations: 4070)
+Completed 200 OK in 28105ms (Views: 889.9ms | ActiveRecord: 3.1ms | Allocations: 403370)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-02 09:51:27 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 2.7ms | Allocations: 236)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.7ms | Allocations: 445)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.4ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 3.0ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 27.3ms
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 212ms (Views: 173.7ms | ActiveRecord: 0.0ms | Allocations: 4720)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-02 09:54:26 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (34.0ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (61.22ms)
+Completed 200 OK in 1099ms (Views: 998.7ms | ActiveRecord: 37.3ms | Allocations: 20485)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-02 09:54:28 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.2ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.56ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 2269)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fplain&locale=en" for ::1 at 2022-11-02 09:57:24 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/plain", "locale"=>"en", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 5.2ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email.txt?part=text%2Fhtml&locale=en" for ::1 at 2022-11-02 09:57:31 +0300
+Processing by Rails::MailersController#preview as TEXT
+  Parameters: {"part"=>"text/html", "locale"=>"en", "path"=>"order_mailer/new_order_email"}
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 5.3ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+OrderMailer#new_order_email: processed outbound mail in 206.7ms
+  [1m[36mOrder Load (23.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 5.4ms | Allocations: 443)
+  Rendered layout layouts/mailer.html.erb (Duration: 8.5ms | Allocations: 662)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 2.4ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 5.0ms | Allocations: 402)
+OrderMailer#new_order_email: processed outbound mail in 257.6ms
+Delivered mail 636217b2aea52_20abaa04661@moringa.mail (36.5ms)
+Date: Wed, 02 Nov 2022 10:09:38 +0300
+From: loretta.jefwa@student.moringaschool.com
+To: loreydjefwa@gmail.com
+Message-ID: <636217b2aea52_20abaa04661@moringa.mail>
+Subject: Your Order is Approved!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_636217b2a5fc9_20abaa046573";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_636217b2a5fc9_20abaa046573
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+
+----==_mimepart_636217b2a5fc9_20abaa046573
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_636217b2a5fc9_20abaa046573--
+
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 01320a82-fed5-442e-b540-5f467e1aa356) to Async(default) with arguments: "OrderMailer", "new_order_email", "deliver_now", {:args=>[#<GlobalID:0x0000564093690440 @uri=#<URI::GID gid://authy/Order/1>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356] Performing ActionMailer::MailDeliveryJob (Job ID: 01320a82-fed5-442e-b540-5f467e1aa356) from Async(default) enqueued at 2022-11-02T07:11:15Z with arguments: "OrderMailer", "new_order_email", "deliver_now", {:args=>[#<GlobalID:0x00005640937b30e8 @uri=#<URI::GID gid://authy/Order/1>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendering layout layouts/mailer.html.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 3.2ms | Allocations: 243)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendered layout layouts/mailer.html.erb (Duration: 5.6ms | Allocations: 463)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendering layout layouts/mailer.text.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 2.0ms | Allocations: 225)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356]   Rendered layout layouts/mailer.text.erb (Duration: 3.7ms | Allocations: 414)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356] OrderMailer#new_order_email: processed outbound mail in 23.8ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356] Delivered mail 636218154b5e5_20ab1aa044687c@moringa.mail (4.9ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356] Date: Wed, 02 Nov 2022 10:11:17 +0300
+From: loretta.jefwa@student.moringaschool.com
+To: loreydjefwa@gmail.com
+Message-ID: <636218154b5e5_20ab1aa044687c@moringa.mail>
+Subject: Your Order is Approved!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362181549fff_20ab1aa04467cf";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362181549fff_20ab1aa04467cf
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+
+----==_mimepart_6362181549fff_20ab1aa04467cf
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362181549fff_20ab1aa04467cf--
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [01320a82-fed5-442e-b540-5f467e1aa356] Performed ActionMailer::MailDeliveryJob (Job ID: 01320a82-fed5-442e-b540-5f467e1aa356) from Async(default) in 1182.49ms
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.7ms | Allocations: 443)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.8ms | Allocations: 662)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.8ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.7ms | Allocations: 402)
+OrderMailer#new_order_email: processed outbound mail in 27.3ms
+Delivered mail 636219823dae3_24ddaa0141af@moringa.mail (3134.3ms)
+Date: Wed, 02 Nov 2022 10:17:22 +0300
+From: loretta.jefwa@student.moringaschool.com
+To: loreydjefwa@gmail.com
+Message-ID: <636219823dae3_24ddaa0141af@moringa.mail>
+Subject: Your Order is Approved!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_636219823cdc1_24ddaa014044";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_636219823cdc1_24ddaa014044
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+
+----==_mimepart_636219823cdc1_24ddaa014044
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_636219823cdc1_24ddaa014044--
+
+OrderMailer#new_order_email: processed outbound mail in 20.7ms
+OrderMailer#new_order_email: processed outbound mail in 17.2ms
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.9ms | Allocations: 443)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.6ms | Allocations: 662)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.1ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.0ms | Allocations: 402)
+OrderMailer#new_order_email: processed outbound mail in 42.3ms
+Delivered mail 63621cc93ee15_28efaa0-34e@moringa.mail (2773.7ms)
+Date: Wed, 02 Nov 2022 10:31:21 +0300
+From: loretta.jefwa@student.moringaschool.com
+To: loreydjefwa@gmail.com
+Message-ID: <63621cc93ee15_28efaa0-34e@moringa.mail>
+Subject: Your Order is Approved!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_63621cc93d193_28efaa0-457";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_63621cc93d193_28efaa0-457
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+
+----==_mimepart_63621cc93d193_28efaa0-457
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam!</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Flammable</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_63621cc93d193_28efaa0-457--
+
