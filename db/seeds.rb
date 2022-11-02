@@ -31,7 +31,7 @@ Receipt.create([
     "nature_of_goods": "Flamable",
     "pickup": "Kawangware",
     "destination": "Kenyatta",
-    "delivery_id": 1,
+    # "delivery_id": 1,
     "created_at": "2022-10-24T07:00:47.076Z",
     "updated_at": "2022-10-24T07:01:51.306Z"
     },
@@ -43,7 +43,7 @@ Receipt.create([
     "nature_of_goods": "Fragile",
     "pickup": "Moringa",
     "destination": "CBD",
-    "delivery_id": 2,
+    # "delivery_id": 2,
     "created_at": "2022-10-24T07:03:48.845Z",
     "updated_at": "2022-10-24T07:03:48.845Z"
     },
@@ -55,7 +55,7 @@ Receipt.create([
     "nature_of_goods": "Perishable",
     "pickup": "Kenyatta",
     "destination": "Zimmer",
-    "delivery_id": 3,
+    # "delivery_id": 3,
     "created_at": "2022-10-24T07:05:17.263Z",
     "updated_at": "2022-10-24T07:05:17.263Z"
     },
@@ -67,7 +67,7 @@ Receipt.create([
     "nature_of_goods": "Fragile",
     "pickup": "Moringa",
     "destination": "CBD",
-    "delivery_id": 4,
+    # "delivery_id": 4,
     "created_at": "2022-10-24T07:09:09.190Z",
     "updated_at": "2022-10-24T07:09:09.190Z"
     },
@@ -79,7 +79,7 @@ Receipt.create([
     "nature_of_goods": "Perishable",
     "pickup": "Moringa",
     "destination": "Coptic",
-    "delivery_id": 5,
+    # "delivery_id": 5,
     "created_at": "2022-10-24T07:24:43.210Z",
     "updated_at": "2022-10-24T07:24:43.210Z"
     }
