@@ -4,19 +4,20 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p>You got a new order from <%= @order.senderName %>!</p>
+    <p>You got a new order from <%=@order.senderName%> </p>
     <p>
     Order details<br>
     --------------------------
     </p>
-    <p>Sender: <%= @order.senderName %></p>
-    <p>Receiver: <%= @order.receiverName %></p>
-    <p>Source: <%= @order.pickup %></p>
-    <p>Destination: <%= @order.destination %></p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
     <p>
     Message:<br>
     ----------
     </p>
     <p><%= @order.natureOfGoods %></p>
+   
   </body>
 </html>

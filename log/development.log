@@ -154,3 +154,3036 @@ Migrating to AddingOrdersColumn (20221027111859)
   [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-02 18:23:44.356350"], ["updated_at", "2022-11-02 18:23:44.356350"]]
   [1m[36mTRANSACTION (297.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+OrderMailer#new_order_email: processed outbound mail in 171.8ms
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+OrderMailer#new_order_email: processed outbound mail in 16.8ms
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 36.4ms | Allocations: 2382)
+  Rendered layout layouts/mailer.html.erb (Duration: 37.0ms | Allocations: 2456)
+OrderMailer#new_order_email: processed outbound mail in 143.2ms
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 11.7ms | Allocations: 4226)
+  Rendered layout layouts/mailer.html.erb (Duration: 12.1ms | Allocations: 4300)
+OrderMailer#new_order_email: processed outbound mail in 34.4ms
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 9.7ms | Allocations: 4226)
+  Rendered layout layouts/mailer.html.erb (Duration: 10.1ms | Allocations: 4300)
+OrderMailer#new_order_email: processed outbound mail in 30.9ms
+  [1m[36mOrder Load (1.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 11.8ms | Allocations: 4226)
+  Rendered layout layouts/mailer.html.erb (Duration: 12.2ms | Allocations: 4300)
+OrderMailer#new_order_email: processed outbound mail in 33.8ms
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 4.3ms | Allocations: 1758)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.6ms | Allocations: 1832)
+OrderMailer#new_order_email: processed outbound mail in 24.2ms
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 2.3ms | Allocations: 1179)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.6ms | Allocations: 1254)
+OrderMailer#new_order_email: processed outbound mail in 22.7ms
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 12.7ms | Allocations: 4212)
+  Rendered layout layouts/mailer.html.erb (Duration: 13.0ms | Allocations: 4286)
+OrderMailer#new_order_email: processed outbound mail in 33.7ms
+  [1m[36mOrder Load (2.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 14.0ms | Allocations: 4212)
+  Rendered layout layouts/mailer.html.erb (Duration: 14.3ms | Allocations: 4286)
+OrderMailer#new_order_email: processed outbound mail in 40.6ms
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.4ms | Allocations: 346)
+  Rendered layout layouts/mailer.html.erb (Duration: 25.8ms | Allocations: 565)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 4.8ms | Allocations: 1559)
+  Rendered layout layouts/mailer.text.erb (Duration: 5.2ms | Allocations: 1626)
+OrderMailer#new_order_email: processed outbound mail in 53.1ms
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.2ms | Allocations: 346)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.1ms | Allocations: 565)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 4.1ms | Allocations: 1559)
+  Rendered layout layouts/mailer.text.erb (Duration: 4.4ms | Allocations: 1626)
+OrderMailer#new_order_email: processed outbound mail in 28.2ms
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.2ms | Allocations: 346)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.1ms | Allocations: 565)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 4.6ms | Allocations: 1559)
+  Rendered layout layouts/mailer.text.erb (Duration: 4.9ms | Allocations: 1626)
+OrderMailer#new_order_email: processed outbound mail in 26.6ms
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.9ms | Allocations: 82)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 16.0ms | Allocations: 619)
+  Rendered layout layouts/mailer.text.erb (Duration: 17.5ms | Allocations: 686)
+OrderMailer#new_order_email: processed outbound mail in 26.8ms
+  [1m[36mOrder Load (1.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.2ms | Allocations: 346)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.1ms | Allocations: 565)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 4.2ms | Allocations: 1559)
+  Rendered layout layouts/mailer.text.erb (Duration: 4.6ms | Allocations: 1626)
+OrderMailer#new_order_email: processed outbound mail in 28.6ms
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.2ms | Allocations: 346)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.5ms | Allocations: 565)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.6ms | Allocations: 145)
+  Rendered layout layouts/mailer.text.erb (Duration: 103.5ms | Allocations: 324)
+OrderMailer#new_order_email: processed outbound mail in 163.5ms
+Delivered mail 6362ce98df7cd_516eaa05393f@moringa.mail (63.3ms)
+Date: Wed, 02 Nov 2022 23:10:00 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362ce98df7cd_516eaa05393f@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362ce98da111_516eaa0538ca";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362ce98da111_516eaa0538ca
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from {order.senderName}</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: {order.senderName }</p>
+    <p>Receiver: {order.receiverName }</p>
+    <p>Source: {order.pickup }</p>
+    <p>Destination: {order.destination }</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>{order.natureOfGoods }</p>
+  </body>
+</html>
+
+----==_mimepart_6362ce98da111_516eaa0538ca
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    # <p>You got a new order from {order.senderName} </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    # <p>Sender: {order.senderName }</p>
+    <p>Receiver: {order.receiverName }</p>
+    <p>Source: {order.pickup }</p>
+    <p>Destination: {order.destination }</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>{order.natureOfGoods }</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362ce98da111_516eaa0538ca--
+
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+OrderMailer#new_order_email: processed outbound mail in 16.8ms
+OrderMailer#new_order_email: processed outbound mail in 0.5ms
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+OrderMailer#new_order_email: processed outbound mail in 13.8ms
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 14.8ms | Allocations: 4226)
+  Rendered layout layouts/mailer.html.erb (Duration: 15.2ms | Allocations: 4300)
+OrderMailer#new_order_email: processed outbound mail in 37.9ms
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+OrderMailer#new_order_email: processed outbound mail in 16.3ms
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 3.0ms | Allocations: 443)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.6ms | Allocations: 662)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.4ms | Allocations: 226)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.7ms | Allocations: 403)
+OrderMailer#new_order_email: processed outbound mail in 114.8ms
+Delivered mail 6362d34a80da3_5977aa0-34d@moringa.mail (7.6ms)
+Date: Wed, 02 Nov 2022 23:30:02 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362d34a80da3_5977aa0-34d@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362d34a7fa27_5977aa0-45e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362d34a7fa27_5977aa0-45e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Janet</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Janet</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Prestige</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+
+----==_mimepart_6362d34a7fa27_5977aa0-45e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Janet </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Janet</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Prestige</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362d34a7fa27_5977aa0-45e--
+
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 13)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.5ms | Allocations: 88)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.6ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 16.7ms
+Delivered mail 6362d54c96c2d_5977aa0-182@moringa.mail (13.1ms)
+Date: Wed, 02 Nov 2022 23:38:36 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362d54c96c2d_5977aa0-182@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362d54c9420e_5977aa0-24";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362d54c9420e_5977aa0-24
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Janet</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Janet</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Prestige</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+
+----==_mimepart_6362d54c9420e_5977aa0-24
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Janet </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Janet</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Prestige</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362d54c9420e_5977aa0-24--
+
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+OrderMailer#new_order_email: processed outbound mail in 12.2ms
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.3ms | Allocations: 444)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.1ms | Allocations: 663)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.8ms | Allocations: 227)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.5ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 29.2ms
+Delivered mail 6362d590f70_5e6baa032495@moringa.mail (6.7ms)
+Date: Wed, 02 Nov 2022 23:39:44 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362d590f70_5e6baa032495@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362d58ff4113_5e6baa03238c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362d58ff4113_5e6baa03238c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    # <p>You got a new order from Janet</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    # <p>Sender: Janet</p>
+    # <p>Receiver: Newton</p>
+    # <p>Source: Moringa</p>
+    # <p>Destination: Prestige</p>
+    # <p>
+    Message:<br>
+    ----------
+    </p>
+    # <p>Fragile</p>
+  </body>
+</html>
+
+----==_mimepart_6362d58ff4113_5e6baa03238c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    # <p>You got a new order from Janet </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    # <p>Sender: Janet</p>
+    # <p>Receiver: Newton</p>
+    # <p>Source: Moringa</p>
+    # <p>Destination: Prestige</p>
+    # <p>
+    Message:<br>
+    ----------
+    </p>
+    # <p>Fragile</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362d58ff4113_5e6baa03238c--
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:12:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 200 OK in 145ms (Views: 112.4ms | ActiveRecord: 1.0ms | Allocations: 34635)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:12:15 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.83ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 1909)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 01:12:52 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Alvin", "receiverName"=>"Newton", "natureOfGoods"=>"Bulk", "pickup"=>"Nairobi", "destination"=>"Prestige", "order"=>{"pickup"=>"Nairobi", "destination"=>"Prestige", "senderName"=>"Alvin", "receiverName"=>"Newton", "natureOfGoods"=>"Bulk"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (0.8ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "use_profile_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Nairobi"], ["destination", "Prestige"], ["use_profile_id", nil], ["created_at", "2022-11-02 22:12:52.815463"], ["updated_at", "2022-11-02 22:12:52.815463"], ["senderName", "Alvin"], ["receiverName", "Newton"], ["amountPaid", nil], ["natureOfGoods", "Bulk"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (598.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (1.29ms)
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:12:53 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.88ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.8ms | Allocations: 2221)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:12:53 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.12ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 2043)
+
+
+  [1m[36mUser Pluck (0.5ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:12:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 28.8ms | Allocations: 443)
+  Rendered layout layouts/mailer.html.erb (Duration: 51.9ms | Allocations: 662)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 21.2ms | Allocations: 226)
+  Rendered layout layouts/mailer.text.erb (Duration: 25.4ms | Allocations: 403)
+OrderMailer#new_order_email: processed outbound mail in 445.8ms
+Delivered mail 6362eb6655cbf_72582c2477948@moringa.mail (94.2ms)
+Date: Thu, 03 Nov 2022 01:12:54 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362eb6655cbf_72582c2477948@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362eb66502a7_72582c24778c5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362eb66502a7_72582c24778c5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Alvin</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Alvin</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Prestige</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Bulk</p>
+  </body>
+</html>
+
+----==_mimepart_6362eb66502a7_72582c24778c5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Alvin </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Alvin</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Prestige</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Bulk</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362eb66502a7_72582c24778c5--
+
+Redirected to 
+Completed 500 Internal Server Error in 1620ms (Views: 10.3ms | ActiveRecord: 602.0ms | Allocations: 49373)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/orders_controller.rb:37:in `create'
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:16:09 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mOrder Destroy (0.3ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mTRANSACTION (225.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+Completed 204 No Content in 271ms (ActiveRecord: 227.7ms | Allocations: 6112)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:16:13 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 404 Not Found in 63ms (Views: 60.9ms | ActiveRecord: 0.2ms | Allocations: 1781)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 01:16:39 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Zamzam", "receiverName"=>"Janet", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Zamzam", "receiverName"=>"Janet", "natureOfGoods"=>"Fragile"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "use_profile_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Moringa"], ["destination", "Nairobi"], ["use_profile_id", nil], ["created_at", "2022-11-02 22:16:39.210640"], ["updated_at", "2022-11-02 22:16:39.210640"], ["senderName", "Zamzam"], ["receiverName", "Janet"], ["amountPaid", nil], ["natureOfGoods", "Fragile"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (710.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:16:39 +0300
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:12:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 97)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 87)
+OrderMailer#new_order_email: processed outbound mail in 11.1ms
+Delivered mail 6362ec47e9453_72582c2478193@moringa.mail (4.2ms)
+Date: Thu, 03 Nov 2022 01:16:39 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362ec47e9453_72582c2478193@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362ec47e8550_72582c24780f1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362ec47e8550_72582c24780f1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Nairobi</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+
+----==_mimepart_6362ec47e8550_72582c24780f1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Nairobi</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362ec47e8550_72582c24780f1--
+
+Redirected to 
+Completed 500 Internal Server Error in 750ms (Views: 3.9ms | ActiveRecord: 711.7ms | Allocations: 11557)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/orders_controller.rb:37:in `create'
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.16ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 2088)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:16:40 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.52ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 2044)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:17:53 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mOrder Destroy (0.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mTRANSACTION (852.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+Completed 204 No Content in 872ms (ActiveRecord: 854.2ms | Allocations: 5287)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:17:56 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.32ms)
+Completed 404 Not Found in 42ms (Views: 27.9ms | ActiveRecord: 0.7ms | Allocations: 1519)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 01:18:15 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Zamzam", "receiverName"=>"Janet", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Zamzam", "receiverName"=>"Janet", "natureOfGoods"=>"Fragile"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "use_profile_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Moringa"], ["destination", "Nairobi"], ["use_profile_id", nil], ["created_at", "2022-11-02 22:18:15.768870"], ["updated_at", "2022-11-02 22:18:15.768870"], ["senderName", "Zamzam"], ["receiverName", "Janet"], ["amountPaid", nil], ["natureOfGoods", "Fragile"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (1348.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (2.15ms)
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:18:17 +0300
+  [1m[36mUser Pluck (0.4ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:12:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.9ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.8ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 36.6ms
+Delivered mail 6362eca935d7a_72582c247837d@moringa.mail (6.1ms)
+Date: Thu, 03 Nov 2022 01:18:17 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362eca935d7a_72582c247837d@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362eca934571_72582c2478251";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362eca934571_72582c2478251
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Nairobi</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+
+----==_mimepart_6362eca934571_72582c2478251
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Zamzam </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Zamzam</p>
+    <p>Receiver: Janet</p>
+    <p>Source: Moringa</p>
+    <p>Destination: Nairobi</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Fragile</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362eca934571_72582c2478251--
+
+Completed 201 Created in 1465ms (Views: 20.9ms | ActiveRecord: 1352.1ms | Allocations: 12183)
+
+
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.23ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 2088)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:18:17 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.01ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 2043)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 01:19:41 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Alvin", "receiverName"=>"Newton", "natureOfGoods"=>"Bulk", "pickup"=>"Prestige", "destination"=>"Moringa", "order"=>{"pickup"=>"Prestige", "destination"=>"Moringa", "senderName"=>"Alvin", "receiverName"=>"Newton", "natureOfGoods"=>"Bulk"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "use_profile_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Prestige"], ["destination", "Moringa"], ["use_profile_id", nil], ["created_at", "2022-11-02 22:19:41.811332"], ["updated_at", "2022-11-02 22:19:41.811332"], ["senderName", "Alvin"], ["receiverName", "Newton"], ["amountPaid", nil], ["natureOfGoods", "Bulk"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (522.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (1.1ms)
+  [1m[36mUser Pluck (0.6ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:12:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.5ms | Allocations: 111)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.5ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.8ms | Allocations: 90)
+OrderMailer#new_order_email: processed outbound mail in 36.7ms
+Delivered mail 6362ecfe637c2_72582c60785f4@moringa.mail (19.9ms)
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:19:42 +0300
+Date: Thu, 03 Nov 2022 01:19:42 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362ecfe637c2_72582c60785f4@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362ecfe5f68f_72582c60784c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362ecfe5f68f_72582c60784c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Alvin</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Alvin</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Prestige</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Bulk</p>
+  </body>
+</html>
+
+----==_mimepart_6362ecfe5f68f_72582c60784c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Alvin </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Alvin</p>
+    <p>Receiver: Newton</p>
+    <p>Source: Prestige</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Bulk</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362ecfe5f68f_72582c60784c--
+
+Completed 201 Created in 617ms (Views: 9.4ms | ActiveRecord: 524.1ms | Allocations: 7877)
+
+
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.82ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 2195)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:19:42 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.31ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 2195)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 01:29:15 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 23)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.8ms | Allocations: 98)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 10.1ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 42.6ms | Allocations: 4136)
+Completed 200 OK in 3376ms (Views: 44.9ms | ActiveRecord: 2.4ms | Allocations: 1033786)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 01:29:18 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.4ms | Allocations: 236)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.6ms | Allocations: 445)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.8ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.6ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 14.8ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 36ms (Views: 18.6ms | ActiveRecord: 0.2ms | Allocations: 5273)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 01:29:22 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.3ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.1ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 15.2ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 5.8ms | Allocations: 4086)
+Completed 200 OK in 27ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 7422)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 01:29:22 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 6.7ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 3257)
+
+
+Started DELETE "/orders/4" for 127.0.0.1 at 2022-11-03 01:29:34 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mCACHE Order Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mOrder Destroy (0.7ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mTRANSACTION (355.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+Completed 204 No Content in 384ms (ActiveRecord: 357.5ms | Allocations: 2346)
+
+
+Started DELETE "/orders/4" for 127.0.0.1 at 2022-11-03 01:29:38 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 404 Not Found in 6ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 1519)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:29:42 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mOrder Destroy (0.8ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mTRANSACTION (413.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+Completed 204 No Content in 428ms (ActiveRecord: 414.6ms | Allocations: 2155)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:29:44 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 404 Not Found in 6ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1416)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:29:49 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.94ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.3ms | Allocations: 3072)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:29:49 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.4ms | Allocations: 1892)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 01:30:24 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet", "receiverName"=>"Zamzam", "natureOfGoods"=>"Bulk", "pickup"=>"Karen", "destination"=>"Nairobi", "order"=>{"pickup"=>"Karen", "destination"=>"Nairobi", "senderName"=>"Janet", "receiverName"=>"Zamzam", "natureOfGoods"=>"Bulk"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "use_profile_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Karen"], ["destination", "Nairobi"], ["use_profile_id", nil], ["created_at", "2022-11-02 22:30:24.049725"], ["updated_at", "2022-11-02 22:30:24.049725"], ["senderName", "Janet"], ["receiverName", "Zamzam"], ["amountPaid", nil], ["natureOfGoods", "Bulk"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (680.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.9ms | Allocations: 111)
+OrderMailer#new_order_email: processed outbound mail in 7.9ms
+Delivered mail 6362ef80b81fe_72582c4c79186@moringa.mail (3.9ms)
+Date: Thu, 03 Nov 2022 01:30:24 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362ef80b81fe_72582c4c79186@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362ef80b753e_72582c4c790e2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362ef80b753e_72582c4c790e2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Janet</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Janet</p>
+    <p>Receiver: Zamzam</p>
+    <p>Source: Karen</p>
+    <p>Destination: Nairobi</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Bulk</p>
+  </body>
+</html>
+
+----==_mimepart_6362ef80b753e_72582c4c790e2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Janet </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Janet</p>
+    <p>Receiver: Zamzam</p>
+    <p>Source: Karen</p>
+    <p>Destination: Nairobi</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Bulk</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362ef80b753e_72582c4c790e2--
+
+Completed 201 Created in 709ms (Views: 2.4ms | ActiveRecord: 681.1ms | Allocations: 7784)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:30:24 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.24ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 2043)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:30:24 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.15ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 2043)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:36:39 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mCACHE Order Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mOrder Destroy (2.3ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mTRANSACTION (251.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+Completed 204 No Content in 292ms (ActiveRecord: 258.4ms | Allocations: 2301)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:36:44 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 404 Not Found in 5ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1416)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 01:37:12 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Alvin", "receiverName"=>"Zamzam", "natureOfGoods"=>"Fragile", "pickup"=>"Nairobi", "destination"=>"Moringa", "order"=>{"pickup"=>"Nairobi", "destination"=>"Moringa", "senderName"=>"Alvin", "receiverName"=>"Zamzam", "natureOfGoods"=>"Fragile"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "use_profile_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Nairobi"], ["destination", "Moringa"], ["use_profile_id", nil], ["created_at", "2022-11-02 22:37:12.420588"], ["updated_at", "2022-11-02 22:37:12.420588"], ["senderName", "Alvin"], ["receiverName", "Zamzam"], ["amountPaid", nil], ["natureOfGoods", "Fragile"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (559.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (1.11ms)
+  [1m[36mUser Pluck (0.8ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:37:13 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.17ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 4.1ms | Allocations: 2204)
+
+
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 120.1ms | Allocations: 5841)
+  Rendered layout layouts/mailer.html.erb (Duration: 121.1ms | Allocations: 5908)
+OrderMailer#new_order_email: processed outbound mail in 152.8ms
+Completed 500 Internal Server Error in 739ms (Views: 8.6ms | ActiveRecord: 560.5ms | Allocations: 11108)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    17:     Message:<br>
+    18:     ----------
+    19:     </p>
+    20:     <p><%= @user.email %> created an order of <%=@order.natureOfGoods %></p>
+    21:   </body>
+    22: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:20
+app/mailers/order_mailer.rb:12:in `new_order_email'
+app/controllers/orders_controller.rb:32:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:37:13 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.98ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 2087)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:39:04 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mCACHE Order Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mOrder Destroy (7.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+  [1m[36mTRANSACTION (516.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:60:in `destroy'
+Completed 204 No Content in 558ms (ActiveRecord: 525.3ms | Allocations: 2145)
+
+
+Started DELETE "/orders/3" for 127.0.0.1 at 2022-11-03 01:39:06 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:67:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.46ms)
+Completed 404 Not Found in 19ms (Views: 12.0ms | ActiveRecord: 0.6ms | Allocations: 1416)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 01:39:23 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Alvin", "receiverName"=>"Zamzam", "natureOfGoods"=>"Perishable", "pickup"=>"Nairobi", "destination"=>"Moringa", "order"=>{"pickup"=>"Nairobi", "destination"=>"Moringa", "senderName"=>"Alvin", "receiverName"=>"Zamzam", "natureOfGoods"=>"Perishable"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (0.9ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "use_profile_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Nairobi"], ["destination", "Moringa"], ["use_profile_id", nil], ["created_at", "2022-11-02 22:39:23.155397"], ["updated_at", "2022-11-02 22:39:23.155397"], ["senderName", "Alvin"], ["receiverName", "Zamzam"], ["amountPaid", nil], ["natureOfGoods", "Perishable"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (739.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (2.16ms)
+  [1m[36mUser Pluck (0.6ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:39:23 +0300
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 4.3ms | Allocations: 239)
+  Rendered layout layouts/mailer.html.erb (Duration: 13.2ms | Allocations: 448)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 8.8ms | Allocations: 246)
+  Rendered layout layouts/mailer.text.erb (Duration: 17.6ms | Allocations: 489)
+OrderMailer#new_order_email: processed outbound mail in 81.9ms
+Delivered mail 6362f19c62c4_72582c4c793af@moringa.mail (14.2ms)
+Date: Thu, 03 Nov 2022 01:39:24 +0300
+From: mkateboflo1@gmail.com
+To: loreydjefwa@gmail.com
+Message-ID: <6362f19c62c4_72582c4c793af@moringa.mail>
+Subject: Order Approval!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6362f19c2d2d_72582c4c792f8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6362f19c2d2d_72582c4c792f8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Alvin</p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Alvin</p>
+    <p>Receiver: Zamzam</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Perishable</p>
+  </body>
+</html>
+
+----==_mimepart_6362f19c2d2d_72582c4c792f8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from Alvin </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: Alvin</p>
+    <p>Receiver: Zamzam</p>
+    <p>Source: Nairobi</p>
+    <p>Destination: Moringa</p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p>Perishable</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_6362f19c2d2d_72582c4c792f8--
+
+Completed 201 Created in 881ms (Views: 18.9ms | ActiveRecord: 741.4ms | Allocations: 9661)
+
+
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.45ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 2043)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 01:39:24 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 2043)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 01:46:36 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.8ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 23)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.4ms | Allocations: 98)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.9ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 27.8ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 8.0ms | Allocations: 4087)
+Completed 200 OK in 240ms (Views: 11.5ms | ActiveRecord: 5.1ms | Allocations: 14738)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 01:46:36 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:13:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 8.5ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 16ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 4259)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:01:03 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+OrderMailer#new_order_email: processed outbound mail in 1.0ms
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 3.9ms | Allocations: 6562)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - ReactApp2.pdf):
+  
+app/mailers/order_mailer.rb:11:in `read'
+app/mailers/order_mailer.rb:11:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:02:33 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+OrderMailer#new_order_email: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.7ms | Allocations: 7310)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - app/assets/images/ReactApp2.pdf):
+  
+app/mailers/order_mailer.rb:11:in `read'
+app/mailers/order_mailer.rb:11:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:04:04 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+OrderMailer#new_order_email: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.4ms | Allocations: 7291)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - app/assets/images/ReactApp2.pdf):
+  
+app/mailers/order_mailer.rb:11:in `read'
+app/mailers/order_mailer.rb:11:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:04:06 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+OrderMailer#new_order_email: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 1430)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - app/assets/images/ReactApp2.pdf):
+  
+app/mailers/order_mailer.rb:11:in `read'
+app/mailers/order_mailer.rb:11:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:06:08 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (1.0ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 23)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.1ms | Allocations: 98)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.8ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 114.8ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 11.3ms | Allocations: 3816)
+Completed 200 OK in 162ms (Views: 12.1ms | ActiveRecord: 4.5ms | Allocations: 17038)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 02:06:08 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 10.7ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 1.4ms | Allocations: 5974)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:10:34 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 23.5ms | Allocations: 23)
+  Rendered layout layouts/mailer.html.erb (Duration: 24.0ms | Allocations: 98)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 91.7ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 5.8ms | Allocations: 3811)
+Completed 200 OK in 446ms (Views: 6.7ms | ActiveRecord: 64.8ms | Allocations: 16748)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 02:10:40 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.3ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.7ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 22.7ms
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 45ms (Views: 0.8ms | ActiveRecord: 1.7ms | Allocations: 5976)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:15:22 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.5ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 186.6ms | Allocations: 360)
+  Rendered layout layouts/mailer.html.erb (Duration: 186.9ms | Allocations: 428)
+OrderMailer#new_order_email: processed outbound mail in 306.3ms
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 1.7ms | Allocations: 3493)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%=@order.senderName%> </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @order.natureOfGoods %></p>
+    <p>Find your receipt here receipt</p>
+
+<%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %>
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+5:      </head>
+6:      <body>
+7:        <p>You got a new order from <%=@order.senderName%> </p>
+8:        <p>
+9:        Order details<br>
+10:        --------------------------
+11:        </p>
+12:        <p>Sender: <%=@order.senderName %></p>
+13:        <p>Receiver: <%=@order.receiverName %></p>
+14:        <p>Source: <%=@order.pickup %></p>
+15:        <p>Destination: <%=@order.destination %></p>
+16:        <p>
+17:        Message:<br>
+18:        ----------
+19:        </p>
+20:        <p><%= @order.natureOfGoods %></p>
+21:        <p>Find your receipt here receipt</p>
+22:    
+23:    <%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %>
+24:    
+25:      </body>
+26:    </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:16:49 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.7ms | Allocations: 357)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.0ms | Allocations: 425)
+OrderMailer#new_order_email: processed outbound mail in 14.7ms
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.8ms | Allocations: 3495)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%=@order.senderName%> </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
+    <p>
+    Message:<br>
+    ----------
+   
+    <p><%= @order.natureOfGoods %></p>
+    <p>Find your receipt here receipt</p>
+
+<%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %>
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+5:      </head>
+6:      <body>
+7:        <p>You got a new order from <%=@order.senderName%> </p>
+8:        <p>
+9:        Order details<br>
+10:        --------------------------
+11:        </p>
+12:        <p>Sender: <%=@order.senderName %></p>
+13:        <p>Receiver: <%=@order.receiverName %></p>
+14:        <p>Source: <%=@order.pickup %></p>
+15:        <p>Destination: <%=@order.destination %></p>
+16:        <p>
+17:        Message:<br>
+18:        ----------
+19:       
+20:        <p><%= @order.natureOfGoods %></p>
+21:        <p>Find your receipt here receipt</p>
+22:    
+23:    <%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %>
+24:    
+25:      </body>
+26:    </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:17:16 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (1.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.1ms | Allocations: 355)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.5ms | Allocations: 423)
+OrderMailer#new_order_email: processed outbound mail in 9.2ms
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.4ms | Allocations: 3493)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%=@order.senderName%> </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @order.natureOfGoods %></p>
+    <p>Find your receipt here receipt</p>
+
+<p><%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %></p>
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+5:      </head>
+6:      <body>
+7:        <p>You got a new order from <%=@order.senderName%> </p>
+8:        <p>
+9:        Order details<br>
+10:        --------------------------
+11:        </p>
+12:        <p>Sender: <%=@order.senderName %></p>
+13:        <p>Receiver: <%=@order.receiverName %></p>
+14:        <p>Source: <%=@order.pickup %></p>
+15:        <p>Destination: <%=@order.destination %></p>
+16:        <p>
+17:        Message:<br>
+18:        ----------
+19:        </p>
+20:        <p><%= @order.natureOfGoods %></p>
+21:        <p>Find your receipt here receipt</p>
+22:    
+23:    <p><%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %></p>
+24:    
+25:      </body>
+26:    </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:17:20 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.6ms | Allocations: 345)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.3ms | Allocations: 413)
+OrderMailer#new_order_email: processed outbound mail in 8.4ms
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.9ms | Allocations: 2758)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%=@order.senderName%> </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @order.natureOfGoods %></p>
+    <p>Find your receipt here receipt</p>
+
+<p><%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %></p>
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+5:      </head>
+6:      <body>
+7:        <p>You got a new order from <%=@order.senderName%> </p>
+8:        <p>
+9:        Order details<br>
+10:        --------------------------
+11:        </p>
+12:        <p>Sender: <%=@order.senderName %></p>
+13:        <p>Receiver: <%=@order.receiverName %></p>
+14:        <p>Source: <%=@order.pickup %></p>
+15:        <p>Destination: <%=@order.destination %></p>
+16:        <p>
+17:        Message:<br>
+18:        ----------
+19:        </p>
+20:        <p><%= @order.natureOfGoods %></p>
+21:        <p>Find your receipt here receipt</p>
+22:    
+23:    <p><%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt', class: 'photos' %></p>
+24:    
+25:      </body>
+26:    </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:18:55 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 6.1ms | Allocations: 1206)
+  Rendered layout layouts/mailer.html.erb (Duration: 7.0ms | Allocations: 1273)
+OrderMailer#new_order_email: processed outbound mail in 17.3ms
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.4ms | Allocations: 4341)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23: <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:24:19 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.6ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 12.3ms | Allocations: 953)
+  Rendered layout layouts/mailer.html.erb (Duration: 14.1ms | Allocations: 1020)
+OrderMailer#new_order_email: processed outbound mail in 30.2ms
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 2.0ms | Allocations: 3359)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23: <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:25:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.5ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 58.8ms | Allocations: 2239)
+  Rendered layout layouts/mailer.html.erb (Duration: 59.8ms | Allocations: 2313)
+OrderMailer#new_order_email: processed outbound mail in 301.0ms
+Completed 500 Internal Server Error in 4011ms (ActiveRecord: 5.9ms | Allocations: 402017)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23: <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:27:57 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 4.4ms | Allocations: 1203)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.8ms | Allocations: 1271)
+OrderMailer#new_order_email: processed outbound mail in 13.8ms
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.8ms | Allocations: 4360)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:28:41 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.1ms | Allocations: 355)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.6ms | Allocations: 424)
+OrderMailer#new_order_email: processed outbound mail in 10.4ms
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.9ms | Allocations: 3514)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%=@order.senderName%> </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @order.natureOfGoods %></p>
+    <p>Find your receipt here receipt</p>
+
+    <%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt'%>
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+5:      </head>
+6:      <body>
+7:        <p>You got a new order from <%=@order.senderName%> </p>
+8:        <p>
+9:        Order details<br>
+10:        --------------------------
+11:        </p>
+12:        <p>Sender: <%=@order.senderName %></p>
+13:        <p>Receiver: <%=@order.receiverName %></p>
+14:        <p>Source: <%=@order.pickup %></p>
+15:        <p>Destination: <%=@order.destination %></p>
+16:        <p>
+17:        Message:<br>
+18:        ----------
+19:        </p>
+20:        <p><%= @order.natureOfGoods %></p>
+21:        <p>Find your receipt here receipt</p>
+22:    
+23:        <%= image_tag attachments['receipt1.jpg'].'app/assets/images/receipt1.png', alt: 'Receipt'%>
+24:    
+25:      </body>
+26:    </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected string literal
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ',', expecting ')'
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:29:00 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.5ms | Allocations: 355)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.7ms | Allocations: 424)
+OrderMailer#new_order_email: processed outbound mail in 11.8ms
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.6ms | Allocations: 3513)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%=@order.senderName%> </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @order.natureOfGoods %></p>
+    <p>Find your receipt here receipt</p>
+
+    <%= image_tag attachments['receipt1.jpg'].['app/assets/images/receipt1.png'], alt: 'Receipt'%>
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+5:      </head>
+6:      <body>
+7:        <p>You got a new order from <%=@order.senderName%> </p>
+8:        <p>
+9:        Order details<br>
+10:        --------------------------
+11:        </p>
+12:        <p>Sender: <%=@order.senderName %></p>
+13:        <p>Receiver: <%=@order.receiverName %></p>
+14:        <p>Source: <%=@order.pickup %></p>
+15:        <p>Destination: <%=@order.destination %></p>
+16:        <p>
+17:        Message:<br>
+18:        ----------
+19:        </p>
+20:        <p><%= @order.natureOfGoods %></p>
+21:        <p>Find your receipt here receipt</p>
+22:    
+23:        <%= image_tag attachments['receipt1.jpg'].['app/assets/images/receipt1.png'], alt: 'Receipt'%>
+24:    
+25:      </body>
+26:    </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:29:04 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.4ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 2.1ms | Allocations: 346)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.9ms | Allocations: 414)
+OrderMailer#new_order_email: processed outbound mail in 12.0ms
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.3ms | Allocations: 2759)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%=@order.senderName%> </p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <p>Sender: <%=@order.senderName %></p>
+    <p>Receiver: <%=@order.receiverName %></p>
+    <p>Source: <%=@order.pickup %></p>
+    <p>Destination: <%=@order.destination %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @order.natureOfGoods %></p>
+    <p>Find your receipt here receipt</p>
+
+    <%= image_tag attachments['receipt1.jpg'].['app/assets/images/receipt1.png'], alt: 'Receipt'%>
+
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+5:      </head>
+6:      <body>
+7:        <p>You got a new order from <%=@order.senderName%> </p>
+8:        <p>
+9:        Order details<br>
+10:        --------------------------
+11:        </p>
+12:        <p>Sender: <%=@order.senderName %></p>
+13:        <p>Receiver: <%=@order.receiverName %></p>
+14:        <p>Source: <%=@order.pickup %></p>
+15:        <p>Destination: <%=@order.destination %></p>
+16:        <p>
+17:        Message:<br>
+18:        ----------
+19:        </p>
+20:        <p><%= @order.natureOfGoods %></p>
+21:        <p>Find your receipt here receipt</p>
+22:    
+23:        <%= image_tag attachments['receipt1.jpg'].['app/assets/images/receipt1.png'], alt: 'Receipt'%>
+24:    
+25:      </body>
+26:    </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected '['
+app/views/order_mailer/new_order_email.html.erb:23: syntax error, unexpected ']', expecting ')'
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:29:20 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.5ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 8.0ms | Allocations: 1216)
+  Rendered layout layouts/mailer.html.erb (Duration: 8.7ms | Allocations: 1283)
+OrderMailer#new_order_email: processed outbound mail in 24.8ms
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.5ms | Allocations: 4351)
+
+
+  
+ActionView::Template::Error (undefined method `app' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     <%= image_tag attachments['receipt1.jpg'].app/assets/images/receipt1.png, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:29:36 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 29.3ms | Allocations: 3706)
+  Rendered layout layouts/mailer.html.erb (Duration: 29.9ms | Allocations: 3773)
+OrderMailer#new_order_email: processed outbound mail in 39.9ms
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 1.4ms | Allocations: 6842)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `receipt1' for #<ActionView::Base:0x0000000000e268>
+Did you mean?  receipt_url):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     <%= image_tag attachments['receipt1.jpg']./receipt1.png, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:30:01 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 5.1ms | Allocations: 1204)
+  Rendered layout layouts/mailer.html.erb (Duration: 6.6ms | Allocations: 1272)
+OrderMailer#new_order_email: processed outbound mail in 14.7ms
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms | Allocations: 4361)
+
+
+  
+ActionView::Template::Error (undefined method `receipt1' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     <%= image_tag attachments['receipt1.jpg'].receipt1.png, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:30:14 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.5ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 7.7ms | Allocations: 1201)
+  Rendered layout layouts/mailer.html.erb (Duration: 8.3ms | Allocations: 1268)
+OrderMailer#new_order_email: processed outbound mail in 25.8ms
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 2.0ms | Allocations: 4335)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:30:24 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 2.8ms | Allocations: 723)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.2ms | Allocations: 790)
+OrderMailer#new_order_email: processed outbound mail in 10.0ms
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.6ms | Allocations: 3859)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     <%= image_tag attachments['receipt1.jpg'], alt: 'Receipt'%>
+    24: 
+    25:   </body>
+    26: </html>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:31:28 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 3.9ms | Allocations: 1216)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.4ms | Allocations: 1283)
+OrderMailer#new_order_email: processed outbound mail in 11.4ms
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.6ms | Allocations: 4349)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     # <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:      attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')
+    26:   </body>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:31:46 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 2.8ms | Allocations: 953)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.4ms | Allocations: 1020)
+OrderMailer#new_order_email: processed outbound mail in 9.6ms
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms | Allocations: 3364)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     # <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:      attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')
+    26:   </body>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:32:01 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 2.4ms | Allocations: 954)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.8ms | Allocations: 1021)
+OrderMailer#new_order_email: processed outbound mail in 6.5ms
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms | Allocations: 3364)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     # <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:      attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')
+    26:   </body>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:32:05 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.6ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 7.0ms | Allocations: 953)
+  Rendered layout layouts/mailer.html.erb (Duration: 8.1ms | Allocations: 1020)
+OrderMailer#new_order_email: processed outbound mail in 22.0ms
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.9ms | Allocations: 3363)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     # <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:      attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')
+    26:   </body>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:32:37 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 8.3ms | Allocations: 1223)
+  Rendered layout layouts/mailer.html.erb (Duration: 8.9ms | Allocations: 1290)
+OrderMailer#new_order_email: processed outbound mail in 24.6ms
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.7ms | Allocations: 4358)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     # <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:     <%=  attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')%>
+    26:   </body>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:32:40 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.6ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 4.4ms | Allocations: 953)
+  Rendered layout layouts/mailer.html.erb (Duration: 5.1ms | Allocations: 1020)
+OrderMailer#new_order_email: processed outbound mail in 12.8ms
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.5ms | Allocations: 3364)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     # <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:     <%=  attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')%>
+    26:   </body>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:32:53 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 4.2ms | Allocations: 744)
+  Rendered layout layouts/mailer.html.erb (Duration: 222.4ms | Allocations: 954)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 55.4ms | Allocations: 227)
+  Rendered layout layouts/mailer.text.erb (Duration: 96.9ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 351.1ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 328.4ms | Allocations: 6602)
+Completed 200 OK in 713ms (Views: 333.3ms | ActiveRecord: 0.7ms | Allocations: 15719)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 02:32:54 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 2.4ms | Allocations: 495)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.2ms | Allocations: 570)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 13.3ms
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 70ms (Views: 40.4ms | ActiveRecord: 0.6ms | Allocations: 7230)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:33:32 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.1ms | Allocations: 258)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.5ms | Allocations: 467)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.0ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.3ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 18.3ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 10.6ms | Allocations: 4970)
+Completed 200 OK in 43ms (Views: 12.3ms | ActiveRecord: 0.5ms | Allocations: 12877)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 02:33:32 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.4ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 14.1ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 5978)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:33:59 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.9ms | Allocations: 742)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.2ms | Allocations: 951)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.9ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.8ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 17.9ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 11.2ms | Allocations: 5513)
+Completed 200 OK in 48ms (Views: 13.3ms | ActiveRecord: 0.6ms | Allocations: 14557)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 02:33:59 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.6ms | Allocations: 495)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.2ms | Allocations: 570)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 13.1ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 29ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 7105)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:34:18 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (2.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 7.6ms | Allocations: 1203)
+  Rendered layout layouts/mailer.html.erb (Duration: 8.8ms | Allocations: 1270)
+OrderMailer#new_order_email: processed outbound mail in 17.5ms
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.6ms | Allocations: 4334)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    20:     <p><%= @order.natureOfGoods %></p>
+    21:     <p>Find your receipt here receipt</p>
+    22: 
+    23:     # <%= image_tag attachments['receipt1.jpg'].url, alt: 'Receipt'%>
+    24: 
+    25:    
+    26:   </body>
+  
+app/views/order_mailer/new_order_email.html.erb:23
+app/mailers/order_mailer.rb:14:in `new_order_email'
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:34:30 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 4.4ms | Allocations: 242)
+  Rendered layout layouts/mailer.html.erb (Duration: 10.6ms | Allocations: 451)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.4ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.9ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 44.2ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 14.8ms | Allocations: 4973)
+Completed 200 OK in 74ms (Views: 18.7ms | ActiveRecord: 1.0ms | Allocations: 12880)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 02:34:30 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.5ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 12.2ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 21ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 5987)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email" for ::1 at 2022-11-03 02:34:40 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.3ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 1.6ms | Allocations: 239)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.1ms | Allocations: 448)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 1.7ms | Allocations: 225)
+  Rendered layout layouts/mailer.text.erb (Duration: 3.8ms | Allocations: 404)
+OrderMailer#new_order_email: processed outbound mail in 30.3ms
+  Rendering /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/mailers/email.html.erb (Duration: 11.7ms | Allocations: 4970)
+Completed 200 OK in 63ms (Views: 16.2ms | ActiveRecord: 0.8ms | Allocations: 12857)
+
+
+Started GET "/rails/mailers/order_mailer/new_order_email?part=text%2Fhtml" for ::1 at 2022-11-03 02:34:40 +0300
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"order_mailer/new_order_email"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/order_mailer_preview.rb:7:in `new_order_email'
+  [1m[36mUser Pluck (0.1ms)[0m  [1m[34mSELECT "users"."email" FROM "users"[0m
+  ↳ app/mailers/order_mailer.rb:15:in `new_order_email'
+  Rendering layout layouts/mailer.html.erb
+  Rendering order_mailer/new_order_email.html.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendering layout layouts/mailer.text.erb
+  Rendering order_mailer/new_order_email.text.erb within layouts/mailer
+  Rendered order_mailer/new_order_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.7ms | Allocations: 82)
+OrderMailer#new_order_email: processed outbound mail in 11.5ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 5978)
+
+
