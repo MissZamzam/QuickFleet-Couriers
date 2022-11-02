@@ -62,19 +62,26 @@ Rails.application.configure do
   
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3004 }
     config.action_mailer.delivery_method = :smtp
-  host = 'loretta.jefwa@student.moringaschool.com' #replace with your own url
-  config.action_mailer.default_url_options = { host: host }
+    # host = 'jannylynemiaz@gmail.com' #replace with your own url
+    # config.action_mailer.default_url_options = { host: host }
 
 # SMTP settings for gmail
 config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :user_name            => "dhahabu",
-  :password             => "dhahabu123",
+  :user_name            => "Loretta Dhahabu",
+  :password             => "dhahabu1997",
   :authentication       => "plain",
-  :enable_starttls_auto => true
+  :enable_starttls_auto => true,
+  :open_timeout        => 5,
+  :read_timeout       => 5
 }
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 end
+
+
+
+
+
