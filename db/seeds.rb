@@ -204,14 +204,14 @@ end
 # ]
 # )
 
-UseProfile.create([
-    {
-        avatar: "https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg",
-        name: "Alvin Smith",
-        email: "alvin@smith.com",
-        telephone: "0712435659",
-        location: "Nairobi"
-    }
-])
+# UseProfile.create([
+#     {
+#         avatar: "https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg",
+#         name: "Alvin Smith",
+#         email: "alvin@smith.com",
+#         telephone: "0712435659",
+#         location: "Nairobi"
+#     }
+# ])
 
 puts "End Seeding ....."
