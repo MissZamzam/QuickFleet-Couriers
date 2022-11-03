@@ -1,7 +1,7 @@
 class Order < ApplicationRecord  
     # belongs_to :use_profile
 
-    # has_one :receipt
+    has_one :receipt
 
     validates :senderName, :receiverName, :destination, :pickup, :natureOfGoods,  presence: true
 
