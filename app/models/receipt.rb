@@ -8,3 +8,4 @@ class Receipt < ApplicationRecord
 
     validates :sender_name, :receiver_name, :destination,  presence: true
 end
+ 
