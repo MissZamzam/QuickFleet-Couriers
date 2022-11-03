@@ -5117,3 +5117,828 @@ Processing by ServicesController#index as */*
 Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 1983)
 
 
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReceipts (20221019132515)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "receipts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receipt_no" varchar, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "order_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019132515"]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTrackings (20221019132526)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pickup" varchar, "destination" varchar, "order_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019132526"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDeliveries (20221019134107)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receiver_name" varchar, "receiver_contact" varchar, "pickup_instructions" varchar, "delivery_instructions" varchar, "package_type" varchar, "package_details" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019134107"]]
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20221024095704)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_name" varchar, "receiver_name" varchar, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "use_profile_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024095704"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateUsers (20221024131614)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024131614"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdmins (20221024132055)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_confirmation_token" ON "admins" ("confirmation_token")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_unlock_token" ON "admins" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024132055"]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUseProfiles (20221025081826)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "name" varchar, "email" varchar, "telephone" varchar, "location" varchar, "user_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221025081826"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveDeliveryId (20221026101129)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221026101129"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateServices (20221026140911)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "category" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221026140911"]]
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemovingOrderColumns (20221027111340)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aorders" ("id","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","receiver_name","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aorders" ("id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aorders" ("id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","use_profile_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "use_profile_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","pickup","destination","use_profile_id","created_at","updated_at")
+                     SELECT "id","pickup","destination","use_profile_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221027111340"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddingOrdersColumn (20221027111859)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  [1m[35mALTER TABLE "orders" ADD "senderName" varchar[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "orders" ADD "receiverName" varchar[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "orders" ADD "amountPaid" integer[0m
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "orders" ADD "natureOfGoods" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221027111859"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveColumn (20221031091450)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adeliveries" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "receiver_contact" varchar DEFAULT NULL, "pickup_instructions" varchar DEFAULT NULL, "delivery_instructions" varchar DEFAULT NULL, "package_type" varchar DEFAULT NULL, "package_details" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "adeliveries" ("id","receiver_name","receiver_contact","pickup_instructions","delivery_instructions","package_type","package_details","created_at","updated_at")
+                     SELECT "id","receiver_name","receiver_contact","pickup_instructions","delivery_instructions","package_type","package_details","created_at","updated_at" FROM "deliveries"[0m
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "deliveries"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "receiver_contact" varchar DEFAULT NULL, "pickup_instructions" varchar DEFAULT NULL, "delivery_instructions" varchar DEFAULT NULL, "package_details" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("id","receiver_name","receiver_contact","pickup_instructions","delivery_instructions","package_details","created_at","updated_at")
+                     SELECT "id","receiver_name","receiver_contact","pickup_instructions","delivery_instructions","package_details","created_at","updated_at" FROM "adeliveries"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "adeliveries"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221031091450"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddColumnSertvice (20221031095040)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  [1m[35mALTER TABLE "deliveries" ADD "service_type" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221031095040"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-03 09:29:22.217344"], ["updated_at", "2022-11-03 09:29:22.217344"]]
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-03 09:29:22.501425"], ["updated_at", "2022-11-03 09:29:22.501425"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-03 09:29:22.527562"], ["updated_at", "2022-11-03 09:29:22.527562"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.9ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-03 09:29:22.551777"], ["updated_at", "2022-11-03 09:29:22.551777"]]
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://img.freepik.com/free-photo/white-pill-container-blue-background_23-2148506747.jpg?w=2000"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 09:29:22.585690"], ["updated_at", "2022-11-03 09:29:22.585690"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.7ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ab/65/67/ab6567fca1d4911ba9462ab66911c881.jpg"], ["category", "Perishable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 09:29:22.612979"], ["updated_at", "2022-11-03 09:29:22.612979"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg"], ["category", "Flammable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 09:29:22.637075"], ["updated_at", "2022-11-03 09:29:22.637075"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.sciencephoto.com/image/f0220694/800wm"], ["category", "Bulk"], ["description", "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."], ["created_at", "2022-11-03 09:29:22.662200"], ["updated_at", "2022-11-03 09:29:22.662200"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-03 09:29:22.685551"], ["updated_at", "2022-11-03 09:29:22.685551"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "receipts" WHERE "receipts"."receipt_no" = ? LIMIT ?[0m  [["receipt_no", "KEN123456"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "receipts" WHERE "receipts"."receipt_no" = ? LIMIT ?[0m  [["receipt_no", "KEN4563211"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "receipts" WHERE "receipts"."receipt_no" = ? LIMIT ?[0m  [["receipt_no", "KEN875543"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "receipts" WHERE "receipts"."receipt_no" = ? LIMIT ?[0m  [["receipt_no", "KEN4563211"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "receipts" WHERE "receipts"."receipt_no" = ? LIMIT ?[0m  [["receipt_no", "KEN875543"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (1.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_details", "created_at", "updated_at", "service_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Jamee Dickinson"], ["receiver_contact", "+357 601.449.4745"], ["pickup_instructions", "atque"], ["delivery_instructions", "consequatur"], ["package_details", "[\"Quis corrupti voluptatem.\"]"], ["created_at", "2022-11-03 09:29:34.032509"], ["updated_at", "2022-11-03 09:29:34.032509"], ["service_type", "Overnight Shipping"]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (1.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_details", "created_at", "updated_at", "service_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Ms. Vannesa Muller"], ["receiver_contact", "+269 1-572-742-2173"], ["pickup_instructions", "dignissimos"], ["delivery_instructions", "et"], ["package_details", "[\"Modi occaecati ipsa.\"]"], ["created_at", "2022-11-03 09:29:34.060942"], ["updated_at", "2022-11-03 09:29:34.060942"], ["service_type", "Overnight Shipping"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (1.1ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_details", "created_at", "updated_at", "service_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Aurelio Gleichner"], ["receiver_contact", "+269 603.506.1763"], ["pickup_instructions", "et"], ["delivery_instructions", "totam"], ["package_details", "[\"Quia praesentium et.\"]"], ["created_at", "2022-11-03 09:29:34.087142"], ["updated_at", "2022-11-03 09:29:34.087142"], ["service_type", "Parcel Services"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (1.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_details", "created_at", "updated_at", "service_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Prof. Raylene Bode"], ["receiver_contact", "+248 1-945-104-9611"], ["pickup_instructions", "et"], ["delivery_instructions", "ut"], ["package_details", "[\"Quaerat soluta consequatur.\"]"], ["created_at", "2022-11-03 09:29:34.115535"], ["updated_at", "2022-11-03 09:29:34.115535"], ["service_type", "Parcel Services"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (1.6ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_details", "created_at", "updated_at", "service_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Cindi Wyman"], ["receiver_contact", "+64 955-563-7215"], ["pickup_instructions", "fugit"], ["delivery_instructions", "consequatur"], ["package_details", "[\"Est minima et.\"]"], ["created_at", "2022-11-03 09:29:34.141699"], ["updated_at", "2022-11-03 09:29:34.141699"], ["service_type", "Same Day Courier"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-11-03 12:31:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 22.4ms | Allocations: 665)
+Completed 200 OK in 190ms (Views: 84.2ms | ActiveRecord: 0.0ms | Allocations: 6404)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-03 12:31:29 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.4ms | Allocations: 349)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 1065)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-03 12:31:29 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 15)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-03 12:31:29 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 15)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 193)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-03 12:31:29 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 15)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 193)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 12:41:45 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (3.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.88ms)
+Completed 200 OK in 325ms (Views: 317.3ms | ActiveRecord: 13.1ms | Allocations: 20056)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 12:41:45 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (1.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.8ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 1.2ms | Allocations: 1893)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 12:42:00 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (2.0ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.05ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 2.0ms | Allocations: 1891)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 12:42:00 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (1.4ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.3ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 1.4ms | Allocations: 1875)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:42:28 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (3.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 64ms (Views: 14.4ms | ActiveRecord: 3.5ms | Allocations: 3227)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:42:28 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.7ms | Allocations: 866)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:42:55 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.7ms | Allocations: 862)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:42:55 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.78ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.0ms | Allocations: 879)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:43:01 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.5ms | Allocations: 866)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:43:01 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.6ms | Allocations: 866)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:43:12 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.7ms | Allocations: 862)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:43:13 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.8ms | Allocations: 862)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:43:16 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.7ms | Allocations: 866)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:43:16 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.9ms | Allocations: 866)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-03 12:45:00 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (2.3ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 41ms (Views: 15.3ms | ActiveRecord: 2.3ms | Allocations: 2314)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-03 12:45:00 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.8ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.8ms | Allocations: 866)
+
+
+Started GET "/mailers/previews/mailer_mailer_preview.rb" for 127.0.0.1 at 2022-11-03 12:49:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/mailers/previews/mailer_mailer_preview.rb"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-03 12:49:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/previews/mailer_mailer_preview.rb" for 127.0.0.1 at 2022-11-03 12:49:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/previews/mailer_mailer_preview.rb"):
+  
+Started GET "/mailer_mailer_preview.rb" for 127.0.0.1 at 2022-11-03 12:50:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/mailer_mailer_preview.rb"):
+  
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 12:54:22 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00005583d9068f58>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:54:22 +0300
+Completed 500 Internal Server Error in 522ms (ActiveRecord: 7.8ms | Allocations: 25854)
+
+
+Processing by OrdersController#index as */*
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00005583d903b8c8>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mOrder Load (0.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 108ms (Views: 103.4ms | ActiveRecord: 3.7ms | Allocations: 5606)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:54:23 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.0ms | Allocations: 913)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:54:37 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.8ms | Allocations: 867)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 12:54:37 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.7ms | Allocations: 866)
+
+
+Started GET "/mailer_mailer_preview.rb" for 127.0.0.1 at 2022-11-03 13:03:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/mailer_mailer_preview.rb"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-03 13:04:30 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 15)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 193)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 13:04:38 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.7ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.71ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 3.5ms | Allocations: 2017)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 13:04:39 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (1.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.55ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 1.1ms | Allocations: 1874)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 13:05:47 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Kileleshwa", "order"=>{"pickup"=>"Moringa", "destination"=>"Kileleshwa", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f872c16caf0>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Kileleshwa", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Kileleshwa", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.0ms | Allocations: 3921)
+
+
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00007f872c147de0>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:05:48 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.0ms | Allocations: 912)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:05:48 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.5ms | Allocations: 866)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 13:07:27 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00005583d8896320>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.0ms | Allocations: 3921)
+
+
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00007f87489a24d8>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:07:28 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.7ms | Allocations: 867)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:07:28 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.6ms | Allocations: 867)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 13:08:42 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"lindsy@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"lindsy@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f872c80bb18>, params: {"email"=>"lindsy@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"lindsy@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lindsy@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.43ms)
+Completed 200 OK in 50ms (Views: 14.4ms | ActiveRecord: 4.9ms | Allocations: 3063)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:08:42 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (1.8ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 1.8ms | Allocations: 1059)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:08:43 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.5ms | Allocations: 866)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 13:10:26 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f872c63a848>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 0.0ms | Allocations: 3921)
+
+
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00007f872c62e0e8>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:10:27 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.6ms | Allocations: 867)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:10:27 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.7ms | Allocations: 866)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 13:11:30 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f872c1a0a58>, params: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jdummy@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.54ms)
+Completed 200 OK in 18ms (Views: 5.5ms | ActiveRecord: 0.8ms | Allocations: 853)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:11:30 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.8ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.8ms | Allocations: 866)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:11:31 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.5ms | Allocations: 866)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 13:11:57 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f872c02dfe0>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.0ms | Allocations: 3918)
+
+
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00007f872c009758>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:11:58 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.8ms | Allocations: 867)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:11:58 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.5ms | Allocations: 866)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:12:21 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.63ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.8ms | Allocations: 866)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:12:21 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.7ms | Allocations: 866)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-03 13:16:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.1ms | Allocations: 559)
+Completed 200 OK in 85ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 5115)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 13:16:29 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f9a40022600>, params: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jdummy@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.52ms)
+Completed 200 OK in 75ms (Views: 45.7ms | ActiveRecord: 2.9ms | Allocations: 3310)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:16:29 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.9ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 200 OK in 76ms (Views: 29.5ms | ActiveRecord: 0.9ms | Allocations: 4836)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:16:30 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.8ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.8ms | Allocations: 883)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 13:16:59 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x0000560cd8d80758>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 6.0ms | Allocations: 22356)
+
+
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00007f9a3c51bf98>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:16:59 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (1.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 1.4ms | Allocations: 937)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:16:59 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.8ms | Allocations: 883)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 13:19:38 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f9a44279648>, params: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jdummy@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 61ms (Views: 11.1ms | ActiveRecord: 7.3ms | Allocations: 2390)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:19:39 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (1.6ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 68ms (Views: 24.3ms | ActiveRecord: 1.6ms | Allocations: 2900)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 13:19:40 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.9ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.9ms | Allocations: 866)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 13:20:37 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x0000560cd7730c00>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 5.2ms | Allocations: 6174)
+
+
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00007f9a54e70108>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:20:38 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 1.1ms | Allocations: 938)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:20:38 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.7ms | Allocations: 866)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 13:23:50 +0300
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:23:51 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f9a48011168>, params: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}} }[0m
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 7.5ms | Allocations: 7960)
+
+
+  
+NoMethodError (undefined method `sender_name' for #<Order:0x00007f9a54d56970>
+Did you mean?  senderName
+               senderName?
+               senderName=):
+  
+app/controllers/orders_controller.rb:16:in `create'
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 200 OK in 69ms (Views: 16.3ms | ActiveRecord: 3.2ms | Allocations: 2948)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 13:23:52 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.7ms | Allocations: 867)
+
+
