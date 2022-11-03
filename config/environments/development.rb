@@ -77,14 +77,25 @@ Rails.application.configure do
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
-  :user_name => '36bb8e6bf0e78c',
-  :password => '332263dcd93b78a20b087296f1b72c1a',
+  :user_name => '0e9b22240e3a11',
+  :password => '96b6b9424d177f',
   :address => 'smtp.mailtrap.io',
   :domain => 'smtp.mailtrap.io',
-  :port => '587',
-  :authentication => "plain"
+  :port => '2525',
+  :authentication => :cram_md5
 }
 config.action_mailer.default_url_options = { host: "send.smtp.mailtrap.io" }
+# config.action_mailer.smtp_settings {
+#   :address => 'smtp.gmail.com',
+#   :domain => 'smtp.gmail.com',
+#   :port => '587',
+#   :user_name => 'mkateboflo1@gmail.com',
+#   :password => 'Moringa2022.',
+#   :authentication => 'plain',
+#   :tls => false,
+#   :enable_starttls_auto => true
+# }
+# config.action_mailer.default_url_options = { host: "send.smtp.gmail.com" }
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true

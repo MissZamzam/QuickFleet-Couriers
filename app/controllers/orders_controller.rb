@@ -2,8 +2,8 @@ class OrdersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :order_not_found
   rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
-   before_action :find_order, only: [:show, :edit, :update, :destroy]
-  
+  before_action :find_order, only: [:show, :edit, :update, :destroy]
+
   def index
     @order = Order.all
     render json: @order
@@ -29,16 +29,18 @@ class OrdersController < ApplicationController
     if @order.valid?
       @order.save
       # OrderMailer.with(order: @order).new_order_email.deliver_now
-      OrderMailer.with(user:current_user, order: @order).new_order_email.deliver_now
-      # puts x
-       return ("Your order has been placed.")
+      # OrderMailer.with(user:current_user, order: @order).new_order_email.deliver_now
+      mail = OrderMailer.new_order_email(@order).deliver_now
+      puts "xxxxxxxxxxxxx"
+      puts mail
+      return ("Your order has been placed.")
       # render json: { error: "Thank you for your order! We'll get contact you soon!"}
-      redirect_to root_path 
+      redirect_to root_path
       # redirect_to "/orders", notice: "Your order has been placed."
     else
       # flash.now[:error] = "Your order form had some errors. Please check the form and resubmit."
       render json: { error: "Your order form had some errors. Please check the form and resubmit." }, status: unprocessable_entity
- 
+
       # render :json => { :errors => "Your order form had some errors. Please check the form and resubmit." }, :status => 420
       # render :new
     end
@@ -78,5 +80,4 @@ class OrdersController < ApplicationController
   def order_not_found
     render json: { error: "order not found" }, status: :not_found
   end
-
 end
