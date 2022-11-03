@@ -18899,3 +18899,156 @@ Started GET "/use_profiles" for 127.0.0.1 at 2022-11-02 14:52:26 +0300
   
 ActionController::RoutingError (No route matches [GET] "/use_profiles"):
   
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-02 11:53:43.420160"], ["updated_at", "2022-11-02 11:53:43.420160"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-02 11:53:43.429284"], ["updated_at", "2022-11-02 11:53:43.429284"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-02 11:53:43.439688"], ["updated_at", "2022-11-02 11:53:43.439688"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-02 11:53:43.446748"], ["updated_at", "2022-11-02 11:53:43.446748"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.4ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN123456"], ["sender_name", "Grace Neema"], ["receiver_name", "Marion Jefwa"], ["amount_paid", 8500], ["nature_of_goods", "Flamable"], ["pickup", "Kawangware"], ["destination", "Kenyatta"], ["delivery_id", 1], ["created_at", "2022-10-24 07:00:47.076000"], ["updated_at", "2022-10-24 07:01:51.306000"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN4563211"], ["sender_name", "Neema Maitha"], ["receiver_name", "Tuma Marion"], ["amount_paid", 10000], ["nature_of_goods", "Fragile"], ["pickup", "Moringa"], ["destination", "CBD"], ["delivery_id", 2], ["created_at", "2022-10-24 07:03:48.845000"], ["updated_at", "2022-10-24 07:03:48.845000"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN875543"], ["sender_name", "Nickson Shuku"], ["receiver_name", "Mkare Griffins"], ["amount_paid", 9000], ["nature_of_goods", "Perishable"], ["pickup", "Kenyatta"], ["destination", "Zimmer"], ["delivery_id", 3], ["created_at", "2022-10-24 07:05:17.263000"], ["updated_at", "2022-10-24 07:05:17.263000"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN4563211"], ["sender_name", "Neema Maitha"], ["receiver_name", "Tuma Marion"], ["amount_paid", 10000], ["nature_of_goods", "Fragile"], ["pickup", "Moringa"], ["destination", "CBD"], ["delivery_id", 4], ["created_at", "2022-10-24 07:09:09.190000"], ["updated_at", "2022-10-24 07:09:09.190000"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReceipt Create (0.3ms)[0m  [1m[32mINSERT INTO "receipts" ("receipt_no", "sender_name", "receiver_name", "amount_paid", "nature_of_goods", "pickup", "destination", "delivery_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receipt_no", "KEN875543"], ["sender_name", "Shuku Nickson"], ["receiver_name", "Griffins Mkare"], ["amount_paid", 9000], ["nature_of_goods", "Perishable"], ["pickup", "Moringa"], ["destination", "Coptic"], ["delivery_id", 5], ["created_at", "2022-10-24 07:24:43.210000"], ["updated_at", "2022-10-24 07:24:43.210000"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Chery Kuhic"], ["receiver_contact", "+220 731-259-0406"], ["pickup_instructions", "[\"Soluta commodi assumenda.\"]"], ["delivery_instructions", "[\"Et quia quia.\"]"], ["package_type", "3"], ["package_details", "[\"Illum laborum cum.\"]"], ["created_at", "2022-11-02 11:53:43.725834"], ["updated_at", "2022-11-02 11:53:43.725834"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.5ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Leandro Kassulke"], ["receiver_contact", "+52 (699) 669-3532"], ["pickup_instructions", "[\"Asperiores labore itaque.\"]"], ["delivery_instructions", "[\"Optio ipsam dolorem.\"]"], ["package_type", "3"], ["package_details", "[\"Iure similique non.\"]"], ["created_at", "2022-11-02 11:53:43.736491"], ["updated_at", "2022-11-02 11:53:43.736491"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Coy Ondricka VM"], ["receiver_contact", "+53 1-683-547-7357"], ["pickup_instructions", "[\"Sit sequi reiciendis.\"]"], ["delivery_instructions", "[\"Voluptas a molestiae.\"]"], ["package_type", "4"], ["package_details", "[\"Magnam ut aut.\"]"], ["created_at", "2022-11-02 11:53:43.748439"], ["updated_at", "2022-11-02 11:53:43.748439"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "The Hon. Sidney Kemmer"], ["receiver_contact", "+62 163-444-3242"], ["pickup_instructions", "[\"Quidem est saepe.\"]"], ["delivery_instructions", "[\"Iste exercitationem alias.\"]"], ["package_type", "2"], ["package_details", "[\"Cumque quas reiciendis.\"]"], ["created_at", "2022-11-02 11:53:43.757314"], ["updated_at", "2022-11-02 11:53:43.757314"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Milo Kris III"], ["receiver_contact", "+43 236.844.9965"], ["pickup_instructions", "[\"In eaque itaque.\"]"], ["delivery_instructions", "[\"Impedit quam nobis.\"]"], ["package_type", "1"], ["package_details", "[\"Quo eos ut.\"]"], ["created_at", "2022-11-02 11:53:43.766997"], ["updated_at", "2022-11-02 11:53:43.766997"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/orders" for 127.0.0.1 at 2022-11-02 14:55:06 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/orders"):
+  
+Started GET "/orders" for 127.0.0.1 at 2022-11-02 14:55:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/orders"):
+  
+Started GET "/orders" for 127.0.0.1 at 2022-11-02 14:55:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/orders"):
+  
+Started GET "/orders" for 127.0.0.1 at 2022-11-02 14:56:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 63ms (Views: 37.5ms | ActiveRecord: 0.3ms | Allocations: 16323)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-02 14:56:54 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1521)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-02 14:57:08 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"dsigdsi", "receiverName"=>"dksnids", "natureOfGoods"=>"ksgidn", "amountPaid"=>"isgisgnis", "pickup"=>"idsis", "destination"=>"dsings", "order"=>{"pickup"=>"idsis", "destination"=>"dsings", "senderName"=>"dsigdsi", "receiverName"=>"dksnids", "amountPaid"=>"isgisgnis", "natureOfGoods"=>"ksgidn"}}
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x00007f3320031f60>, params: {"senderName"=>"dsigdsi", "receiverName"=>"dksnids", "natureOfGoods"=>"ksgidn", "amountPaid"=>"isgisgnis", "pickup"=>"idsis", "destination"=>"dsings", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"idsis", "destination"=>"dsings", "senderName"=>"dsigdsi", "receiverName"=>"dksnids", "amountPaid"=>"isgisgnis", "natureOfGoods"=>"ksgidn"}} }[0m
+Started GET "/orders" for 127.0.0.1 at 2022-11-02 14:57:08 +0300
+Processing by OrdersController#index as */*
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "service_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "idsis"], ["destination", "dsings"], ["service_id", nil], ["created_at", "2022-11-02 11:57:08.326667"], ["updated_at", "2022-11-02 11:57:08.326667"], ["senderName", "dsigdsi"], ["receiverName", "dksnids"], ["amountPaid", 0], ["natureOfGoods", "ksgidn"]]
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.9ms | Allocations: 3794)
+
+
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (1.04ms)
+Completed 201 Created in 77ms (Views: 10.9ms | ActiveRecord: 12.9ms | Allocations: 23548)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-02 14:57:08 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.87ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 1684)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 09:25:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UseProfilesController#index as */*
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 14614)
+
+
+  
+NameError (uninitialized constant UseProfilesController::User_Profile):
+  
+app/controllers/use_profiles_controller.rb:8:in `index'
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 09:25:03 +0300
+Processing by UseProfilesController#index as */*
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+  
+NameError (uninitialized constant UseProfilesController::User_Profile):
+  
+app/controllers/use_profiles_controller.rb:8:in `index'
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 09:25:18 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f5bd80359b8>, params: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@smith.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 19ms (Views: 10.1ms | ActiveRecord: 0.8ms | Allocations: 3943)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 09:25:18 +0300
+Processing by UseProfilesController#index as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+  
+NameError (uninitialized constant UseProfilesController::User_Profile):
+  
+app/controllers/use_profiles_controller.rb:8:in `index'
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 09:25:18 +0300
+Processing by UseProfilesController#index as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+  
+NameError (uninitialized constant UseProfilesController::User_Profile):
+  
+app/controllers/use_profiles_controller.rb:8:in `index'
