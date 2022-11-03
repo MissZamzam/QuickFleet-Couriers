@@ -1217,3 +1217,56 @@ Processing by ReceiptsController#create as */*
 Completed 422 Unprocessable Entity in 40ms (Views: 3.5ms | ActiveRecord: 1.6ms | Allocations: 3209)
 
 
+Started GET "/" for 127.0.0.1 at 2022-11-02 10:28:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.9ms | Allocations: 559)
+Completed 200 OK in 80ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 5113)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-02 10:29:07 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (1.2ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.98ms)
+Completed 200 OK in 132ms (Views: 105.4ms | ActiveRecord: 1.2ms | Allocations: 3994)
+
+
+Started GET "/receipts" for 127.0.0.1 at 2022-11-02 10:29:07 +0300
+Processing by ReceiptsController#index as */*
+  [1m[36mReceipt Load (0.7ms)[0m  [1m[34mSELECT "receipts".* FROM "receipts"[0m
+  ↳ app/controllers/receipts_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.7ms | Allocations: 883)
+
+
+Started POST "/receipts" for 127.0.0.1 at 2022-11-02 10:30:15 +0300
+Processing by ReceiptsController#create as */*
+  Parameters: {"receipt_no"=>"QF2020", "sender_name"=>"Newton", "receiver_name"=>"Loretta", "nature_of_goods"=>"Fragile", "pickup"=>"Prestige", "destination"=>"Nairobi", "amount_paid"=>"1500", "receipt"=>{"receipt_no"=>"QF2020", "sender_name"=>"Newton", "receiver_name"=>"Loretta", "amount_paid"=>"1500", "nature_of_goods"=>"Fragile", "pickup"=>"Prestige", "destination"=>"Nairobi"}}
+[31mUnpermitted parameter: :receipt. Context: { controller: ReceiptsController, action: create, request: #<ActionDispatch::Request:0x00007fc7d44fd910>, params: {"receipt_no"=>"QF2020", "sender_name"=>"Newton", "receiver_name"=>"Loretta", "nature_of_goods"=>"Fragile", "pickup"=>"Prestige", "destination"=>"Nairobi", "amount_paid"=>"1500", "controller"=>"receipts", "action"=>"create", "receipt"=>{"receipt_no"=>"QF2020", "sender_name"=>"Newton", "receiver_name"=>"Loretta", "amount_paid"=>"1500", "nature_of_goods"=>"Fragile", "pickup"=>"Prestige", "destination"=>"Nairobi"}} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/receipts_controller.rb:22:in `create'
+  [1m[36mReceipt Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "receipts" WHERE "receipts"."receipt_no" = ? LIMIT ?[0m  [["receipt_no", "QF2020"], ["LIMIT", 1]]
+  ↳ app/controllers/receipts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/receipts_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.52ms)
+Completed 422 Unprocessable Entity in 1781ms (Views: 14.5ms | ActiveRecord: 5.8ms | Allocations: 373573)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-03 12:09:24 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.8ms | Allocations: 559)
+Completed 200 OK in 103ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 5113)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-03 12:09:25 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 350)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 1072)
+
+
