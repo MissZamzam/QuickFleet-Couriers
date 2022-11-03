@@ -85,17 +85,6 @@ config.action_mailer.smtp_settings = {
   :authentication => :cram_md5
 }
 config.action_mailer.default_url_options = { host: "send.smtp.mailtrap.io" }
-# config.action_mailer.smtp_settings {
-#   :address => 'smtp.gmail.com',
-#   :domain => 'smtp.gmail.com',
-#   :port => '587',
-#   :user_name => 'mkateboflo1@gmail.com',
-#   :password => 'Moringa2022.',
-#   :authentication => 'plain',
-#   :tls => false,
-#   :enable_starttls_auto => true
-# }
-# config.action_mailer.default_url_options = { host: "send.smtp.gmail.com" }
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
