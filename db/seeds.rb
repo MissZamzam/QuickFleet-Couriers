@@ -21,6 +21,30 @@ service4 = Service.create(
     category: "Same Day Courier",
     description: "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."
 )
+service5 = Service.create(
+    image_url: "https://i.pinimg.com/564x/ab/65/67/ab6567fca1d4911ba9462ab66911c881.jpg",
+    category: "Perishable Items",
+    description: "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."
+)
+service6 = Service.create(
+    image_url: "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg",
+    category: "Flammable Items",
+    description: "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."
+)
+service7 = Service.create(
+    image_url: "https://media.sciencephoto.com/image/f0220694/800wm",
+    category: "Bulk",
+    description: "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."
+)
+service8 = Service.create(
+    image_url: "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg",
+    category: "Fragile Goods",
+    description: "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."
+)
+
+
+
+
 
 Receipt.create([
     {

@@ -10,3 +10,4 @@ class Receipt < ApplicationRecord
     validates :nature_of_goods, inclusion: {in: %w(Flammable  Fragile  Perishable  Bulk  Medicals )}
     validates :amount_paid, presence: true, numericality: { greater_than: 300, less_than: 20000 }
 end
+ 
