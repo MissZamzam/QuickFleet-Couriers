@@ -1,12 +1,12 @@
 class OrderMailer < ApplicationMailer
   default from: "mkateboflo1@gmail.com"
 
-  #  def new_order_email
-  #      @order = order
+   def new_order_email(order)
+       @order = order
 
-  def new_order_email
-    @user = params[:user]
-    @order = params[:order]
+#   def new_order_email
+#     @user = params[:user]
+#     @order = params[:order]
 
     attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')
 
