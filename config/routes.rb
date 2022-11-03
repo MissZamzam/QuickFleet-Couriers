@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   resources :services
   resources :orders
   resources :use_profiles
@@ -8,13 +7,7 @@ Rails.application.routes.draw do
   resources :trackings, only: [:index, :show, :create, :update, :destroy]
   resources :receipts
   resources :users
-  # resources :users
-=======
-  resources :users
-  # resources :admin
-  # get "/me", to: "users#show"
   
->>>>>>> 68444e8920f71fb9a71279bf0e2a39d1a674a67c
   devise_for :admins, path: 'admin', path_names:{
     sign_in: 'login',
     sign_out: 'signout',

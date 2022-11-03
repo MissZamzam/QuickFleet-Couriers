@@ -4781,3 +4781,359 @@ Started GET "/receipts" for 127.0.0.1 at 2022-11-01 19:50:39 +0300
 ActionController::RoutingError (No route matches [GET] "/receipts"):
   
 >>>>>>> 68444e8920f71fb9a71279bf0e2a39d1a674a67c
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReceipts (20221019132515)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "receipts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receipt_no" varchar, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "delivery_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019132515"]]
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTrackings (20221019132526)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "receipt_id" integer, "pickup" varchar, "destination" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019132526"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDeliveries (20221019134107)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receiver_name" varchar, "receiver_contact" varchar, "pickup_instructions" text, "delivery_instructions" text, "package_type" varchar, "package_details" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221019134107"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20221024095704)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "service_id" integer, "delivery_id" integer, "receipt_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024095704"]]
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateUsers (20221024131614)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024131614"]]
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdmins (20221024132055)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_confirmation_token" ON "admins" ("confirmation_token")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_unlock_token" ON "admins" ("unlock_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221024132055"]]
+  [1m[36mTRANSACTION (9.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUseProfiles (20221025081826)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "name" varchar, "email" varchar, "telephone" varchar, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221025081826"]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveDeliveryId (20221026101129)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "delivery_id" integer DEFAULT NULL, "receipt_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","delivery_id","receipt_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","delivery_id","receipt_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "receipt_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","receipt_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","receipt_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "receipt_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","receipt_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","receipt_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221026101129"]]
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateServices (20221026140911)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "category" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221026140911"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemovingOrderColumns (20221027111340)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "sender_name" varchar DEFAULT NULL, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "aorders" ("id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","sender_name","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "receiver_name" varchar DEFAULT NULL, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aorders" ("id","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","receiver_name","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "amount_paid" integer DEFAULT NULL, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "aorders" ("id","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","amount_paid","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "nature_of_goods" varchar DEFAULT NULL, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aorders" ("id","nature_of_goods","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","nature_of_goods","pickup","destination","service_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "pickup" varchar DEFAULT NULL, "destination" varchar DEFAULT NULL, "service_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "orders" ("id","pickup","destination","service_id","created_at","updated_at")
+                     SELECT "id","pickup","destination","service_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221027111340"]]
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddingOrdersColumn (20221027111859)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[35mALTER TABLE "orders" ADD "senderName" varchar[0m
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "orders" ADD "receiverName" varchar[0m
+  [1m[35m (3.3ms)[0m  [1m[35mALTER TABLE "orders" ADD "amountPaid" integer[0m
+  [1m[35m (3.1ms)[0m  [1m[35mALTER TABLE "orders" ADD "natureOfGoods" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221027111859"]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.8ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-03 13:28:07.691961"], ["updated_at", "2022-11-03 13:28:07.691961"]]
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-03 13:28:07.727282"], ["updated_at", "2022-11-03 13:28:07.727282"]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (2.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-03 13:28:07.754674"], ["updated_at", "2022-11-03 13:28:07.754674"]]
+  [1m[36mTRANSACTION (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://img.freepik.com/free-photo/white-pill-container-blue-background_23-2148506747.jpg?w=2000"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 13:28:07.789764"], ["updated_at", "2022-11-03 13:28:07.789764"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ab/65/67/ab6567fca1d4911ba9462ab66911c881.jpg"], ["category", "Perishable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 13:28:07.816278"], ["updated_at", "2022-11-03 13:28:07.816278"]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg"], ["category", "Flammable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 13:28:07.846660"], ["updated_at", "2022-11-03 13:28:07.846660"]]
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.2ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.sciencephoto.com/image/f0220694/800wm"], ["category", "Bulk"], ["description", "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."], ["created_at", "2022-11-03 13:28:07.871060"], ["updated_at", "2022-11-03 13:28:07.871060"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.2ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-03 13:28:07.893843"], ["updated_at", "2022-11-03 13:28:07.893843"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-03 13:29:04.782321"], ["updated_at", "2022-11-03 13:29:04.782321"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-03 13:29:04.815136"], ["updated_at", "2022-11-03 13:29:04.815136"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.8ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-03 13:29:04.845956"], ["updated_at", "2022-11-03 13:29:04.845956"]]
+  [1m[36mTRANSACTION (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://img.freepik.com/free-photo/white-pill-container-blue-background_23-2148506747.jpg?w=2000"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 13:29:04.876705"], ["updated_at", "2022-11-03 13:29:04.876705"]]
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ab/65/67/ab6567fca1d4911ba9462ab66911c881.jpg"], ["category", "Perishable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 13:29:04.904216"], ["updated_at", "2022-11-03 13:29:04.904216"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.2ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg"], ["category", "Flammable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-03 13:29:04.931609"], ["updated_at", "2022-11-03 13:29:04.931609"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.2ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.sciencephoto.com/image/f0220694/800wm"], ["category", "Bulk"], ["description", "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."], ["created_at", "2022-11-03 13:29:04.954490"], ["updated_at", "2022-11-03 13:29:04.954490"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.2ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-03 13:29:04.978214"], ["updated_at", "2022-11-03 13:29:04.978214"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2022-11-03 16:29:46 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 22.5ms | Allocations: 559)
+Completed 200 OK in 82ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 5115)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:30:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/services"):
+  
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:30:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/services"):
+  
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:30:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/services"):
+  
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:30:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/services"):
+  
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:31:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/services"):
+  
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:37:14 +0300
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:37:15 +0300
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (1.6ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.73ms)
+Completed 200 OK in 382ms (Views: 361.0ms | ActiveRecord: 15.8ms | Allocations: 21208)
+
+
+Processing by ServicesController#index as */*
+  [1m[36mService Load (1.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.03ms)
+Completed 200 OK in 101ms (Views: 92.3ms | ActiveRecord: 9.1ms | Allocations: 5185)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-03 16:37:16 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (1.5ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.99ms)
+Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 1.5ms | Allocations: 2888)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 16:37:33 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fb124be46c8>, params: {"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"jdummy@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jdummy@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.71ms)
+Completed 200 OK in 47ms (Views: 13.3ms | ActiveRecord: 3.7ms | Allocations: 3117)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:37:33 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (1.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 33ms (Views: 11.1ms | ActiveRecord: 1.1ms | Allocations: 2498)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:37:33 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.6ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 866)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-03 16:37:54 +0300
+Processing by OrdersController#create as */*
+  Parameters: {"senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile", "pickup"=>"Moringa", "destination"=>"Nairobi", "order"=>{"pickup"=>"Moringa", "destination"=>"Nairobi", "senderName"=>"Janet ", "receiverName"=>"Loretta", "natureOfGoods"=>"Fragile"}}
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 16:37:54 +0300
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mOrder Create (2.0ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "service_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Moringa"], ["destination", "Nairobi"], ["service_id", nil], ["created_at", "2022-11-03 13:37:54.651957"], ["updated_at", "2022-11-03 13:37:54.651957"], ["senderName", "Janet "], ["receiverName", "Loretta"], ["amountPaid", nil], ["natureOfGoods", "Fragile"]]
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:24:in `create'
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (180.91ms)
+Processing by OrdersController#index as */*
+Completed 500 Internal Server Error in 469ms (ActiveRecord: 15.0ms | Allocations: 22805)
+
+
+  
+NoMethodError (undefined method `use_profile_id' for #<Order:0x0000560055f3bf50>):
+  
+app/controllers/orders_controller.rb:27:in `create'
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (257.51ms)
+Completed 500 Internal Server Error in 663ms (ActiveRecord: 4.1ms | Allocations: 23714)
+
+
+  
+NoMethodError (undefined method `use_profile_id' for #<Order:0x00007fb124fd2c08>):
+  
+app/controllers/orders_controller.rb:9:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 16:37:56 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (186.85ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.8ms | Allocations: 4325)
+
+
+  
+NoMethodError (undefined method `use_profile_id' for #<Order:0x00007fb124abcca0>):
+  
+app/controllers/orders_controller.rb:9:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 16:38:14 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (1.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (230.27ms)
+Completed 500 Internal Server Error in 249ms (ActiveRecord: 1.2ms | Allocations: 4325)
+
+
+  
+NoMethodError (undefined method `use_profile_id' for #<Order:0x00007fb10c302b30>):
+  
+app/controllers/orders_controller.rb:9:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 16:38:15 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (173.91ms)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.8ms | Allocations: 4327)
+
+
+  
+NoMethodError (undefined method `use_profile_id' for #<Order:0x00005600560aa008>):
+  
+app/controllers/orders_controller.rb:9:in `index'
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 16:38:54 +0300
+Processing by OrdersController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.43ms)
+Completed 200 OK in 18ms (Views: 10.9ms | Allocations: 850)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-03 16:38:55 +0300
+Processing by OrdersController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.28ms)
+Completed 200 OK in 6ms (Views: 4.5ms | Allocations: 306)
+
+
