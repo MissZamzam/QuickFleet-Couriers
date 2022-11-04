@@ -49,6 +49,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_03_232230) do
   end
 
   create_table "orders", force: :cascade do |t|
+    t.string "sender_name"
+    t.string "receiver_name"
+    t.string "nature_of_goods"
     t.string "pickup"
     t.string "destination"
     t.integer "use_profile_id"
@@ -98,13 +101,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_03_232230) do
 
   create_table "use_profiles", force: :cascade do |t|
     t.string "avatar"
-    t.string "name"
-    t.string "email"
     t.string "telephone"
     t.string "location"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "firstName"
+    t.string "lastName"
   end
 
   create_table "users", force: :cascade do |t|

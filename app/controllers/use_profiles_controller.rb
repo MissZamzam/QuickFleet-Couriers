@@ -38,7 +38,7 @@ class UseProfilesController < ApplicationController
         private
 
         def user_profile_params
-            params.permit(:avatar, :name, :email, :telephone, :location)
+            params.permit(:avatar, :firstName, :lastName, :telephone, :location)
         end
 
         def unprocessable_entity(invalid)
