@@ -1,37 +1,37 @@
 class UserProfilesController < ApplicationController
-    rescue_from ActiveRecord::RecordNotFound, with: :user_profile_not_found
-    rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
+    # rescue_from ActiveRecord::RecordNotFound, with: :user_profile_not_found
+    # rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
 
         # GET /userprofiles
         def index
-            user_profiles = UseProfile.all
+            user_profiles = UserProfile.all
             render json: user_profiles
         end
         
 
         # GET /userprofiles/:id
         def show
-            user_profile = UseProfile.find_by(id: params[:id])
+            user_profile = UserProfile.find_by(id: params[:id])
             render json: user_profile, status: :ok
         end
 
         # POST/userprofile
         def create
-            user_profile = UseProfile.create!(user_profile_params)
+            user_profile = UserProfile.create!(user_profile_params)
             render json: user_profile, status: :created
         end
 
         # PATCH /user_profile/:id
         def update
-            user_profile = UseProfile.find(id: params[:id])
+            user_profile = UserProfile.find(id: params[:id])
             user_profile.update!(user_profile_params)
             render json: user_profile, status: :ok
         end
 
         # DELETE /user_profiles/:id
         def destroy
-            user_profile = UseProfile.find(id: params[:id])
+            user_profile = UserProfile.find(id: params[:id])
             User_Profile.destroy
             head :no_content
         end
