@@ -2,8 +2,9 @@
 class OrderMailerPreview < ActionMailer::Preview
   def new_order_email
     # Set up a temporary order for the preview
-    order = Order.new(senderName: "Zamzam", receiverName: "Janet", pickup: "Moringa", destination: "Nairobi", natureOfGoods: "Perishable")
+    # order = Order.new(senderName: "Zamzam", receiverName: "Janet", pickup: "Moringa", destination: "Nairobi", natureOfGoods: "Perishable")
 
-    OrderMailer.with(order: order).new_order_email
+    receipt =Receipt.first
+    OrderMailer.new_order_email(receipt)
   end
 end

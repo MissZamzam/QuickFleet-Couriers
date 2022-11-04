@@ -1,12 +1,16 @@
 class OrderMailer < ApplicationMailer
+  default from: "mkateboflo1@gmail.com"
 
-    # default from: 'notifications@example.com'
+   def new_order_email(receipt)
+       @receipt = receipt
 
-    def new_order_email
-        # @order = order
-     @order = params[:order]
+    attachments['receipt1.png'] = File.read('app/assets/images/receipt1.png')
 
-     mail(to: "loreydjefwa@gmail.com", subject: "Your Order is Approved!")
+    #   mail to: User.first.email, cc: User.all.pluck(:email), subject: "Order Approval!"
+    mail(to: "loreydjefwa@gmail.com",
+         cc: User.all.pluck(:email),
+         subject: "Order Approval!")
+    #  mail(to: "jannylynemiaz@gmail.com", subject: "Order Approval!")
 
-    end
+  end
 end
