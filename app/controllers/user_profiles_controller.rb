@@ -1,52 +1,51 @@
 class UserProfilesController < ApplicationController
-    # rescue_from ActiveRecord::RecordNotFound, with: :user_profile_not_found
-    # rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
-
-
-        # GET /userprofiles
+        rescue_from ActiveRecord::RecordNotFound, with: :user_not_found
+        rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
+    
+        # GET /rprofiles
         def index
-            user_profiles = UserProfile.all
-            render json: user_profiles
+            profiles = UserProfile.all
+            render json: profiles
         end
-        
-
-        # GET /userprofiles/:id
+    
+        # GET /profiles/:id
         def show
-            user_profile = UserProfile.find_by(id: params[:id])
-            render json: user_profile, status: :ok
+            userprofile = UserProfile.find_by(id: params[:id])
+            render json: UserProfile, status: :ok
         end
-
-        # POST/userprofile
+    
+        # POST/profiles
         def create
-            user_profile = UserProfile.create!(user_profile_params)
-            render json: user_profile, status: :created
+            userprofile = UserProfile.create!(user_params)
+            render json: userprofile, status: :created
         end
-
-        # PATCH /user_profile/:id
+    
+        # PATCH /profiles/:id
         def update
-            user_profile = UserProfile.find(id: params[:id])
-            user_profile.update!(user_profile_params)
-            render json: user_profile, status: :ok
+            userprofile = UserProfile.find(id: params[:id])
+            userprofile.update!(user_params)
+            render json: userprofile, status: :ok
         end
-
-        # DELETE /user_profiles/:id
+    
+        # DELETE /profiles/:id
         def destroy
-            user_profile = UserProfile.find(id: params[:id])
-            User_Profile.destroy
+            userprofile = UserProfile.find(id: params[:id])
+            UserProfile.destroy
             head :no_content
         end
-
+    
         private
-
-        def user_profile_params
-            params.permit(:avatar, :firstName, :lastName, :telephone, :location)
+    
+        def user_params
+            params.permit(:firstName, :lastName, :location, :telephone)
         end
-
+    
         def unprocessable_entity(invalid)
             render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
         end
-
-        def delivery_not_found
-            render json: { error: "user_profile not found" }, status: :not_found
+    
+        def user_not_found
+            render json: { error: "user not found" }, status: :not_found
         end
+    
 end
