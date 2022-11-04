@@ -1,19 +1,8 @@
 # QUICKFLEET-COURIER-SERVICE
 
-   ## By Zamzam Hassan
-   ## By Janet Ngei
-   ## By Loretta Jefwa
-   ## By Alvin Ndung'u
-   ## By Newton Ombese
-
 ## Table of Content
 
 - [QUICKFLEET-COURIER-SERVICE](#quickfleet-courier-service)
-  - [By Zamzam Hassan](#by-zamzam-hassan)
-  - [By Janet Ngei](#by-janet-ngei)
-  - [By Loretta Jefwa](#by-loretta-jefwa)
-  - [By Alvin Ndung'u](#by-alvin-ndungu)
-  - [By Newton Ombese](#by-newton-ombese)
   - [Table of Content](#table-of-content)
   - [Description](#description)
   - [Features](#features)
