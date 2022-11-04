@@ -109,16 +109,16 @@ service8 = Service.create(
 #     }
 # ])
 
-5.times do
-seeded_deliveries = Delivery.create!(
-    receiver_name: Faker::Name.name,
-    receiver_contact: Faker::PhoneNumber.cell_phone_with_country_code,
-    pickup_instructions: Faker::Lorem.sentences(number: 1),
-    delivery_instructions: Faker::Lorem.sentences(number: 1),
-    package_type: rand(1..4),
-    package_details: Faker::Lorem.sentences(number: 1),
-)
-end
+# 5.times do
+# seeded_deliveries = Delivery.create!(
+#     receiver_name: Faker::Name.name,
+#     receiver_contact: Faker::PhoneNumber.cell_phone_with_country_code,
+#     pickup_instructions: Faker::Lorem.sentences(number: 1),
+#     delivery_instructions: Faker::Lorem.sentences(number: 1),
+#     package_type: rand(1..4),
+#     package_details: Faker::Lorem.sentences(number: 1),
+# )
+# end
 
 # 5.times do
 #     seeded_orders = Order.create(
