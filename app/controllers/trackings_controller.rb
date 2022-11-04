@@ -30,7 +30,7 @@ class TrackingsController < ApplicationController
         render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
       end
     
-      def tenant_not_found
+      def tracking_not_found
         render json: { error: "tracking not found" }, status: :not_found
       end
 

@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :order_not_found
   rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
-   before_action :find_order, only: [:show, :edit, :update, :destroy]
+   before_action :find_order, only: [:index, :show, :edit, :update, :destroy]
   
   def index
     @order = Order.all
