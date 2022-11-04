@@ -12670,3 +12670,1544 @@ Migrating to RemovingAddingUseProfileEmailColumn (20221103124331)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Mr. Natacha Price"], ["receiver_contact", "+224 138-206-6861"], ["pickup_instructions", "[\"Nemo recusandae autem.\"]"], ["delivery_instructions", "[\"Repudiandae sunt minima.\"]"], ["package_type", "2"], ["package_details", "[\"Tempora numquam at.\"]"], ["created_at", "2022-11-03 12:43:57.405817"], ["updated_at", "2022-11-03 12:43:57.405817"]]
   [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 15:53:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 100ms (Views: 76.3ms | ActiveRecord: 1.3ms | Allocations: 32964)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 15:53:07 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 1672)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 15:53:42 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f00c802e228>, params: {"email"=>"alvin@smith.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"alvin@smith.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@smith.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.28ms)
+Completed 200 OK in 26ms (Views: 7.7ms | ActiveRecord: 1.4ms | Allocations: 3722)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 15:58:34 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f00cc02fc50>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-03 15:58:45 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f00c00113d8>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started POST "/users/signup" for 127.0.0.1 at 2022-11-03 16:18:55 +0300
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:18:55 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (1.4ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.44ms)
+Completed 200 OK in 94ms (Views: 80.8ms | ActiveRecord: 7.1ms | Allocations: 1880)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:18:55 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 1669)
+
+
+Processing by Users::Devise::RegistrationsController#create as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f00e01938f8>, params: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}} }[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 742ms (Views: 3.8ms | ActiveRecord: 0.7ms | Allocations: 369653)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-03 16:34:46 +0300
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:34:46 +0300
+Started POST "/users/signup" for 127.0.0.1 at 2022-11-03 16:34:46 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 3.8ms | Allocations: 1897)
+
+
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Processing by Users::Devise::RegistrationsController#create as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f00c811ab00>, params: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}} }[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 9ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 2346)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:34:46 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1656)
+
+
+Started POST "/users/signup" for 127.0.0.1 at 2022-11-03 16:35:33 +0300
+Processing by Users::Devise::RegistrationsController#create as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f00cc067bf0>, params: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}} }[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 10ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-03 16:35:33 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:35:33 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1656)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:35:33 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 1655)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-03 16:37:09 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:37:09 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (2.8ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.74ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 2.8ms | Allocations: 1656)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:37:09 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 1655)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-03 16:38:22 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:38:22 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1654)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-03 16:38:22 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.76ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 1655)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-04 03:42:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.23ms)
+Completed 200 OK in 52ms (Views: 35.4ms | ActiveRecord: 1.1ms | Allocations: 35785)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-11-04 03:42:09 +0300
+Processing by ServicesController#index as */*
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ app/controllers/services_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.24ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 5556)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 03:42:21 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00005630daeb1c78>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 10ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 3723)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:42:21 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 1.2ms | Allocations: 17085)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:42:22 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 1672)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 03:43:48 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fbd5c70ef60>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 12ms (Views: 3.0ms | ActiveRecord: 1.5ms | Allocations: 3039)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:43:48 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 1.5ms | Allocations: 4332)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:43:48 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 1655)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 03:44:08 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fbd480eb728>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1506)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:44:08 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 1655)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:44:08 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (3.4ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 3.4ms | Allocations: 1655)
+
+
+Started POST "/users/signup" for 127.0.0.1 at 2022-11-04 03:44:45 +0300
+Processing by Users::Devise::RegistrationsController#create as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007fbd50138ae8>, params: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}} }[0m
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-04 03:44:45 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:44:45 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 200 OK in 126ms (Views: 123.8ms | ActiveRecord: 1.5ms | Allocations: 123047)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 03:44:45 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 8654)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 483ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 382410)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 04:45:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fb37c4ccac0>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.54ms)
+Completed 200 OK in 74ms (Views: 20.6ms | ActiveRecord: 2.0ms | Allocations: 18634)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:45:30 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.89ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 1.7ms | Allocations: 20104)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:45:30 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 1672)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 04:45:56 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fb35c01a010>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:45:56 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1655)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:45:56 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 1655)
+
+
+Started POST "/users/signup" for 127.0.0.1 at 2022-11-04 04:46:13 +0300
+Processing by Users::Devise::RegistrationsController#create as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007fb364079af8>, params: {"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"email"=>"", "password"=>"[FILTERED]", "username"=>"", "password_confirmation"=>"[FILTERED]"}} }[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 743ms (Views: 4.9ms | ActiveRecord: 1.6ms | Allocations: 370734)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 04:47:15 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fb36802faa8>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1523)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-04 04:47:16 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:47:16 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 1654)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:47:16 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.95ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 1657)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 04:49:25 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fb36c55d9e0>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1506)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-04 04:49:36 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:49:36 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 1677)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:49:36 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 1655)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:50:48 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 2.6ms | Allocations: 3875)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.8ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-04 01:51:21.021078"], ["updated_at", "2022-11-04 01:51:21.021078"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-04 01:51:21.037978"], ["updated_at", "2022-11-04 01:51:21.037978"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-04 01:51:21.049331"], ["updated_at", "2022-11-04 01:51:21.049331"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 01:51:21.057447"], ["updated_at", "2022-11-04 01:51:21.057447"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ab/65/67/ab6567fca1d4911ba9462ab66911c881.jpg"], ["category", "Perishable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 01:51:21.066093"], ["updated_at", "2022-11-04 01:51:21.066093"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg"], ["category", "Flammable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 01:51:21.074176"], ["updated_at", "2022-11-04 01:51:21.074176"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.sciencephoto.com/image/f0220694/800wm"], ["category", "Bulk"], ["description", "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."], ["created_at", "2022-11-04 01:51:21.084133"], ["updated_at", "2022-11-04 01:51:21.084133"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-04 01:51:21.093075"], ["updated_at", "2022-11-04 01:51:21.093075"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Raul Parisian"], ["receiver_contact", "+351 1-841-774-8415"], ["pickup_instructions", "[\"Sint occaecati dolores.\"]"], ["delivery_instructions", "[\"Repellat ullam sint.\"]"], ["package_type", "3"], ["package_details", "[\"Autem beatae quis.\"]"], ["created_at", "2022-11-04 01:51:21.320825"], ["updated_at", "2022-11-04 01:51:21.320825"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Humberto Legros"], ["receiver_contact", "+689 (746) 925-2893"], ["pickup_instructions", "[\"Harum dolorum officia.\"]"], ["delivery_instructions", "[\"Et sed est.\"]"], ["package_type", "4"], ["package_details", "[\"Eos quis ducimus.\"]"], ["created_at", "2022-11-04 01:51:21.333923"], ["updated_at", "2022-11-04 01:51:21.333923"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Zelda Ullrich"], ["receiver_contact", "+230 1-392-042-5569"], ["pickup_instructions", "[\"Temporibus explicabo non.\"]"], ["delivery_instructions", "[\"Sed ut ab.\"]"], ["package_type", "4"], ["package_details", "[\"Molestiae molestiae occaecati.\"]"], ["created_at", "2022-11-04 01:51:21.344058"], ["updated_at", "2022-11-04 01:51:21.344058"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.5ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Doloris Rath"], ["receiver_contact", "+32 (782) 266-5140"], ["pickup_instructions", "[\"Enim ipsum maxime.\"]"], ["delivery_instructions", "[\"Doloremque voluptas alias.\"]"], ["package_type", "3"], ["package_details", "[\"Dolores rem eum.\"]"], ["created_at", "2022-11-04 01:51:21.354423"], ["updated_at", "2022-11-04 01:51:21.354423"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Cortez Johnson"], ["receiver_contact", "+960 1-359-830-5712"], ["pickup_instructions", "[\"In sit eum.\"]"], ["delivery_instructions", "[\"Facere cumque aut.\"]"], ["package_type", "3"], ["package_details", "[\"Aliquam voluptas dolor.\"]"], ["created_at", "2022-11-04 01:51:21.365504"], ["updated_at", "2022-11-04 01:51:21.365504"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:51:32 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.75ms)
+Completed 200 OK in 79ms (Views: 51.4ms | ActiveRecord: 1.5ms | Allocations: 32297)
+
+
+Started GET "/use_profile" for 127.0.0.1 at 2022-11-04 04:51:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:51:51 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.75ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 1027)
+
+
+Started POST "/use_profiles" for 127.0.0.1 at 2022-11-04 04:52:47 +0300
+Processing by UseProfilesController#create as */*
+  Parameters: {"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "firstName"=>"Bofulo", "lastName"=>"Newton", "telephone"=>"0712435659", "location"=>"Nairobi", "use_profile"=>{"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "telephone"=>"0712435659", "location"=>"Nairobi", "firstName"=>"Bofulo", "lastName"=>"Newton"}}
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x00007f4aa402f9e0>, params: {"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "firstName"=>"Bofulo", "lastName"=>"Newton", "telephone"=>"0712435659", "location"=>"Nairobi", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "telephone"=>"0712435659", "location"=>"Nairobi", "firstName"=>"Bofulo", "lastName"=>"Newton"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (1.2ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", "https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg"], ["telephone", "0712435659"], ["location", "Nairobi"], ["created_at", "2022-11-04 01:52:47.226932"], ["updated_at", "2022-11-04 01:52:47.226932"], ["firstName", "Bofulo"], ["lastName", "Newton"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 201 Created in 24ms (Views: 1.9ms | ActiveRecord: 8.9ms | Allocations: 2438)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "admins"[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_confirmation_token" ON "admins" ("confirmation_token")[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_unlock_token" ON "admins" ("unlock_token")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "deliveries"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receiver_name" varchar, "receiver_contact" varchar, "pickup_instructions" text, "delivery_instructions" text, "package_type" varchar, "package_details" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pickup" varchar, "destination" varchar, "service_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "senderName" varchar, "receiverName" varchar, "amountPaid" integer, "natureOfGoods" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "receipts"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "receipts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receipt_no" varchar, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "delivery_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "category" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "trackings"[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "receipt_id" integer, "pickup" varchar, "destination" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "use_profiles"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "telephone" varchar, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "firstName" varchar, "lastName" varchar)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221103124331)[0m
+  [1m[35m (4.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221019132515),
+(20221019132526),
+(20221019134107),
+(20221024095704),
+(20221024131614),
+(20221024132055),
+(20221025081826),
+(20221026101129),
+(20221026140911),
+(20221027111340),
+(20221027111859),
+(20221103123622);
+
+[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-04 01:52:55.989644"], ["updated_at", "2022-11-04 01:52:55.989644"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "1904cd307cf4491b4fa7874d42ab8a7657f1a6e3"], ["created_at", "2022-11-04 01:52:56.007634"], ["updated_at", "2022-11-04 01:52:56.007634"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "admins"[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_confirmation_token" ON "admins" ("confirmation_token")[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_unlock_token" ON "admins" ("unlock_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "deliveries"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receiver_name" varchar, "receiver_contact" varchar, "pickup_instructions" text, "delivery_instructions" text, "package_type" varchar, "package_details" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pickup" varchar, "destination" varchar, "service_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "senderName" varchar, "receiverName" varchar, "amountPaid" integer, "natureOfGoods" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "receipts"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "receipts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receipt_no" varchar, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "delivery_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "category" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "trackings"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "receipt_id" integer, "pickup" varchar, "destination" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "use_profiles"[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "telephone" varchar, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "firstName" varchar, "lastName" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221103124331)[0m
+  [1m[35m (4.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221019132515),
+(20221019132526),
+(20221019134107),
+(20221024095704),
+(20221024131614),
+(20221024132055),
+(20221025081826),
+(20221026101129),
+(20221026140911),
+(20221027111340),
+(20221027111859),
+(20221103123622);
+
+[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-04 01:52:56.161773"], ["updated_at", "2022-11-04 01:52:56.161773"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2022-11-04 01:52:56.172458"], ["key", "environment"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "1904cd307cf4491b4fa7874d42ab8a7657f1a6e3"], ["created_at", "2022-11-04 01:52:56.184230"], ["updated_at", "2022-11-04 01:52:56.184230"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-04 01:52:56.231010"], ["updated_at", "2022-11-04 01:52:56.231010"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.7ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-04 01:52:56.243461"], ["updated_at", "2022-11-04 01:52:56.243461"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-04 01:52:56.258646"], ["updated_at", "2022-11-04 01:52:56.258646"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 01:52:56.270861"], ["updated_at", "2022-11-04 01:52:56.270861"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ab/65/67/ab6567fca1d4911ba9462ab66911c881.jpg"], ["category", "Perishable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 01:52:56.281373"], ["updated_at", "2022-11-04 01:52:56.281373"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg"], ["category", "Flammable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 01:52:56.290731"], ["updated_at", "2022-11-04 01:52:56.290731"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.sciencephoto.com/image/f0220694/800wm"], ["category", "Bulk"], ["description", "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."], ["created_at", "2022-11-04 01:52:56.299554"], ["updated_at", "2022-11-04 01:52:56.299554"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-04 01:52:56.308264"], ["updated_at", "2022-11-04 01:52:56.308264"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.5ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Gov. Paulette Torphy"], ["receiver_contact", "+591 300-761-8109"], ["pickup_instructions", "[\"Perspiciatis est sed.\"]"], ["delivery_instructions", "[\"Omnis praesentium similique.\"]"], ["package_type", "4"], ["package_details", "[\"Enim aliquid corrupti.\"]"], ["created_at", "2022-11-04 01:52:56.546009"], ["updated_at", "2022-11-04 01:52:56.546009"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Margret Prohaska"], ["receiver_contact", "+81 (522) 018-8553"], ["pickup_instructions", "[\"Deserunt iure quis.\"]"], ["delivery_instructions", "[\"Omnis repudiandae sequi.\"]"], ["package_type", "3"], ["package_details", "[\"Fugiat eum maxime.\"]"], ["created_at", "2022-11-04 01:52:56.557456"], ["updated_at", "2022-11-04 01:52:56.557456"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Laverne Reilly"], ["receiver_contact", "+227 576.129.8150"], ["pickup_instructions", "[\"Eveniet ea illo.\"]"], ["delivery_instructions", "[\"Tempore debitis dolores.\"]"], ["package_type", "2"], ["package_details", "[\"Fugiat incidunt nostrum.\"]"], ["created_at", "2022-11-04 01:52:56.565601"], ["updated_at", "2022-11-04 01:52:56.565601"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Cathrine Abbott"], ["receiver_contact", "+996 702.815.4474"], ["pickup_instructions", "[\"Cupiditate sed ex.\"]"], ["delivery_instructions", "[\"Repellat eligendi quasi.\"]"], ["package_type", "3"], ["package_details", "[\"Maxime eligendi nisi.\"]"], ["created_at", "2022-11-04 01:52:56.573727"], ["updated_at", "2022-11-04 01:52:56.573727"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Chase Ward Ret."], ["receiver_contact", "+1-684 1-561-636-2067"], ["pickup_instructions", "[\"Dolor reiciendis libero.\"]"], ["delivery_instructions", "[\"Sit ex qui.\"]"], ["package_type", "3"], ["package_details", "[\"Hic voluptatibus laudantium.\"]"], ["created_at", "2022-11-04 01:52:56.585323"], ["updated_at", "2022-11-04 01:52:56.585323"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:53:06 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UseProfilesController#index as */*
+  Parameters: {"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "firstName"=>"Bofulo", "lastName"=>"Newton", "telephone"=>"0712435659", "location"=>"Nairobi", "use_profile"=>{"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "telephone"=>"0712435659", "location"=>"Nairobi", "firstName"=>"Bofulo", "lastName"=>"Newton"}}
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 39ms (Views: 16.2ms | ActiveRecord: 1.2ms | Allocations: 14829)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:53:07 +0300
+Processing by UseProfilesController#index as */*
+  Parameters: {"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "firstName"=>"Bofulo", "lastName"=>"Newton", "telephone"=>"0712435659", "location"=>"Nairobi", "use_profile"=>{"avatar"=>"https://cdn.pixabay.com/photo/2014/12/16/21/59/gifts-570821_960_720.jpg", "telephone"=>"0712435659", "location"=>"Nairobi", "firstName"=>"Bofulo", "lastName"=>"Newton"}}
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:54:35 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.15ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 1527)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:54:35 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 04:54:45 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007ff7f0031570>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 13ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 3733)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-04 04:55:01 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:55:01 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.4ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 1503)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:55:01 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 1504)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:56:00 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 1504)
+
+
+Started POST "/use_profile" for 127.0.0.1 at 2022-11-04 04:56:15 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/use_profile"):
+  
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:56:15 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 1503)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:56:15 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.6ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 1504)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:56:39 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1504)
+
+
+Started POST "/use_profiles" for 127.0.0.1 at 2022-11-04 04:59:21 +0300
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:59:21 +0300
+Processing by UseProfilesController#create as */*
+  Parameters: {"firstName"=>"Newton", "lastName"=>"Ombese", "location"=>"Nairobi", "telephone"=>"0758982500", "use_profile"=>{"telephone"=>"0758982500", "location"=>"Nairobi", "firstName"=>"Newton", "lastName"=>"Ombese"}}
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x00007ff7e80df3f8>, params: {"firstName"=>"Newton", "lastName"=>"Ombese", "location"=>"Nairobi", "telephone"=>"0758982500", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"telephone"=>"0758982500", "location"=>"Nairobi", "firstName"=>"Newton", "lastName"=>"Ombese"}} }[0m
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.32ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 2.3ms | Allocations: 1671)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 04:59:21 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1504)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (9.3ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", nil], ["telephone", "0758982500"], ["location", "Nairobi"], ["created_at", "2022-11-04 01:59:21.965997"], ["updated_at", "2022-11-04 01:59:21.965997"], ["firstName", "Newton"], ["lastName", "Ombese"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 201 Created in 157ms (Views: 7.7ms | ActiveRecord: 23.9ms | Allocations: 26392)
+
+
+Started POST "/use_profiles" for 127.0.0.1 at 2022-11-04 05:00:32 +0300
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:00:32 +0300
+Processing by UseProfilesController#index as */*
+Processing by UseProfilesController#create as */*
+  [1m[36mUseProfile Load (3.8ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  Parameters: {"firstName"=>"Newton", "lastName"=>"fsknfl", "location"=>"kvank", "telephone"=>"0758982500", "use_profile"=>{"telephone"=>"0758982500", "location"=>"kvank", "firstName"=>"Newton", "lastName"=>"fsknfl"}}
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x00007ff7f81a2848>, params: {"firstName"=>"Newton", "lastName"=>"fsknfl", "location"=>"kvank", "telephone"=>"0758982500", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"telephone"=>"0758982500", "location"=>"kvank", "firstName"=>"Newton", "lastName"=>"fsknfl"}} }[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.19ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 3.8ms | Allocations: 2079)
+
+
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (1.9ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", nil], ["telephone", "0758982500"], ["location", "kvank"], ["created_at", "2022-11-04 02:00:32.811189"], ["updated_at", "2022-11-04 02:00:32.811189"], ["firstName", "Newton"], ["lastName", "fsknfl"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 201 Created in 30ms (Views: 2.6ms | ActiveRecord: 11.3ms | Allocations: 3910)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:00:32 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.9ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1806)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "admins"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_confirmation_token" ON "admins" ("confirmation_token")[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_unlock_token" ON "admins" ("unlock_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "deliveries"[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receiver_name" varchar, "receiver_contact" varchar, "pickup_instructions" text, "delivery_instructions" text, "package_type" varchar, "package_details" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pickup" varchar, "destination" varchar, "service_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "senderName" varchar, "receiverName" varchar, "amountPaid" integer, "natureOfGoods" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "receipts"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "receipts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receipt_no" varchar, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "delivery_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "category" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "trackings"[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "receipt_id" integer, "pickup" varchar, "destination" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "use_profiles"[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "telephone" varchar, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "firstName" varchar, "lastName" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221103124331)[0m
+  [1m[35m (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221019132515),
+(20221019132526),
+(20221019134107),
+(20221024095704),
+(20221024131614),
+(20221024132055),
+(20221025081826),
+(20221026101129),
+(20221026140911),
+(20221027111340),
+(20221027111859),
+(20221103123622);
+
+[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-04 02:01:23.347595"], ["updated_at", "2022-11-04 02:01:23.347595"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "1904cd307cf4491b4fa7874d42ab8a7657f1a6e3"], ["created_at", "2022-11-04 02:01:23.361648"], ["updated_at", "2022-11-04 02:01:23.361648"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "admins"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_confirmation_token" ON "admins" ("confirmation_token")[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_unlock_token" ON "admins" ("unlock_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "deliveries"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receiver_name" varchar, "receiver_contact" varchar, "pickup_instructions" text, "delivery_instructions" text, "package_type" varchar, "package_details" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pickup" varchar, "destination" varchar, "service_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "senderName" varchar, "receiverName" varchar, "amountPaid" integer, "natureOfGoods" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "receipts"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "receipts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "receipt_no" varchar, "sender_name" varchar, "receiver_name" varchar, "amount_paid" integer, "nature_of_goods" varchar, "pickup" varchar, "destination" varchar, "delivery_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "category" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "trackings"[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "receipt_id" integer, "pickup" varchar, "destination" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "use_profiles"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "use_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "avatar" varchar, "telephone" varchar, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "firstName" varchar, "lastName" varchar)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221103124331)[0m
+  [1m[35m (4.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221019132515),
+(20221019132526),
+(20221019134107),
+(20221024095704),
+(20221024131614),
+(20221024132055),
+(20221025081826),
+(20221026101129),
+(20221026140911),
+(20221027111340),
+(20221027111859),
+(20221103123622);
+
+[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-04 02:01:23.513965"], ["updated_at", "2022-11-04 02:01:23.513965"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2022-11-04 02:01:23.525965"], ["key", "environment"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "1904cd307cf4491b4fa7874d42ab8a7657f1a6e3"], ["created_at", "2022-11-04 02:01:23.535347"], ["updated_at", "2022-11-04 02:01:23.535347"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-04 02:01:23.578347"], ["updated_at", "2022-11-04 02:01:23.578347"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.7ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-04 02:01:23.590858"], ["updated_at", "2022-11-04 02:01:23.590858"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.5ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-04 02:01:23.604353"], ["updated_at", "2022-11-04 02:01:23.604353"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 02:01:23.614995"], ["updated_at", "2022-11-04 02:01:23.614995"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ab/65/67/ab6567fca1d4911ba9462ab66911c881.jpg"], ["category", "Perishable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 02:01:23.623453"], ["updated_at", "2022-11-04 02:01:23.623453"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg"], ["category", "Flammable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 02:01:23.630965"], ["updated_at", "2022-11-04 02:01:23.630965"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.sciencephoto.com/image/f0220694/800wm"], ["category", "Bulk"], ["description", "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."], ["created_at", "2022-11-04 02:01:23.639308"], ["updated_at", "2022-11-04 02:01:23.639308"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-04 02:01:23.646381"], ["updated_at", "2022-11-04 02:01:23.646381"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Jessie Baumbach CPA"], ["receiver_contact", "+242 737.076.0505"], ["pickup_instructions", "[\"Officiis quo beatae.\"]"], ["delivery_instructions", "[\"Aliquid et praesentium.\"]"], ["package_type", "3"], ["package_details", "[\"Sint vel nobis.\"]"], ["created_at", "2022-11-04 02:01:23.937898"], ["updated_at", "2022-11-04 02:01:23.937898"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Bev Stark"], ["receiver_contact", "+239 352.210.9795"], ["pickup_instructions", "[\"Voluptatem voluptate tempora.\"]"], ["delivery_instructions", "[\"Enim ut sed.\"]"], ["package_type", "4"], ["package_details", "[\"Aspernatur quidem nihil.\"]"], ["created_at", "2022-11-04 02:01:23.947333"], ["updated_at", "2022-11-04 02:01:23.947333"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Gisela Toy"], ["receiver_contact", "+692 1-943-918-1289"], ["pickup_instructions", "[\"Distinctio sit quisquam.\"]"], ["delivery_instructions", "[\"Ut quaerat non.\"]"], ["package_type", "4"], ["package_details", "[\"Voluptate quos facere.\"]"], ["created_at", "2022-11-04 02:01:23.956703"], ["updated_at", "2022-11-04 02:01:23.956703"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Dennis Walker"], ["receiver_contact", "+93 1-802-256-7958"], ["pickup_instructions", "[\"Sit eveniet cum.\"]"], ["delivery_instructions", "[\"Amet maxime commodi.\"]"], ["package_type", "4"], ["package_details", "[\"Magnam explicabo quis.\"]"], ["created_at", "2022-11-04 02:01:23.965949"], ["updated_at", "2022-11-04 02:01:23.965949"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("receiver_name", "receiver_contact", "pickup_instructions", "delivery_instructions", "package_type", "package_details", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["receiver_name", "Dillon Hartmann"], ["receiver_contact", "+880 139.793.0614"], ["pickup_instructions", "[\"Pariatur id maiores.\"]"], ["delivery_instructions", "[\"Et omnis autem.\"]"], ["package_type", "1"], ["package_details", "[\"Vel aperiam nisi.\"]"], ["created_at", "2022-11-04 02:01:23.974674"], ["updated_at", "2022-11-04 02:01:23.974674"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:02:38 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 42ms (Views: 23.2ms | ActiveRecord: 0.2ms | Allocations: 15731)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:03:39 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Started POST "/use_profiles" for 127.0.0.1 at 2022-11-04 05:03:58 +0300
+Processing by UseProfilesController#create as */*
+  Parameters: {"firstName"=>"Newton", "lastName"=>"Ombese", "location"=>"Nairobi", "telephone"=>"0758982500", "use_profile"=>{"telephone"=>"0758982500", "location"=>"Nairobi", "firstName"=>"Newton", "lastName"=>"Ombese"}}
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x00007f62c4025b10>, params: {"firstName"=>"Newton", "lastName"=>"Ombese", "location"=>"Nairobi", "telephone"=>"0758982500", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"telephone"=>"0758982500", "location"=>"Nairobi", "firstName"=>"Newton", "lastName"=>"Ombese"}} }[0m
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:03:58 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.9ms | Allocations: 6012)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (0.5ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", nil], ["telephone", "0758982500"], ["location", "Nairobi"], ["created_at", "2022-11-04 02:03:58.691231"], ["updated_at", "2022-11-04 02:03:58.691231"], ["firstName", "Newton"], ["lastName", "Ombese"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:03:58 +0300
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (1.65ms)
+Completed 201 Created in 89ms (Views: 11.0ms | ActiveRecord: 8.4ms | Allocations: 24818)
+
+
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1679)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:04:18 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:05:37 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1662)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:05:37 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:06:36 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (5.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.33ms)
+Completed 200 OK in 21ms (Views: 14.7ms | ActiveRecord: 5.5ms | Allocations: 1677)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:08:00 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (2.0ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 2.0ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:08:07 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:08:07 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:08:26 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:08:38 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:08:56 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.03ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:09:23 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:10:38 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:13:18 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (1.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 1.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:13:35 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:13:57 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:14:37 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:14:48 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.35ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:14:56 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (1.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.3ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:17:32 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:17:38 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:17:38 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.78ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:19:01 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.8ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.65ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.8ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:25:19 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 4.1ms | Allocations: 1812)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:26:35 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (4.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.15ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 4.5ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:27:30 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:27:39 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started POST "/orders" for 127.0.0.1 at 2022-11-04 05:30:00 +0300
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:30:00 +0300
+Processing by OrdersController#index as */*
+Processing by OrdersController#create as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  Parameters: {"senderName"=>"Alvin", "receiverName"=>"Ndungu", "natureOfGoods"=>"flammable", "pickup"=>"Malaba", "destination"=>"Mombasa", "order"=>{"pickup"=>"Malaba", "destination"=>"Mombasa", "senderName"=>"Alvin", "receiverName"=>"Ndungu", "natureOfGoods"=>"flammable"}}
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[31mUnpermitted parameter: :order. Context: { controller: OrdersController, action: create, request: #<ActionDispatch::Request:0x000055b888c0f670>, params: {"senderName"=>"Alvin", "receiverName"=>"Ndungu", "natureOfGoods"=>"flammable", "pickup"=>"Malaba", "destination"=>"Mombasa", "controller"=>"orders", "action"=>"create", "order"=>{"pickup"=>"Malaba", "destination"=>"Mombasa", "senderName"=>"Alvin", "receiverName"=>"Ndungu", "natureOfGoods"=>"flammable"}} }[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.78ms)
+Completed 200 OK in 28ms (Views: 14.1ms | ActiveRecord: 1.3ms | Allocations: 5430)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mOrder Create (0.8ms)[0m  [1m[32mINSERT INTO "orders" ("pickup", "destination", "service_id", "created_at", "updated_at", "senderName", "receiverName", "amountPaid", "natureOfGoods") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["pickup", "Malaba"], ["destination", "Mombasa"], ["service_id", nil], ["created_at", "2022-11-04 02:30:00.241150"], ["updated_at", "2022-11-04 02:30:00.241150"], ["senderName", "Alvin"], ["receiverName", "Ndungu"], ["amountPaid", nil], ["natureOfGoods", "flammable"]]
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:16:in `create'
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:30:00 +0300
+[active_model_serializers] Rendered OrderSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 57ms (Views: 5.4ms | ActiveRecord: 12.9ms | Allocations: 19469)
+
+
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 1718)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:32:22 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (4.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.74ms)
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 4.9ms | Allocations: 1665)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:32:34 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 1665)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:32:41 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 1665)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:32:48 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1665)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:33:03 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 1665)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:33:20 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 1665)
+
+
+Started DELETE "/orders/1" for 127.0.0.1 at 2022-11-04 05:33:28 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (11.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:40:in `find_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+  [1m[36mOrder Destroy (2.1ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/orders_controller.rb:33:in `destroy'
+Completed 204 No Content in 107ms (ActiveRecord: 17.8ms | Allocations: 3675)
+
+
+Started DELETE "/orders/1" for 127.0.0.1 at 2022-11-04 05:33:29 +0300
+Processing by OrdersController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:40:in `find_order'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 404 Not Found in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 1667)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:33:46 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.61ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 05:33:46 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:33:59 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (1.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 1.2ms | Allocations: 1504)
+
+
+Started GET "/orders" for 127.0.0.1 at 2022-11-04 05:33:59 +0300
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 1504)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:09:46 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62cc05ec50>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.91ms)
+Completed 200 OK in 121ms (Views: 25.8ms | ActiveRecord: 17.1ms | Allocations: 3059)
+
+
+Started POST "/use_profiles" for 127.0.0.1 at 2022-11-04 08:10:02 +0300
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:10:02 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (11.0ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 23ms (Views: 11.4ms | ActiveRecord: 11.0ms | Allocations: 1721)
+
+
+Processing by UseProfilesController#create as */*
+  Parameters: {"firstName"=>"Bofulo", "lastName"=>"Alvo", "location"=>"Nakuru", "telephone"=>"018282", "use_profile"=>{"telephone"=>"018282", "location"=>"Nakuru", "firstName"=>"Bofulo", "lastName"=>"Alvo"}}
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x00007f62d453bcc0>, params: {"firstName"=>"Bofulo", "lastName"=>"Alvo", "location"=>"Nakuru", "telephone"=>"018282", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"telephone"=>"018282", "location"=>"Nakuru", "firstName"=>"Bofulo", "lastName"=>"Alvo"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (1.7ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", nil], ["telephone", "018282"], ["location", "Nakuru"], ["created_at", "2022-11-04 05:10:02.427636"], ["updated_at", "2022-11-04 05:10:02.427636"], ["firstName", "Bofulo"], ["lastName", "Alvo"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 201 Created in 17ms (Views: 2.8ms | ActiveRecord: 8.6ms | Allocations: 2831)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:10:02 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.98ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 1806)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:17:39 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62b807fb58>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 25ms (Views: 11.7ms | ActiveRecord: 3.3ms | Allocations: 1704)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:17:45 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"ksii@kfngkenk", "password"=>"[FILTERED]", "session"=>{"email"=>"ksii@kfngkenk", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62b803fcb0>, params: {"email"=>"ksii@kfngkenk", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"ksii@kfngkenk", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ksii@kfngkenk"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 1504)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:25:01 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62c40de4d0>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.79ms)
+Completed 200 OK in 18ms (Views: 5.0ms | ActiveRecord: 4.5ms | Allocations: 1706)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:25:41 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62c403e570>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1505)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:25:50 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62c00344c0>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1503)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:26:45 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62d44dd0d0>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 1.4ms | Allocations: 1504)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:26:46 +0300
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:26:46 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62d8c01150>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.42ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 1517)
+
+
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62d44a8510>, params: {"email"=>"", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2022-11-04 08:40:15 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007f62d8bb3c98>, params: {"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"newtonombese02@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "newtonombese02@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.67ms)
+Completed 200 OK in 25ms (Views: 6.3ms | ActiveRecord: 6.1ms | Allocations: 1704)
+
+
+Started POST "/use_profiles" for 127.0.0.1 at 2022-11-04 08:41:01 +0300
+Processing by UseProfilesController#create as */*
+  Parameters: {"firstName"=>"Newton", "lastName"=>"Ibrahim", "location"=>"South C", "telephone"=>"03485279", "use_profile"=>{"telephone"=>"03485279", "location"=>"South C", "firstName"=>"Newton", "lastName"=>"Ibrahim"}}
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x00007f62d439ae20>, params: {"firstName"=>"Newton", "lastName"=>"Ibrahim", "location"=>"South C", "telephone"=>"03485279", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"telephone"=>"03485279", "location"=>"South C", "firstName"=>"Newton", "lastName"=>"Ibrahim"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (1.2ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", nil], ["telephone", "03485279"], ["location", "South C"], ["created_at", "2022-11-04 05:41:01.084971"], ["updated_at", "2022-11-04 05:41:01.084971"], ["firstName", "Newton"], ["lastName", "Ibrahim"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (3.02ms)
+Completed 201 Created in 19ms (Views: 6.1ms | ActiveRecord: 5.3ms | Allocations: 2831)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:41:01 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.4ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.95ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 1989)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:41:01 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.18ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms | Allocations: 1952)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:44:41 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (5.9ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.68ms)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 5.9ms | Allocations: 1952)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:44:41 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.1ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.17ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 1952)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:44:47 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.11ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.5ms | Allocations: 1952)
+
+
+Started GET "/use_profiles" for 127.0.0.1 at 2022-11-04 08:44:47 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.29ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 1952)
+
+

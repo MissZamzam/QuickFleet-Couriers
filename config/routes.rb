@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :use_profiles
   resources :deliveries
   resources :receipts
-  resources :use_profiles
   resources :services
   # resources :admin
   # get "/me", to: "users#show"
