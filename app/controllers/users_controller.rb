@@ -13,6 +13,12 @@ class UsersController < ApplicationController
        render json: current_user
     end
 
+    def destroy
+        @message = "Signed out"
+        sign_out(@user)
+        render json: @message
+    end
+
     
     private
 

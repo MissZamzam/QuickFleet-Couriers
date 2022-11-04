@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :receipts
   resources :services
   # resources :admin
-  # get "/me", to: "users#show"
+  get "/me", to: "users#show"
 
   devise_for :admins, path: 'admin', path_names:{
     sign_in: 'login',
