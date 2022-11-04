@@ -8,6 +8,7 @@ class UseProfilesController < ApplicationController
             user_profiles = UseProfile.all
             render json: user_profiles
         end
+        
 
         # GET /userprofiles/:id
         def show

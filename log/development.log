@@ -130,3 +130,100 @@ Migrating to CreateStatuses (20221103232230)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-04 06:50:15.440801"], ["updated_at", "2022-11-04 06:50:15.440801"]]
   [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.kindpng.com/picc/m/115-1153565_fruit-and-vegetable-basket-png-transparent-png.png"], ["category", "On-Demand Delivery"], ["description", "On-demand delivery simply means that customers have a choice to decide not just where they would like their products to be delivered, but also when — that is within the shortest delivery time possible"], ["created_at", "2022-11-04 07:56:39.735123"], ["updated_at", "2022-11-04 07:56:39.735123"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.istockphoto.com/photos/brown-recycled-paper-gift-parcels-picture-id520844431?k=20&m=520844431&s=170667a&w=0&h=rpidmCiVKYQ7V9tpWR42sQnvnv5asOu0MiMJ_muObao="], ["category", "Parcel Services"], ["description", "Parcel shipping refers to shipping lighter, smaller boxed items. Typically, parcel means packages that weigh 100 pounds or less and can be moved without assistance. If you need to ship a few small packages at a time, parcel shipping is an economical way to ship your products."], ["created_at", "2022-11-04 07:56:39.745788"], ["updated_at", "2022-11-04 07:56:39.745788"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8XWc7z14b0Tg_RzEKrcGdkxu5cBMlDPqJQ&usqp=CAU"], ["category", "Overnight Shipping"], ["description", "Overnight shipping is a delivery service that guarantees shipments will be delivered the next day by a certain time."], ["created_at", "2022-11-04 07:56:39.757493"], ["updated_at", "2022-11-04 07:56:39.757493"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.8ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["category", "Same Day Courier"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 07:56:39.768281"], ["updated_at", "2022-11-04 07:56:39.768281"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://www.vietnamairlines.com/fr/en/cargo/product-and-service/~/media/Images/VNANew/Cargo/product-and-services/005_wetCargo.ashx"], ["category", "Perishable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 07:56:39.782256"], ["updated_at", "2022-11-04 07:56:39.782256"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/564x/ed/b5/fa/edb5fa86dfd287954847739585d13b47.jpg"], ["category", "Flammable Items"], ["description", "Same-day delivery is the act of delivering a package the same day it was sent. If a package is delivered before noon, for example, it will be delivered the same day, in the afternoon. Companies that offer this service advertise it as a same-day service."], ["created_at", "2022-11-04 07:56:39.792508"], ["updated_at", "2022-11-04 07:56:39.792508"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://media.sciencephoto.com/image/f0220694/800wm"], ["category", "Bulk"], ["description", "We charge bulk services per CBM ( cubic meters ). We ship goods to county headquarters from where we distribute to other branches for collection."], ["created_at", "2022-11-04 07:56:39.803796"], ["updated_at", "2022-11-04 07:56:39.803796"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("image_url", "category", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/ef/4f/42/ef4f429cf7304f0c76a8f7c9e37fe24d.jpg"], ["category", "Fragile Goods"], ["description", "QuickFleet is a great option to trust for shipping your breakable products. QuickFleet can do the hard work for you by making sure your package is safe and intact. Plus, QuickFleet offers multiple shipping box sizes so they can customize a box fit for your needs."], ["created_at", "2022-11-04 07:56:39.817084"], ["updated_at", "2022-11-04 07:56:39.817084"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/use_profiles" for ::1 at 2022-11-04 10:58:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.5ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 200 OK in 44ms (Views: 19.9ms | ActiveRecord: 0.5ms | Allocations: 16551)
+
+
+Started POST "/use_profiles" for ::1 at 2022-11-04 10:59:02 +0300
+Started GET "/use_profiles" for ::1 at 2022-11-04 10:59:02 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 2441)
+
+
+Processing by UseProfilesController#create as */*
+  Parameters: {"firstName"=>"kfdk", "lastName"=>"gkdn`", "location"=>"kdsvnk", "telephone"=>"skn", "use_profile"=>{"telephone"=>"skn", "location"=>"kdsvnk", "firstName"=>"kfdk", "lastName"=>"gkdn`"}}
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x00007f3be80159c0>, params: {"firstName"=>"kfdk", "lastName"=>"gkdn`", "location"=>"kdsvnk", "telephone"=>"skn", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"telephone"=>"skn", "location"=>"kdsvnk", "firstName"=>"kfdk", "lastName"=>"gkdn`"}} }[0m
+Started GET "/use_profiles" for ::1 at 2022-11-04 10:59:02 +0300
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (0.7ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "user_id", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", nil], ["telephone", "skn"], ["location", "kdsvnk"], ["user_id", nil], ["created_at", "2022-11-04 07:59:02.601127"], ["updated_at", "2022-11-04 07:59:02.601127"], ["firstName", "kfdk"], ["lastName", "gkdn`"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 201 Created in 62ms (Views: 7.5ms | ActiveRecord: 7.6ms | Allocations: 20751)
+
+
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.3ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1077)
+
+
+Started POST "/use_profiles" for ::1 at 2022-11-04 10:59:45 +0300
+Processing by UseProfilesController#create as */*
+  Parameters: {"firstName"=>"Zamzam", "lastName"=>"Hassan", "location"=>"Zamzam", "telephone"=>"Hassan", "use_profile"=>{"telephone"=>"Hassan", "location"=>"Zamzam", "firstName"=>"Zamzam", "lastName"=>"Hassan"}}
+[31mUnpermitted parameter: :use_profile. Context: { controller: UseProfilesController, action: create, request: #<ActionDispatch::Request:0x000055ea10550690>, params: {"firstName"=>"Zamzam", "lastName"=>"Hassan", "location"=>"Zamzam", "telephone"=>"Hassan", "controller"=>"use_profiles", "action"=>"create", "use_profile"=>{"telephone"=>"Hassan", "location"=>"Zamzam", "firstName"=>"Zamzam", "lastName"=>"Hassan"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/use_profiles" for ::1 at 2022-11-04 10:59:45 +0300
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Create (0.7ms)[0m  [1m[32mINSERT INTO "use_profiles" ("avatar", "telephone", "location", "user_id", "created_at", "updated_at", "firstName", "lastName") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["avatar", nil], ["telephone", "Hassan"], ["location", "Zamzam"], ["user_id", nil], ["created_at", "2022-11-04 07:59:45.034234"], ["updated_at", "2022-11-04 07:59:45.034234"], ["firstName", "Zamzam"], ["lastName", "Hassan"]]
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[36mcommit transaction[0m
+Processing by UseProfilesController#index as */*
+  ↳ app/controllers/use_profiles_controller.rb:20:in `create'
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+[active_model_serializers] Rendered UseProfileSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.94ms)
+Completed 201 Created in 36ms (Views: 3.4ms | ActiveRecord: 10.8ms | Allocations: 3902)
+
+
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 1575)
+
+
+Started GET "/use_profiles" for ::1 at 2022-11-04 10:59:45 +0300
+Processing by UseProfilesController#index as */*
+  [1m[36mUseProfile Load (0.2ms)[0m  [1m[34mSELECT "use_profiles".* FROM "use_profiles"[0m
+  ↳ app/controllers/use_profiles_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.07ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 1164)
+
+
