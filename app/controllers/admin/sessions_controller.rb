@@ -45,7 +45,7 @@ class Admin::SessionsController < Devise::SessionsController
   private 
 
   def no_user
-    render json: {error: "An account with email doesn't exist. Please create a new account"}
+    render json: {error: "An account with email doesn't exist. Please create a new account"} status: :unauthorized
   end
 
   def invalid_attempt
