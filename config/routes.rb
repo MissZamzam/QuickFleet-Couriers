@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :orders, only: [:index, :show, :create, :update, :destroy]
   resources :services
-  resources :orders
   resources :use_profiles, only: [:show, :create, :update]
   resources :deliveries, only: [:index, :show, :create, :update, :destroy]
   resources :trackings
