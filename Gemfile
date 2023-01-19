@@ -14,6 +14,7 @@ gem "rack-cors"
 gem "bcrypt"
 gem "serializer"
 gem "jsonapi-serializer"
+gem "railway"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
