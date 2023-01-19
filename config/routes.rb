@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   resources :orders
   resources :use_profiles
   resources :deliveries
+  resources :orders, only: [:index, :show, :create, :update, :destroy]
+  resources :services
+  resources :use_profiles, only: [:show, :create, :update]
+  resources :deliveries, only: [:index, :show, :create, :update, :destroy]
+  resources :trackings
+  resources :trackings, only: [:index, :show, :create, :update, :destroy]
   resources :receipts
   resources :services
   # resources :admin

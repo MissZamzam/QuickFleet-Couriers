@@ -6,4 +6,8 @@ class Order < ApplicationRecord
     validates :senderName, :receiverName, :destination, :pickup, :natureOfGoods,  presence: true
 
     # has_one :tracking
+
+class Order < ApplicationRecord
+    belongs_to :delivery
+    
 end
