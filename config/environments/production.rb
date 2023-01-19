@@ -56,6 +56,20 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "authy_production"
 
   config.action_mailer.perform_caching = false
+  config.action_controller.perform_caching = true
+  config.public_file_server.enabled = true
+  config.assets.compile = true
+  config.assets.digest = true
+  
+  config.log_level = :info
+  config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
+
+
+  # Configure the middleware
+  config.middleware.use Rack::Deflater
+  config.middleware.use Rack::Timeout
+  config.middleware.use Rack::Attack
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -86,22 +100,24 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.assets.precompile += %w( application.js application.css )
 
-#   config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.delivery_method = :smtp
 #   host = '/orders' #replace with your own url
 #   config.action_mailer.default_url_options = { host: localhost }
 #   config.action_mailer.default_options = {from: 'mkateboflo1@gmail.com'}
 
 # # SMTP settings for gmail
-# config.action_mailer.smtp_settings = {
-#      address:              'smtp.gmail.com', 
-#      port:                 587,
-#      domain:               'example.com', 
-#      user_name:            'Quick Fleet',  
-#      password:             'Moringa2022.', 
-#      authentication:       'plain',
-#      enable_starttls_auto: true,
-#      open_timeout:              5,
-#      read_timeout:             5
-# }
+config.action_mailer.smtp_settings = {
+     address:              'smtp.gmail.com', 
+     port:                 587,
+     domain:               'example.com', 
+     user_name:            'Quick Fleet',  
+     password:             'Moringa2022.', 
+     authentication:       'plain',
+     enable_starttls_auto: true,
+     open_timeout:              5,
+     read_timeout:             5
+}
 end
