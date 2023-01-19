@@ -25,5 +25,32 @@ module Authy
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    # config.assets.enabled = true
+    config.assets.initialize_on_precompile = false
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    
+# Enable the asset pipeline
+config.assets.enabled = true
+
+# Serve static files in production
+config.serve_static_assets = true
+
+# Compile assets in production
+config.assets.compile = true
+
+# Precompile assets in production
+config.assets.precompile += %w( application.js application.css )
+
+# Set the cache store in production
+config.cache_store = :memory_store
+
+# Enable caching in production
+config.action_controller.perform_caching = true
+
+# Enable gzip compression in production
+config.middleware.use Rack::Deflater
+
+
+
   end
 end
