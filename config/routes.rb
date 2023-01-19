@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :user_profiles
   resources :users
   resources :orders
   resources :use_profiles
   resources :deliveries
+=======
+  resources :orders, only: [:index, :show, :create, :update, :destroy]
+  resources :services
+  resources :use_profiles, only: [:show, :create, :update]
+  resources :deliveries, only: [:index, :show, :create, :update, :destroy]
+  resources :trackings
+  resources :trackings, only: [:index, :show, :create, :update, :destroy]
+>>>>>>> f00bfeb06b75872601ee403550d58c39abdf34bf
   resources :receipts
   resources :services
   # resources :admin
