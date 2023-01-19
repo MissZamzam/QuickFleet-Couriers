@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :user_profiles
+  resources :users
+  resources :orders
+  resources :use_profiles
+  resources :deliveries
   resources :orders, only: [:index, :show, :create, :update, :destroy]
   resources :services
   resources :use_profiles, only: [:show, :create, :update]
@@ -6,8 +11,10 @@ Rails.application.routes.draw do
   resources :trackings
   resources :trackings, only: [:index, :show, :create, :update, :destroy]
   resources :receipts
-  resources :users
-  # resources :users
+  resources :services
+  # resources :admin
+  get "/me", to: "users#show"
+
   devise_for :admins, path: 'admin', path_names:{
     sign_in: 'login',
     sign_out: 'signout',

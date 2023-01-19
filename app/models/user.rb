@@ -5,6 +5,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  # has_one :use_profile
   # after_create :build_use_profile
 # accepts_nested_attributes_for :use_profile
 

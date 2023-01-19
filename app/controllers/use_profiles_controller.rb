@@ -4,10 +4,16 @@ class UseProfilesController < ApplicationController
 
 
         # GET /userprofiles
+        def index
+            user_profiles = UseProfile.all
+            render json: user_profiles
+        end
+        
         # def index
         #     user_profiles = UseProfile.all
         #     render json: user_profiles
         # end
+
 
         # GET /userprofiles/:id
         def show
@@ -17,6 +23,8 @@ class UseProfilesController < ApplicationController
 
         # POST/userprofile
         def create
+            user_profile = UseProfile.create!(user_profile_params)
+            render json: user_profile, status: :created
             @user_profile = UseProfile.new(user_profile_params)
             @user_profile.user_id = 10
             @user_profile.save
@@ -26,6 +34,7 @@ class UseProfilesController < ApplicationController
 
         # PATCH /user_profile/:id
         def update
+            user_profile = UseProfile.find(id: params[:id])
             user_profile = UseProfile.find(params[:id])
             user_profile.update!(user_profile_params)
             render json: user_profile, status: :ok
@@ -33,6 +42,8 @@ class UseProfilesController < ApplicationController
 
         # DELETE /user_profiles/:id
         def destroy
+            user_profile = UseProfile.find(id: params[:id])
+            User_Profile.destroy
             user_profile = UseProfile.find_by(id: params[:id])
             user_profile.destroy
             head :no_content
@@ -45,7 +56,7 @@ class UseProfilesController < ApplicationController
         # end
 
         def user_profile_params
-            params.permit(:avatar, :name, :email, :telephone, :location)
+            params.permit(:avatar, :firstName, :lastName, :telephone, :location)
         end
 
         def unprocessable_entity(invalid)

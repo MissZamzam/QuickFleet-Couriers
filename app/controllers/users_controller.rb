@@ -7,12 +7,23 @@ class UsersController < ApplicationController
         user= User.find_by(id: params[:id])
         render json: user
 
+    def show
+    #     # current_user = User.find(session[:user_id])
+    #     # render json: current_user
+       render json: current_user
     end
     def index
         users = User.all
         render json: users
     end
 
+    def destroy
+        @message = "Signed out"
+        sign_out(@user)
+        render json: @message
+    end
+
+    
     private
 
     # def this_user
